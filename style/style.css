@@ -3,7 +3,12 @@ header {
 }
 
 body {
-    background-image: url('/images/background.png');
+    background-image: url("/images/background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: black;
+    background-attachment: fixed;
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
 }
