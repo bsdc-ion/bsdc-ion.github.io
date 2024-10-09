@@ -3,5 +3,6 @@ header {
 }
 
 body {
-    background-image: "/ion.github.io/images/pexels-vlada-karpovich-4050293.jpg";
+    background-image: "/images/pexels-vlada-karpovich-4050293.jpg";
+    background-size: cover;
 }
