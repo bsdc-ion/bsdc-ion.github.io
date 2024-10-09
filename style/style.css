@@ -65,6 +65,7 @@ body {
     color: white;
     font-family: "Calibri";
     padding-bottom: 10px;
+    align-items: center;
     gap: 180px;
     position: fixed;
     left: 0;
@@ -72,4 +73,44 @@ body {
     width: 100%;
     height: 12%;
     background-color:rgba(0, 0, 0, 0.70);
+}
+
+.locationtab {
+    display: flex;
+    flex-direction:row;
+    margin-left: -70%;
+    width: 411px;
+    text-align: center;
+}
+.locationpin {
+    width: 30px;
+    height: 43px;
+    
+    margin-right: 10px
+}
+
+.callmepls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+}
+
+.phonepin {
+    width: 30px;
+    height: 43px;
+    margin-left: 650px
+    margin-right: 10px
+}
+
+.buttonbro2 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    width: 385px;
+    padding-right: 30px;
+    border: none;
+    font-family: "Calibri";
+    text-decoration: none;
 }
