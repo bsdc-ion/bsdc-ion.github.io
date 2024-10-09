@@ -3,6 +3,6 @@ header {
 }
 
 body {
-    background-image: "/images/pexels-vlada-karpovich-4050293.jpg";
+    background-image: url('/images/pexels-vlada-karpovich-4050293.jpg');
     background-size: cover;
 }
