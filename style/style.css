@@ -99,10 +99,16 @@ body {
 .phonepin {
     width: 30px;
     height: 43px;
-    margin-left: 650px
-    margin-right: 10px
+    margin-left: 650px;
+    margin-right: 10px;
 }
 
+.mailpin {
+    width: 30px;
+    height: 43px;
+    margin-left: 650px;
+    margin-right: 10px;
+}
 .buttonbro2 {
     color: rgb(255, 255, 255);
     font-size: 25px;
@@ -113,4 +119,9 @@ body {
     border: none;
     font-family: "Calibri";
     text-decoration: none;
+}
+
+.socialmedia {
+    width:40px;
+    margin: -180px;
 }
