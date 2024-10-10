@@ -1,1 +1,0 @@
-console.log("bafta coaie am plecat")
