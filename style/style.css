@@ -80,29 +80,38 @@ body {
     flex-direction:row;
     width: 411px;
     text-align: center;
+    margin-left: -125px;
 }
 .locationpin {
     width: 30px;
-    height: 43px;
+    height: 40px;
     margin-right: 10px
 }
 
 .callmepls {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 300px;
+    flex-direction:row;
+    text-align: center;
+    margin-left: -240px;
+}
+
+.mailmepls {
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    margin-left: -300px;
+    margin-right: 400px;
 }
 
 .phonepin {
     width: 30px;
-    height: 43px;
+    height: 40px;
     margin-right: 10px;
 }
 
 .mailpin {
     width: 30px;
-    height: 43px;
+    height: 40px;
     margin-right: 10px;
 }
 .buttonbro2 {
@@ -117,6 +126,29 @@ body {
     text-decoration: none;
 }
 
+.callbro {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    width: 105px;
+    padding-right: 30px;
+    border: none;
+    font-family: "Calibri";
+    text-decoration: none;
+}
+
+.mailbro {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    width: 105px;
+    padding-right: 30px;
+    border: none;
+    font-family: "Calibri";
+    text-decoration: none;
+}
 .socialmedia {
     width:40px;
     margin: -180px;
