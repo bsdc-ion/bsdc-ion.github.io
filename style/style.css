@@ -78,14 +78,12 @@ body {
 .locationtab {
     display: flex;
     flex-direction:row;
-    margin-left: -70%;
     width: 411px;
     text-align: center;
 }
 .locationpin {
     width: 30px;
     height: 43px;
-    
     margin-right: 10px
 }
 
@@ -99,14 +97,12 @@ body {
 .phonepin {
     width: 30px;
     height: 43px;
-    margin-left: 650px;
     margin-right: 10px;
 }
 
 .mailpin {
     width: 30px;
     height: 43px;
-    margin-left: 650px;
     margin-right: 10px;
 }
 .buttonbro2 {
