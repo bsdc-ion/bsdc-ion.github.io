@@ -1,0 +1,787 @@
+body {
+    background-image: url("/images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+.logofix {
+    width: 130px;
+    margin-top: -43px;
+}
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.buttonbro {
+    color: black;
+    font-size: 36px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    font-family: "Calibri";
+    background: none;
+    margin: 25px;
+    text-decoration: none;
+}
+
+.buttonbro:hover {
+    color:#004aad
+}
+
+.MainName {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 100px;
+    margin-top: -130px;
+}
+
+.Experience {
+    font-family: "Calibri";
+    font-size: 99px;
+}
+
+.HUB {
+    font-family: "Calibri";
+    font-size: 99px;
+    color: #004aad;
+}
+
+.Slogan {
+    display: flex;
+    font-family: "Calibri";
+    font-size: 40px;
+    flex-direction: row-reverse;
+    margin-right: 105px;
+    margin-top: -155px;
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-family: "Calibri";
+    padding-bottom: 10px;
+    align-items: center;
+    gap: 180px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color:rgba(0, 0, 0, 0.70);
+}
+
+.locationpin {
+    width: 7%;
+    height: 40px;
+    margin-right: 10px
+}
+
+
+.phonepin {
+    width: 20%;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.mailpin {
+    width: 20%;
+    height: 40px;
+    margin-right: 10px;
+}
+.buttonbro2 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    width: 385px;
+    padding-right: 30px;
+    border: none;
+    font-family: "Calibri";
+    text-decoration: none;
+}
+
+.locationtab {
+    display: flex;
+    flex-direction:row;
+    width: 411px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.callmepls {
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    margin-left: -140px;
+}
+
+.mailmepls {
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    margin-left: -110px;
+    margin-right: 500px;
+}
+
+
+.callbro {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    width: 105px;
+    padding-right: 30px;
+    border: none;
+    font-family: "Calibri";
+    text-decoration: none;
+}
+
+.mailbro {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    width: 105px;
+    padding-right: 30px;
+    border: none;
+    font-family: "Calibri";
+    text-decoration: none;
+}
+.socialmediaall {
+    display:flex;
+    margin-left: -20%;
+}
+.socialmedia {
+    width:40px;
+    margin:10px;
+    cursor: pointer;
+}
+
+.phonemenu {
+    width: 0px;
+}
+
+.mailbro:hover {
+    color:rgb(149, 205, 255)
+}
+.callbro:hover {
+    color:rgb(149, 205, 255)
+}
+.buttonbro2:hover {
+    color:rgb(149, 205, 255)
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    .logofix {
+        width: 0px;
+        margin-top: -43px;
+    }
+    .buttonbro {
+        font-size: 0px;
+    }
+    .phonemenu {
+        width: 80px;
+        margin-top: -25px;
+        cursor: pointer;
+    }
+
+    .MainName {
+        position: static;
+        margin-bottom: -100px;
+        margin-top: 30px;
+        margin-left: 370px;
+        margin-right: 0px;
+    }
+
+    .Experience {
+        font-family: "Calibri";
+        font-size: 56px;
+    }
+    
+    .HUB {
+        font-family: "Calibri";
+        font-size: 56px;
+        color: #004aad;
+    }
+    
+    .Slogan {
+        display: flex;
+        font-family: "Calibri";
+        font-size: 22px;
+        flex-direction: row-reverse;
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        font-family: "Calibri";
+        padding-bottom: 10px;
+        align-items: center;
+        gap: 180px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        min-height: 20%;
+        max-height: 40%;
+        background-color:rgba(0, 0, 0, 0.70);
+    }
+
+    
+    .locationtab {
+        text-align: center;
+        margin-left: 15px;
+        margin-top: -90px;
+        position:static;
+    }
+    .locationpin {
+        width: 25px;
+        height: 35px;
+    }
+    .buttonbro2 {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        cursor: pointer;
+        width: auto;
+        text-align: center;
+        padding-right: 0px;
+        padding-top: 1px;
+        border: none;
+        font-family: "Calibri";
+        text-decoration: none;
+    }
+
+
+    .callmepls {
+        margin-left: -2px;
+        margin-top: 15px;
+        position:absolute;
+    }
+    .phonepin {
+        width: 30px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    .callbro {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        width:auto;
+        padding-top: 3px;
+        border: none;
+        font-family: "Calibri";
+        text-decoration: none;
+    }
+
+
+    .mailmepls {
+        display: flex;
+        flex-direction:row;
+        text-align: center;
+        margin-left: 285px;
+        margin-top: 110px;
+        position: fixed;
+    }
+    .mailpin {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    .mailbro {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 4px;
+        border: none;
+        font-family: "Calibri";
+        text-decoration: none;
+    }
+
+    .socialmediaall {
+        position:fixed;
+        margin-top: 20px;
+        margin-left: 220px;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+    }
+
+    .socialmedia {
+        float: left;
+        position: relative;
+        cursor: pointer;
+    }
+
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) and (max-width: 928px) {
+    .logofix {
+        width: 170px;
+        margin-top: -40px;
+    }
+    .buttonbro {
+        font-size: 50px;
+    }
+    .phonemenu {
+        width: 0px;
+        cursor: pointer;
+    }
+
+    .MainName {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 30px;
+        margin-right: 10px;
+    }
+
+    .Experience {
+        font-family: "Calibri";
+        font-size: 99px;
+    }
+    
+    .HUB {
+        font-family: "Calibri";
+        font-size: 99px;
+        color: #004aad;
+    }
+    
+    .Slogan {
+        display: flex;
+        font-family: "Calibri";
+        font-size: 35px;
+        flex-direction: row-reverse;
+        margin-top: -140px;
+        margin-right: 10px;
+    }
+
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        font-family: "Calibri";
+        padding-bottom: 10px;
+        align-items: center;
+        gap: 180px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 22%;
+        background-color:rgba(0, 0, 0, 0.70);
+    }
+
+    
+    .locationtab {
+        display: flex;
+        flex-direction:row;
+        text-align: center;
+        margin-left: -270px;
+        margin-top: -160px;
+        position:fixed;
+    }
+    .locationpin {
+        width: 40;
+        height: 40px;
+        margin-right: 0px;
+    }
+    .buttonbro2 {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        cursor: pointer;
+        text-align: center;
+        margin-left: 0px;
+        padding-top: 1px;
+        border: none;
+        font-family: "Calibri";
+        text-decoration: none;
+    }
+
+
+    .callmepls {
+        display: flex;
+        flex-direction:row;
+        margin-left: -500px;
+        margin-top: -15px;
+        position:fixed;
+    }
+    .phonepin {
+        width: 40px;
+        height: 45px;
+        margin-right: 10px;
+    }
+    .callbro {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 3px;
+        border: none;
+        font-family: "Calibri";
+        text-decoration: none;
+    }
+
+
+    .mailmepls {
+        display: flex;
+        flex-direction:row;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 140px;
+        position:fixed;
+    }
+    .mailpin {
+        width: 40px;
+        height: 45px;
+        margin-right: 10px;
+    }
+    .mailbro {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 4px;
+        border: none;
+        font-family: "Calibri";
+        text-decoration: none;
+    }
+
+    .socialmediaall {
+        position:fixed;
+        margin-left: 60vw;
+        display:grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .socialmedia {
+        width:70px;
+        cursor: pointer;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 928px) and (max-width: 1200px) {
+    .logofix {
+        width: 170px;
+        margin-top: -40px;
+    }
+    .buttonbro {
+        font-size: 50px;
+    }
+    .phonemenu {
+        width: 0px;
+        cursor: pointer;
+    }
+
+    .MainName {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 30px;
+        margin-right: 10px;
+    }
+
+    .Experience {
+        font-family: "Calibri";
+        font-size: 99px;
+    }
+    
+    .HUB {
+        font-family: "Calibri";
+        font-size: 99px;
+        color: #004aad;
+    }
+    
+    .Slogan {
+        display: flex;
+        font-family: "Calibri";
+        font-size: 35px;
+        flex-direction: row-reverse;
+        margin-top: -140px;
+        margin-right: 10px;
+    }
+
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        font-family: "Calibri";
+        padding-bottom: 10px;
+        align-items: center;
+        gap: 180px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 22%;
+        background-color:rgba(0, 0, 0, 0.70);
+    }
+
+    
+    .locationtab {
+        display: flex;
+        flex-direction:row;
+        text-align: center;
+        margin-left: -270px;
+        margin-top: -160px;
+        position:fixed;
+    }
+    .locationpin {
+        width: 40;
+        height: 40px;
+        margin-right: 0px;
+    }
+    .buttonbro2 {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        cursor: pointer;
+        text-align: center;
+        margin-left: 0px;
+        padding-top: 1px;
+        border: none;
+        font-family: "Calibri";
+        text-decoration: none;
+    }
+
+
+    .callmepls {
+        display: flex;
+        flex-direction:row;
+        margin-left: -500px;
+        margin-top: -15px;
+        position:fixed;
+    }
+    .phonepin {
+        width: 40px;
+        height: 45px;
+        margin-right: 10px;
+    }
+    .callbro {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 3px;
+        border: none;
+        font-family: "Calibri";
+        text-decoration: none;
+    }
+
+
+    .mailmepls {
+        display: flex;
+        flex-direction:row;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 140px;
+        position:fixed;
+    }
+    .mailpin {
+        width: 40px;
+        height: 45px;
+        margin-right: 10px;
+    }
+    .mailbro {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 4px;
+        border: none;
+        font-family: "Calibri";
+        text-decoration: none;
+    }
+
+    .socialmediaall {
+        position:fixed;
+        margin-left: 60vw;
+        display:grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .socialmedia {
+        width:70px;
+        cursor: pointer;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+
+    .logofix {
+        width: 150px;
+        margin-top: -43px; 
+    }
+    .buttonbro {
+        color: black;
+        font-size: 36px;
+        cursor: pointer;
+        text-align: center;
+        border: none;
+        font-family: "Calibri";
+        background: none;
+        margin: 25px;
+        text-decoration: none;
+    }
+    
+    .MainName {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 100px;
+        margin-top: -130px;
+    }
+    
+    .Experience {
+        font-family: "Calibri";
+        font-size: 99px;
+    }
+    
+    .HUB {
+        font-family: "Calibri";
+        font-size: 99px;
+        color: #004aad;
+    }
+    
+    .Slogan {
+        display: flex;
+        font-family: "Calibri";
+        font-size: 40px;
+        flex-direction: row-reverse;
+        margin-right: 105px;
+        margin-top: -155px;
+        
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        font-family: "Calibri";
+        padding-bottom: 10px;
+        align-items: center;
+        gap: 180px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+        background-color:rgba(0, 0, 0, 0.70);
+    }
+    
+    .locationpin {
+        width: 7%;
+        height: 40px;
+        margin-right: 10px
+    }
+    
+    
+    .phonepin {
+        width: 20%;
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+    .mailpin {
+        width: 20%;
+        height: 40px;
+        margin-right: 10px;
+    }
+    .buttonbro2 {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        cursor: pointer;
+        text-align: center;
+        width: 385px;
+        padding-right: 30px;
+        border: none;
+        font-family: "Calibri";
+        text-decoration: none;
+    }
+    
+    .locationtab {
+        display: flex;
+        flex-direction:row;
+        width: 411px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    
+    .callmepls {
+        display: flex;
+        flex-direction:row;
+        text-align: center;
+        margin-left: -140px;
+    }
+    
+    .mailmepls {
+        display: flex;
+        flex-direction:row;
+        text-align: center;
+        margin-left: -110px;
+        margin-right: 500px;
+    }
+    
+    
+    .callbro {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        cursor: pointer;
+        text-align: center;
+        width: 105px;
+        padding-right: 30px;
+        border: none;
+        font-family: "Calibri";
+        text-decoration: none;
+    }
+    
+    .mailbro {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        cursor: pointer;
+        text-align: center;
+        width: 105px;
+        padding-right: 30px;
+        border: none;
+        font-family: "Calibri";
+        text-decoration: none;
+    }
+    .socialmediaall {
+        display:flex;
+        margin-left: -20%;
+    }
+    .socialmedia {
+        width:40px;
+        margin:10px;
+        cursor: pointer;
+    }
+    
+    .phonemenu {
+        width: 0px;
+    }
+    
+    .mailbro:hover {
+        color:rgb(149, 205, 255)
+    }
+    .callbro:hover {
+        color:rgb(149, 205, 255)
+    }
+    .buttonbro2:hover {
+        color:rgb(149, 205, 255)
+    }
+}
