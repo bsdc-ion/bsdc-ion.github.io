@@ -6,3 +6,67 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
+
+/* Everything that takes part in header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin-bottom: -8px;
+}
+.logofix {
+    width: 200px;
+    margin-top: -63px;
+    margin-right: 30px;
+}
+.phonemenu {
+    display: none;
+}
+.phonemenu:hover {
+    background-color:#004aad;
+    border-radius: 40px;
+}
+.buttonbro {
+    color: black;
+    font-size: 56px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    font-family: "Calibri";
+    background: none;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-bottom: -10px;
+}
+.buttonbro:hover {
+    color:#004aad
+}
+
+/* Everything that takes part in the middle of the page*/
+
+.MainName {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 1.5%;
+    margin-top: -10%;
+    margin-bottom: -6.6%;
+}
+.Experience {
+    font-family: "Calibri";
+    font-size: clamp(46px, 6vw, 69px);
+}
+.HUB {
+    font-family: "Calibri";
+    font-size: clamp(46px, 6vw, 69px);
+    color: #004aad;
+}
+.Slogan {
+    display: flex;
+    font-family: "Calibri";
+    font-size: clamp(10px, 20vw, 25px);
+    flex-direction: row-reverse;
+    margin-right: 25px;
+    margin-top: -4%;
+}
