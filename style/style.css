@@ -47,7 +47,7 @@ header {
     display: flex;
     flex-direction: row-reverse;
     margin-right: 1.5%;
-    margin-top: -18vh;
+    margin-top: -1%;
 }
 .Experience {
     font-family: "Calibri";
@@ -64,7 +64,7 @@ header {
     font-size: clamp(22px, 6vw, 40px);
     flex-direction: row-reverse;
     margin-right: 25px;
-    margin-top: -22vh;
+    margin-top: -20vh;
 }
 
 /* Everything that takes part in the footer*/
@@ -156,24 +156,23 @@ footer {
 
     /* Everything that takes part in the middle of the page*/
     .MainName {
-        margin-top: 0px;
+        margin-top: 5vh;
     }
     .Experience {
-        font-size: clamp(30px, 14vw, 99px);
+        font-size: 65px;
     }
     .HUB {
-        font-size: clamp(30px, 14vw, 99px);
+        font-size: 65px;
     }
     .Slogan {
-        font-size: clamp(20px, 6vw, 35px);
+        font-size: 30px;
     }
     .Slogan {
-        margin-right: 10px;
+        margin-right: 5px;
         position: relative;
         float:right;
-        margin-top: -115px;
+        margin-top: -11vh;
     }
-
     /* Everything that takes part in the footer*/
 
     footer {
@@ -182,26 +181,21 @@ footer {
         background-color:rgba(0, 0, 0, 0.70);
     }
     .buttonbro2 {
-        color: rgb(255, 255, 255);
-        font-size: 22px;
-        cursor: pointer;
-        margin-top: -72px;
-        font-family: "Calibri";
-        text-decoration: none;
-        
+        font-size: 27px;
+        margin-top: -80px;
     }
 
     /*Localization Info*/
 
     .UtilitiesTab {
         display: grid;
-        margin-left: 20px;
-        margin-top: 15px;
+        margin-left: clamp(10vw, 5%, 30vw);
+        margin-top: 20px;
     }
 
     .locationpin {
         margin-bottom: 15px;
-       
+        margin-left: -18px;
     }
 
 
@@ -209,21 +203,21 @@ footer {
         width: 40px;
         height: 40px;
         margin-right: 0px;
-        margin-left: 0px;
+        margin-left: -20px;
         margin-bottom: 15px;
     }
 
     /*SocialMedia*/
 
     .SocialMediaTab {
-        float: inline-start;
+        float: left;
         margin-top: 10px;
-        margin-left: 4.2%;
+        margin-left: 14vw;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 705px) and (max-width: 1200px) {
+@media only screen and (min-width: 705px) and (max-width: 1199px) {
     
     /* Everything that takes part in header*/
 
@@ -236,11 +230,24 @@ footer {
         font-size: 45px;
     }
 
+    /* Middle */
+    .MainName {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 1.5%;
+        margin-top: -1%;
+    }
+    .Slogan {
+        font-size: 40px;
+        margin-right: 15px;
+        margin-top: -20vh;
+    }
+
     /* Everything that takes part in the footer*/
 
     footer {
         width: 100%;
-        height: 28vh;
+        height: 30%;
     }
 
     .buttonbro2 {
@@ -264,7 +271,7 @@ footer {
         width: auto;
         align-items: center;
         margin-left: 25px;
-        margin-top: 15px;
+        margin-top: 30px;
     }
 
     .pmpin {
@@ -277,7 +284,7 @@ footer {
         position:relative;
         display: grid;
         grid-template-columns: 70% 70%;
-        margin-top: -23vh;
+        margin-top: -21vh;
     }
 
     .socialmedia {
@@ -293,6 +300,11 @@ footer {
     }
 
     .MainName {
+        margin-right: 10px;
+    }
+
+    .Slogan {
+        margin-top: -20vh;
         margin-right: 10px;
     }
 
