@@ -132,9 +132,11 @@ header {
     }
 
     .AboutusBOX {
-        left: 15px;
+        left: 10px;
         width: 96vw;
         height: 76%;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 }
 
