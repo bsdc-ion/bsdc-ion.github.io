@@ -68,7 +68,7 @@ header {
     font-size: clamp(10px, 20vw, 32px);
     flex-direction: row-reverse;
     margin-right: 25px;
-    margin-top: 3%;
+    margin-top: 4.2%;
 }
 
 /* Social Media */
@@ -134,13 +134,45 @@ header {
     font-family: "Calibri";
     margin-left: 50px;
     float: left;
+    display:grid;
+    grid-template-columns: 80%;
     width: 650px;
     height: 450px;
-    background-color:rgba(0, 0, 0, 0.70);
     border-radius: 40px;
     margin-top: -90px;
-    text-align: center;
-    color:white;
+    text-align: start;
+    color:black;
+}
+
+.titlee {
+    text-decoration: underline;
+    float:left;
+    font-size: 80px;
+    margin-top: -20px;
+}
+.headers {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.inputmess {
+    text-align: start;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 30px;
+    color: white;
+    font-size: large;
+}
+
+.inputsmall {
+    text-align: start;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.507);
+    margin-top: -45px;
+    margin-left: 130px;
+    border-radius: 30px;
+    color: white;
+    font-size: large;
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 705px) {

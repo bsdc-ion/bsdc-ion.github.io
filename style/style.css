@@ -64,7 +64,7 @@ header {
     font-size: clamp(22px, 6vw, 40px);
     flex-direction: row-reverse;
     margin-right: 25px;
-    margin-top: -20vh;
+    margin-top: -200px;
 }
 
 /* Everything that takes part in the footer*/
@@ -112,7 +112,6 @@ footer {
     margin-right: 8px;
 }
 
-
 .pmpin {
     width: 40px;
     height: 40px;
@@ -156,23 +155,22 @@ footer {
 
     /* Everything that takes part in the middle of the page*/
     .MainName {
-        margin-top: 5vh;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 1.5%;
     }
     .Experience {
-        font-size: clamp(55px, 12vw, 90px);
+        font-size: clamp(50px, 10vw, 90px);
     }
     .HUB {
-        font-size: clamp(55px, 12vw, 90px);
-    }
-    .Slogan {
-        font-size: 30px;
+        font-size: clamp(50px, 10vw, 90px);
     }
     .Slogan {
         margin-right: 5px;
-        position: relative;
-        float:right;
-        font-size: clamp(25px, 6vw, 30px);
-        margin-top: -12vh;
+        font-size: clamp(20px, 4vw, 28px);
+        margin-top: -8vh;
+        margin-bottom: 0%;
     }
     /* Everything that takes part in the footer*/
 
@@ -239,9 +237,9 @@ footer {
         margin-top: -1%;
     }
     .Slogan {
-        font-size: clamp(20px, 6vw, 45px);
+        font-size: clamp(20px, 6vw, 43px);
         margin-right: 15px;
-        margin-top: -14vh;
+        margin-top: -15vh;
     }
 
     /* Everything that takes part in the footer*/
@@ -285,7 +283,7 @@ footer {
         position:relative;
         display: grid;
         grid-template-columns: 70% 70%;
-        margin-top: -21vh;
+        margin-top: -17vh;
     }
 
     .socialmedia {
@@ -305,7 +303,7 @@ footer {
     }
 
     .Slogan {
-        margin-top: -25vh;
+        margin-top: -15vh;
         margin-right: 10px;
     }
 
@@ -326,7 +324,7 @@ footer {
         font-size: clamp(56px, 14vw, 149px);
     }
     .Slogan {
-        margin-top: -30vh;
+        margin-top: -23vh;
         font-size: clamp(22px, 6vw, 60px);
     }
 }
