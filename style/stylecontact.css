@@ -68,7 +68,7 @@ header {
     font-size: clamp(10px, 20vw, 32px);
     flex-direction: row-reverse;
     margin-right: 25px;
-    margin-top: 3%;
+    margin-top: 4%;
 }
 
 /* Social Media */
@@ -134,13 +134,78 @@ header {
     font-family: "Calibri";
     margin-left: 50px;
     float: left;
+    display:grid;
+    grid-template-columns: 80%;
     width: 650px;
     height: 450px;
-    background-color:rgba(0, 0, 0, 0.70);
     border-radius: 40px;
     margin-top: -90px;
+    text-align: start;
+    color:black;
+}
+
+.titlee {
+    text-decoration: underline;
+    float:left;
+    font-size: 80px;
+    margin-top: -20px;
+}
+.headers {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.inputmess {
+    text-align: start;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+    font-size: large;
+    display: flex;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.inputsmall {
+    text-align: start;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.507);
+    margin-top: -45px;
+    margin-left: 130px;
+    border-radius: 25px;
+    color: white;
+    font-size: large;
+}
+
+.submitbutton {
     text-align: center;
-    color:white;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.507);
+    margin-top: -25px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 25px;
+    color: white;
+    font-size: x-large;
+}
+.submitbutton:hover {
+    background-color: #004bad6c;
+    cursor:pointer;
+    color: rgba(0, 255, 255, 0.644);
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 705px) {
@@ -158,18 +223,60 @@ header {
         margin-top: -15px;
         cursor: pointer;
     }
-
     /* Everything that takes part in the middle of the page*/
     .Experience {
-        font-size: clamp(46px, 6vw, 69px);
+        font-size: clamp(46px, 5vw, 69px);
     }
     .HUB {
-        font-size: clamp(46px, 6vw, 69px);
+        font-size: clamp(46px, 5vw, 69px);
     }
     .Slogan {
         font-size: 20px;
         margin-right: 10px;
-        margin-top: -70px;
+        margin-top: 0;
+    }
+    /*Localization Info*/
+
+    .easycontact {
+        display: grid;
+        grid-template-columns: 70%;
+        width: auto;
+        align-items: center;
+        width: 90%;
+        height: 30%;
+        
+    }
+
+    .pmpin {
+        margin-right: 10px;
+        margin-left:0px;
+    }
+
+    /*SocialMedia*/
+    .SocialMediaTab {
+        position:relative;
+        display: grid;
+        grid-template-columns: 70% 70%;
+        margin-top: -17vh;
+    }
+
+    .socialmedia {
+        width:60px;
+    }
+
+    .directmail {
+        display: none;
+    }
+    
+    .titlee {
+        display: none;
+    }
+    .headers {
+        display: none;
+    }
+    
+    .inputmess {
+        display: none;
     }
 }
 
