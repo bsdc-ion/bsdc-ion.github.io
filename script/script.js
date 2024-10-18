@@ -1,1 +1,0 @@
-console.log("Nobody knows why I use java script buttt ok.");
