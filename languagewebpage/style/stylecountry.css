@@ -1,11 +1,26 @@
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3c3c3c; /* color of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* color of the scroll thumb on hover */
+}
+
 body {
-    background-image: url("/languagewebpage/images/empty-blackboard.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 70%);
     background-attachment: fixed;
     background-position: center;
-    overflow: hidden;
+    background-repeat: no-repeat;
+    overflow:auto;
     font-family: "Indie Flower", cursive;
     font-weight: 400;
     font-style: normal;
@@ -13,14 +28,30 @@ body {
     
 }
 
+.page {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mainbox {
+    background-image: url("/languagewebpage/images/empty-blackboard.png");
+    display:flexbox;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 90rem;
+    width: 550px;
+    border-radius: 40px;
+    margin-top: 0;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.432);
+    
+}
 .box1 {
-    align-self: center;
-    width: 95vw;
-    height: 30%;
+    width: auto;
+    height: 25%;
     background-color: transparent;
-    border: 5px dotted black;
-    left: 0;
-    margin-left: -5px;
+    border-bottom: 5px dotted black;
+    margin-left: 0px;
     display:grid;
     flex-grow: 0;
     flex-shrink: 0;
@@ -42,7 +73,8 @@ body {
 .allflags {
     display:grid;
     grid-template-columns: 50% 50%;
-    margin-left: 45px;
+    margin-left: 0px;
+    margin-top: 50px;
     
 }
 .flag {

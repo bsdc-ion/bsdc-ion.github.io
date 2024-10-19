@@ -1,3 +1,19 @@
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3e88ff; /* color of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4000ff; /* color of the scroll thumb on hover */
+}
+
 body {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(34,34,125,1) 50%, rgba(2,0,36,1) 90%);
@@ -163,7 +179,7 @@ hr {
 }
 
 
-.mmywork {
+.mywork {
     display: flex;
     height: 150px;
     align-items: center;
@@ -173,6 +189,7 @@ hr {
 
 .workicon {
     margin-left: 10%;
+    margin-right: 5%;
     height: 150px;
     width: 150px; 
     transition: transform .2s;

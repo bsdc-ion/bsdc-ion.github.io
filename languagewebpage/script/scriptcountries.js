@@ -17,7 +17,7 @@ const ngbt = document.getElementById("Nigeria");
 
 // all translates // 
 const morningtr = ["Good Morning!", "Bonne matinée!", "Buna dimineata!", "صبح بخیر!", "Добро утро!", "Jó reggelt!", "Kàárọ̀!"];
-const pron1 = ["Good Morn·ing", "Buna dimi·neatsa", "Bon matin", "Sabah bak·hair", "Dobro utro", "Jo reg·et", "Karu"];
+const pron1 = ["[Good Morn·ing]", "[Buna dimi·neatsa]", "[Bon matin]", "[Sabah bak·hair]", "[Dobro utro]", "[Jo reg·et]", "[Karu]"];
 const hellostr = ["Hello!", "Bonjour!", "Salut!", "ہیلو!", "здравей!", "Üdvözlöm", "Báwo"];
 const pron2 = ["Hello", "Buna", "Bon·jur", "Helo", "Zdra·vei", "Üd·voz·lom", "Ba·vo"];
 
