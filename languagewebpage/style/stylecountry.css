@@ -1,5 +1,5 @@
 body {
-    background-image: url("/languagewebpage/images/empty-blackboard.jpg");
+    background-image: url("/languagewebpage/images/empty-blackboard.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
@@ -16,7 +16,7 @@ body {
 .box1 {
     align-self: center;
     width: 95vw;
-    height: 40%;
+    height: 30%;
     background-color: transparent;
     border: 5px dotted black;
     left: 0;
@@ -35,6 +35,7 @@ body {
 
 .text4 {
     color:black;
+    margin-bottom: 0;
 }
 
 /* flag part of everything*/
