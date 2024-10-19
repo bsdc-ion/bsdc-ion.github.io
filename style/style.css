@@ -37,7 +37,7 @@ body {
     display:flexbox;
     flex-grow: 0;
     flex-shrink: 0;
-    height: 90rem;
+    height: 97rem;
     width: 550px;
     border-radius: 40px;
     margin-top: 60;
@@ -181,7 +181,7 @@ hr {
 
 .mywork {
     display: flex;
-    height: 150px;
+    height: 125px;
     align-items: center;
     text-align: center;
     display: flex;
@@ -190,13 +190,14 @@ hr {
 .workicon {
     margin-left: 10%;
     margin-right: 5%;
+    margin-bottom: 0px;
     height: 150px;
     width: 150px; 
     transition: transform .2s;
 }
 .workicon:hover {
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .text5 {
     font-weight: bold;
