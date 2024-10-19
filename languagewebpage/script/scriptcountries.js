@@ -1,6 +1,6 @@
 console.log('iubire merge!')
 function addBox() {
-    console.log("hello");
+    console.log("test if working");
 }
 
 var clickBox = document.getElementById('france');
