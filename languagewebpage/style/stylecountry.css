@@ -1,0 +1,56 @@
+body {
+    background-image: url("/languagewebpage/images/empty-blackboard.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    
+}
+
+.box1 {
+    align-self: center;
+    width: 95vw;
+    height: 40%;
+    background-color: transparent;
+    border: 5px dotted black;
+    left: 0;
+    margin-left: -5px;
+    display:grid;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.text1 {
+    margin-top: 20px;
+    margin-bottom: -50px;
+}
+
+.text4 {
+    color:black;
+}
+
+/* flag part of everything*/
+.allflags {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 45px;
+    
+}
+.flag {
+    width: 150px;
+    height: 150px;
+    transition: transform .2s;
+}
+
+.flag:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
