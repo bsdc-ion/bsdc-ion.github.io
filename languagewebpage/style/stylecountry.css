@@ -3,15 +3,15 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* color of the tracking area */
+    background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #3c3c3c; /* color of the scroll thumb */
+    background: #3c3c3c;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* color of the scroll thumb on hover */
+    background: #555;
 }
 
 body {
@@ -62,10 +62,11 @@ body {
 .text1 {
     margin-top: 20px;
     margin-bottom: -50px;
+    font-size: clamp(45px, 10vw, 65px);
 }
 
 .text4 {
-    color:black;
+    color:rgba(255, 255, 255, 0.768);
     margin-bottom: 0;
 }
 
@@ -88,19 +89,29 @@ body {
     transform: scale(1.2);
 }
 
+.countryname {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+
 /* iphone and small devices */
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 575px) {
     .mainbox {
         width: 400px;
+        height: 70rem;
     }
     .flag {
         width: 105px;
         height: 105px;
     }
 }
-@media only screen and (min-width: 428px) and (max-width: 980px) {
+@media only screen and (min-width: 575px) and ( max-width: 980px) {
     .mainbox {
         width: 500px;
+        height: 80rem;
     }
     .flag {
         width: 150px;
