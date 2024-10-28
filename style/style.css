@@ -38,7 +38,7 @@ body {
     display:flexbox;
     flex-grow: 0;
     flex-shrink: 0;
-    height: 86rem;
+    height: 87rem;
     width: 550px;
     border-radius: 40px;
     margin-top: 60;
@@ -108,7 +108,7 @@ hr {
 }
 .socialicon:hover {
     cursor:pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .text2 {
