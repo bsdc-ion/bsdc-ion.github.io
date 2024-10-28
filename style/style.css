@@ -3,15 +3,15 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* color of the tracking area */
+    background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #3e88ff; /* color of the scroll thumb */
+    background: #3e88ff;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #4000ff; /* color of the scroll thumb on hover */
+    background: #4000ff;
 }
 
 body {
@@ -30,6 +30,7 @@ body {
     align-items: center;
     text-align: center;
 }
+
 /* start of box */
 .mainbox {
     background: rgb(61,155,255);
@@ -37,7 +38,7 @@ body {
     display:flexbox;
     flex-grow: 0;
     flex-shrink: 0;
-    height: 97rem;
+    height: 86rem;
     width: 550px;
     border-radius: 40px;
     margin-top: 60;
@@ -85,10 +86,6 @@ body {
     width:auto;
 }
 
-.text1 {
-    font-family: Titillium Web;
-}
-
 hr {
     height: 3px;
     background-color: black;
@@ -125,13 +122,9 @@ hr {
     margin-left: -130px;
     color:rgba(0, 0, 0, 0.5);
     text-align: center;
-    transition: transform .2s;
     text-decoration: none;
 }
-.text3:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-}
+
 
 .text8 {
     font-weight: bold;
@@ -139,13 +132,9 @@ hr {
     margin-left: -100px;
     color:rgba(0, 0, 0, 0.5);
     text-align: center;
-    transition: transform .2s;
     text-decoration: none;
 }
-.text8:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-}
+
 
 .text9 {
     font-weight: bold;
@@ -153,13 +142,7 @@ hr {
     margin-left: -55px;
     color:rgba(0, 0, 0, 0.5);
     text-align: center;
-    transition: transform .2s;
     text-decoration: none;
-
-}
-.text9:hover {
-    cursor: pointer;
-    transform: scale(1.2);
 }
 
 .text10 {
@@ -168,15 +151,8 @@ hr {
     margin-left: -115px;
     color:rgba(0, 0, 0, 0.5);
     text-align: center;
-    transition: transform .2s;
     text-decoration: none;
-
 }
-.text10:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-}
-
 
 .mywork {
     display: flex;
