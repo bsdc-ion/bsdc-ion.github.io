@@ -12,12 +12,12 @@
 <body>
     <section class="landingpage">
         <h1 class="logo">Flomar</h1>
-        <button class="explorebutt">Exploreaza</button>
+        <button class="explorebutt" id="explorebutt">Exploreaza</button>
     </section>
     <section class="liniedespartire">
         <h2>Produsele Noastre</h2>
     </section>
-    <section class="produse">
+    <section class="produse" id="produse">
         <div class="produs">
             <div class="imagineprodus"></div>
             <h1 class="numeprodus">Produs #1</h1>
@@ -80,8 +80,20 @@
         </div>
     </section>
     <footer>
-        
+        <h1 style="text-align: center;">More to come!</h1>
     </footer>
+
+    <script>
+        const explorebut = document.getElementById('explorebutt');
+
+        explorebut.addEventListener('click', () => {
+            const produsee = document.getElementById('produse');
+            
+            if (produsee) {
+                produsee.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
 </body>
 </html>
 
