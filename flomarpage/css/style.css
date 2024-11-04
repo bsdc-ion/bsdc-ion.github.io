@@ -1,5 +1,23 @@
-.mainland {
-    background-image: "/flomar/images/mainbackground.png";
+body {
+    background: rgb(255, 255, 255);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    overflow:hidden;
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    top: 0;
+}
+
+.mainland {
+    background-image: url("/flomarpage/images/mainbackground.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1980px;
+    height: 1080px;
+    margin-top: -20px;
 }
