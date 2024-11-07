@@ -151,15 +151,6 @@ footer {
     color: white;
 }
 
-iframe {
-    display: flex;
-    height: 365px;
-    width: 550px;
-    float: right;
-    border-radius: 60px;
-    margin-right: 50px;
-}
-
 .logo2 {
     margin-left: 60px;
     font-size: 45px;
