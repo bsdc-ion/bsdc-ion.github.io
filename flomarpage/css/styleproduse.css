@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navig {
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.logo {
+    font-size: 60px;
+    text-decoration: none;
+}
+
+.Butonnav {
+    color: #704814;
+    margin-left: 35px;
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+/* produs pagina */
+
+.produsprincipal {
+    width: 1140px;
+    height: 798px;
+    background-color: #D9D9D9;
+    display:block;
+    text-align: center;
+    margin: auto;
+    border-radius: 60px;
+    margin-top: 20px;
+}
+
+.imagineprodus {
+    width: 540px;
+    height: 700px;
+    background-color: #000000;
+    border-radius: 60px;
+    float: left;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.numeprodus {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.stockdis {
+    font-size: 30px;
+    margin: 15px;
+}
+
+.cumparabuton {
+    background-color: #469e17;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    font-size: 28px;
+    width: 350px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+
+.descriereprodus {
+    width: 540px;
+    height: 400px;
+    background-color: #777777;
+    float: right;
+    border-radius: 60px;
+    margin: auto;
+    margin-right: 15px;
+    margin-top: 50px;
+}
+
+.descriere {
+    color: white;
+    font-size: 20px;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+}
