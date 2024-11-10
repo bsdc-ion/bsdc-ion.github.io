@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketing System</title>
+    <link href="/ticketingsystem/style/styleticket.css" rel="stylesheet">
+    <link href="/ticketingsystem/style/bootstrap.css" rel="stylesheet">
+</head>
+<body Data-bs-theme="dark">
+    <section class="createticket">
+        <form id="form">
+            <div class="row">
+                <div class="col">
+                    <label for="inputEmail4" class="form-label">First name</label>
+                    <input type="text" class="form-control" placeholder="John" aria-label="First name" id="firstname">
+                </div>
+                <div class="col">
+                    <label for="inputEmail4" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Smith" aria-label="Last name" id="lastname">
+                </div>
+            </div><br>
+            <div class="mb-3">
+                <label  class="form-label">Email address</label>
+                <input type="email" class="form-control" placeholder="name@example.com" id="email">
+              </div><br>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="3" id="message"></textarea>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" type="button" id="createticket">Submit</button>
+            </div>
+        </form>
+    </section>
+    <script src="/ticketingsystem/script/createticket.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

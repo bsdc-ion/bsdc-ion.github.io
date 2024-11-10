@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.createticket {
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 100vh;
+    margin-top: 100px;
+    margin-left: 50px;
+    display: block;
+}
