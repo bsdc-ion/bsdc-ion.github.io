@@ -36,6 +36,12 @@ html, body {
     background-color: rgb(255, 255, 255);
     border-radius: 25px;
     margin-top: 50px;
+    box-shadow: 10px 10px 40px;
+    transition: transform .5s;
+}
+.pokeshow:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 img {
