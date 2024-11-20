@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: "Itim", cursive;
     font-weight: 400;
     font-style: normal;
@@ -27,9 +26,8 @@ html, body {
 }
 .pokeshow1 {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    justify-content: center;
-    margin-top: 30px;
+    margin-left: 125px;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 .pokeshow {
@@ -37,18 +35,27 @@ html, body {
     height: 165px;
     background-color: rgb(255, 255, 255);
     border-radius: 25px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 40px;
+    transition: transform .5s;
+}
+.pokeshow:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 img {
-    margin-left: 5px;
+    margin-left: 25px;
+    margin-top: 10px;
     width: 100px;
     height: 100px;
+    display: flex;
 }
 
-h2 {
+.namebar {
     height: 32px;
     font-size: 20px; 
-    margin-top: -20px; 
+    margin-top: 30px; 
     text-align: center; 
     background-color: rgb(255, 64, 64); 
     border-end-end-radius: 25px; 
