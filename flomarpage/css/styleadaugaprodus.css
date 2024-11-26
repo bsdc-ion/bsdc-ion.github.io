@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* start of everything */
+
+.mainbox {
+    width: 450px;
+    height: 450px;
+    background-color: grey;
+    border-radius: 30px;
+    flex-basis: auto;
+}
