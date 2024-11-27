@@ -3,11 +3,6 @@ console.log("Application running!")
 // important consts and vars to use
 const conteiner = document.getElementById("pokeshow1");
 var data;
-const mypokemons = {
-    id: [],
-    name: [],
-    img: []
-};
 
 // read json file
 function readTextFile(file, callback) {
