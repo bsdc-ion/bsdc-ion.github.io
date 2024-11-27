@@ -9,13 +9,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 /* start of everything */
 
-.mainbox {
-    width: 450px;
-    height: 450px;
-    background-color: grey;
+.formular {
+    background-color: rgb(13, 13, 139);
+    width: 350px;
     border-radius: 30px;
-    flex-basis: auto;
+    margin: translateY(50%);
+    padding: 40px;
+}
+
+
+th {
+    padding: 20px;
+    font-size: 30px;
+    border: 1px rgb(255, 255, 255) solid;
+}
+
+tr {
+    border: 1px rgb(255, 255, 255) solid;
+    text-align: center;
+}
+
+.thingy {
+    margin-top: 50px;
 }
