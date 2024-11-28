@@ -1,0 +1,148 @@
+/* scroll */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #B2731E;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a3a0f;
+}
+
+
+html, body {
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0;
+}
+
+body {
+    background-color: #F5E1C0;
+}
+
+/* start */
+nav {
+    margin-left: -15px;
+}
+.navig {
+    text-decoration: none;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 10% 13% 20%;
+}
+
+.logomic {
+    width: 125px;
+    height: 125px;
+}
+
+.Butonnav, .Butonnav1 {
+    font-size: 32px;
+    color: #5F4B4B;
+}
+
+.Butonnav1 {
+    color: #C0392B;
+}
+.Butonnav:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* despre noi */
+.aboutusinfo {
+    width: 1200px;
+    height: 550px;
+    background-color: #FFF8E7;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: -30px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px;
+}
+
+/* unde ne gasiti */
+.liniedespartire {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 44px;
+}
+
+h2:before,
+h2:after {
+    content: "";
+    flex: 1;
+    border-bottom: 1.6px solid #000;
+    margin: auto;
+    padding: 5px;
+}
+
+.info {
+    width: 100%;
+    background-color: black;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* partea stanga */
+.parteastanga {
+    width: 50%;
+    background-color: yellow;
+    height: 500px;
+}
+
+.parteadreapta {
+    width: 50%;
+    background-color: red;
+    height: 500px;
+}
+
+.infomare {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.pin {
+    margin-top: 25px;
+}
+
+.info1 {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.infot {
+    font-size: 30px;
+}
+.infot:hover {
+    cursor: pointer;
+}
+
+/* participanti / footer */
+
+footer {
+    height: 80px;
+    background-color: #383838;
+    color: white;
+    margin-top: 55px;
+}
+
+.numepart {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 25% 30% 25% 16%;
+    text-align: center;
+}
