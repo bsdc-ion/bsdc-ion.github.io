@@ -95,18 +95,12 @@ h2:after {
     height: 420px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 /* partea stanga */
-
-.parteadreapta {
-    width: 50%;
-    background-color: red;
-    height: 450px;
-}
-
 .infomare {
-    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 50px;
 }
 
@@ -115,7 +109,7 @@ h2:after {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    font-size: 35px;
+    font-size: 33px;
 }
 
 .contact-item .contactimg {
@@ -124,10 +118,15 @@ h2:after {
     height: 80px;
 }
 
-span:hover {
+span:hover, a:hover {
     cursor: pointer;
+    color: rgb(141, 141, 141);
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 /* Social Icons */
 .social-icons {
     display: flex;
@@ -154,6 +153,18 @@ span:hover {
     background-color: #ccc;
     display: inline-block;
     border-radius: 50%;
+}
+/* partea dreaapta / harta */
+.harta {
+    width: 600px;
+    height: 400px;
+    border: 0px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 5px 5px 45px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
 }
 
 /* participanti / footer */
