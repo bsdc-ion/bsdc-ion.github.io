@@ -92,23 +92,17 @@ h2:after {
 
 .info {
     width: 100%;
-    background-color: black;
-    height: 500px;
+    height: 420px;
     display: flex;
     flex-direction: row;
 }
 
 /* partea stanga */
-.parteastanga {
-    width: 50%;
-    background-color: yellow;
-    height: 500px;
-}
 
 .parteadreapta {
     width: 50%;
     background-color: red;
-    height: 500px;
+    height: 450px;
 }
 
 .infomare {
@@ -116,19 +110,50 @@ h2:after {
     margin-top: 50px;
 }
 
-.pin {
-    margin-top: 25px;
+/* Contact Item */
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 35px;
 }
 
-.info1 {
-    display: grid;
-    grid-template-columns: 10% 90%;
+.contact-item .contactimg {
+    margin-right: 25px;
+    width: 80px;
+    height: 80px;
 }
-.infot {
-    font-size: 30px;
-}
-.infot:hover {
+
+span:hover {
     cursor: pointer;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.social-icons .socialic {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons .socialic:hover {
+    transform: scale(1.2);
+}
+
+
+.icon {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 50%;
 }
 
 /* participanti / footer */
@@ -146,3 +171,4 @@ footer {
     grid-template-columns: 25% 30% 25% 16%;
     text-align: center;
 }
+
