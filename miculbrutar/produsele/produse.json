@@ -1,0 +1,102 @@
+[
+    {
+        "produse": [
+            {
+                "name": "Pâine albă",
+                "description": "Pâinea albă este unul dintre cele mai populare produse de panificație, apreciată pentru textura sa moale și coaja subțire. Fabricată din făină de grâu rafinată, apă, drojdie și sare, aceasta este coaptă cu grijă pentru a obține un miez pufos și o crustă aurie, delicată. În brutăria noastră, fiecare pâine albă este frământată cu grijă, lăsată să dospească și apoi coaptă în cuptoare tradiționale pentru a obține o pâine de calitate, perfectă pentru orice masă. Este ideală pentru sandvișuri, toasturi sau pur și simplu pentru a fi savurată alături de unt sau brânzeturi.",
+                "image1": "./produsele/images/paine_alba1.png",
+                "image2": "./produsele/images/paine_alba2.png",
+                "image3": "./produsele/images/paine_alba3.png",
+                "image4": "./produsele/images/paine_alba4.png"
+            },
+            {
+                "name": "Pâine neagră",
+                "description": "Pâinea neagră este o opțiune sănătoasă, obținută din făină integrală de grâu sau secară, și este cunoscută pentru beneficiile sale nutriționale, fiind bogată în fibre și minerale. Această pâine are o textură densă și un gust intens, fiind perfectă pentru o alimentație echilibrată. În brutăria noastră, pâinea neagră este frământată și coaptă cu atenție, pentru a oferi o aromă autentică și o coajă crocantă. Este ideală pentru a însoți preparate din carne sau brânzeturi, sau pentru a fi consumată simplă, cu un strop de ulei de măsline.",
+                "image1": "./produsele/images/paine_neagra1.png",
+                "image2": "./produsele/images/paine_neagra2.png",
+                "image3": "./produsele/images/paine_neagra3.png",
+                "image4": "./produsele/images/paine_neagra4.png"
+            },
+            {
+                "name": "Pâine cu semințe",
+                "description": "Pâinea cu semințe este o alegere delicioasă și sănătoasă, plină de nutrienți. Semințele de floarea-soarelui, susan și in se adaugă la aluat, oferind o aromă deosebită și o textură crocantă la exterior. Această pâine este perfectă pentru cei care doresc o sursă suplimentară de fibre și proteine în dieta lor. La brutăria noastră, pâinea cu semințe este frământată cu grijă, lăsată să dospească și coaptă lent, pentru a-i păstra toate beneficiile și gustul autentic. Este o alegere excelentă pentru sandvișuri, toasturi sau alături de supe și salate.",
+                "image1": "./produsele/images/paine_seminte1.png",
+                "image2": "./produsele/images/paine_seminte2.png",
+                "image3": "./produsele/images/paine_seminte3.png",
+                "image4": "./produsele/images/paine_seminte4.png"
+            },
+            {
+                "name": "Pâine cu cartofi",
+                "description": "Pâinea cu cartofi este un produs cu o textură moale, ușor dulceagă, care își păstrează prospețimea pentru o perioadă mai lungă datorită cartofilor adăugați în aluat. Acesta este un tip de pâine sățioasă și hrănitoare, ideală pentru mesele de zi cu zi sau pentru a însoți diverse preparate. La brutăria noastră, pâinea cu cartofi este pregătită folosind doar ingrediente de calitate, iar coacerea lentă îi conferă o crustă subțire și crocantă. Este perfectă pentru sandvișuri sau pur și simplu savurată cu unt și brânză.",
+                "image1": "./produsele/images/paine_cartofi1.png",
+                "image2": "./produsele/images/paine_cartofi2.png",
+                "image3": "./produsele/images/paine_cartofi3.png",
+                "image4": "./produsele/images/paine_cartofi4.png"
+            },
+            {
+                "name": "Pâine feliată",
+                "description": "Pâinea feliată este ideală pentru un stil de viață rapid și practic, oferind porții precise și ușor de utilizat pentru sandvișuri sau toasturi. Cu o textură moale și o crustă delicată, aceasta poate fi folosită pentru o gamă largă de preparate, de la sandvișuri cu diverse umpluturi, la toasturi cu unt sau gem. La brutăria noastră, pâinea feliată este pregătită cu grijă pentru a obține felii perfecte și un gust plăcut. Este o alegere versatilă și gustoasă pentru orice masă sau gustare.",
+                "image1": "./produsele/images/paine_feliata1.png",
+                "image2": "./produsele/images/paine_feliata2.png",
+                "image3": "./produsele/images/paine_feliata3.png",
+                "image4": "./produsele/images/paine_feliata4.png"
+            },
+            {
+                "name": "Baghetă",
+                "description": "Bagheta este o pâine tradițională franceză, cu o formă alungită, o crustă crocantă și un miez aerat și ușor. De obicei, este consumată proaspătă, în combinație cu brânzeturi, mezeluri sau folosită pentru a prepara sandvișuri. Făcută cu ingrediente simple, precum făină de grâu, apă, drojdie și sare, bagheta oferă o aromă delicată și o textură perfectă. La brutăria noastră, baghetele sunt coapte cu grijă, iar coaja lor crocantă și interiorul moale sunt perfect echilibrate, pentru o experiență culinară autentică.",
+                "image1": "./produsele/images/bagheta1.png",
+                "image2": "./produsele/images/bagheta2.png",
+                "image3": "./produsele/images/bagheta3.png",
+                "image4": "./produsele/images/bagheta4.png"
+            },
+            {
+                "name": "Gogoși",
+                "description": "Gogoșile sunt un desert clasic, prăjit, care se remarcă prin textura sa pufoasă și gustul dulce și aromat. De obicei, sunt umplute cu gem, ciocolată sau unt de arahide, iar unele sunt glazurate cu zahăr pudră sau decorate cu ciocolată topită. În brutăria noastră, gogoșile sunt preparate proaspăt, cu ingrediente de calitate, pentru a asigura o experiență culinară delicioasă. Pot fi servite alături de o ceașcă de cafea sau ceai, fiind ideale pentru mic dejun sau gustări dulci de-a lungul zilei.",
+                "image1": "./produsele/images/gogosi1.png",
+                "image2": "./produsele/images/gogosi2.png",
+                "image3": "./produsele/images/gogosi3.png",
+                "image4": "./produsele/images/gogosi4.png"
+            },
+            {
+                "name": "Piscot",
+                "description": "Piscoturile sunt prăjituri delicate și ușor aerate, cu o textură crocantă la exterior și un interior moale, perfect echilibrat. De obicei, sunt folosite în deserturi celebre precum tiramisu sau servite alături de o cafea sau un ceai aromat. Aceste prăjituri sunt coapte cu grijă, obținându-se o culoare aurie și o structură ușor friabilă. Ideal pentru a fi savurate într-un moment de răsfăț sau ca un acompaniament pentru băuturi calde, piscoturile sunt un deliciu clasic, ce adaugă rafinament oricărui desert.",
+                "image1": "./produsele/images/piscot1.png",
+                "image2": "./produsele/images/piscot2.png",
+                "image3": "./produsele/images/piscot3.png",
+                "image4": "./produsele/images/piscot4.png"
+            },
+            {
+                "name": "Blat de tort",
+                "description": "Blatul de tort este baza perfectă pentru orice tip de tort, având o textură pufoasă, ușoară și un gust delicat. Fiecare blat este pregătit cu ingrediente de calitate și coapt cu grijă pentru a oferi un suport ideal pentru diverse creme, fructe sau ciocolată. Indiferent dacă este folosit pentru un tort de zi cu zi sau pentru un desert special de sărbători, blatul nostru de tort asigură o combinație perfectă între gustul rafinat și textura ideală, care poate susține orice tip de decor sau umplutură.",
+                "image1": "./produsele/images/blat_tort1.png",
+                "image2": "./produsele/images/blat_tort2.png",
+                "image3": "./produsele/images/blat_tort3.png",
+                "image4": "./produsele/images/blat_tort4.png"
+            },
+            {
+                "name": "Chec",
+                "description": "Checul este o prăjitură pufoasă, densă și ușor umedă, cu o aromă subtilă de vanilie sau cacao. Adesea, checul este îmbogățit cu nuci, fructe confiate sau ciocolată, oferind o combinație de gusturi și texturi delicioase. Este un desert versatil, care poate fi servit atât dimineața, alături de o cafea, cât și ca un desert la prânz sau cină. La brutăria noastră, checul este copt cu grijă, obținând o coajă aurie și o miez delicat, perfect pentru orice moment al zilei.",
+                "image1": "./produsele/images/chec1.png",
+                "image2": "./produsele/images/chec2.png",
+                "image3": "./produsele/images/chec3.png",
+                "image4": "./produsele/images/chec4.png"
+            },
+            {
+                "name": "Plăcintă cu mere",
+                "description": "Plăcinta cu mere este un desert clasic, cu o crustă crocantă și un umplutură de mere dulci și aromate, adesea îmbogățită cu scorțișoară sau nucșoară. Fiecare felie oferă un gust echilibrat, între dulceața merelor și aroma rafinată a condimentele tradiționale. În brutăria noastră, plăcintele sunt pregătite cu grijă, folosind ingrediente proaspete, pentru a obține o crustă ușor crocantă și un umplutură perfect gătită. Este desertul ideal pentru orice ocazie, oferind o combinație minunată de gusturi și texturi.",
+                "image1": "./produsele/images/placinta_mere1.png",
+                "image2": "./produsele/images/placinta_mere2.png",
+                "image3": "./produsele/images/placinta_mere3.png",
+                "image4": "./produsele/images/placinta_mere4.png"
+            },
+            {
+                "name": "Brioșe",
+                "description": "Brioșele sunt prăjituri mici, pufoase și foarte aromate, potrivite pentru orice moment al zilei. Acestea pot fi preparate cu o varietate de ingrediente, de la fructe și ciocolată până la nuci sau semințe. De obicei, brioșele sunt coapte într-o formă individuală, fiind perfecte pentru gustări rapide sau ca deserturi de mic dejun. Cu o textură aerată și un gust delicios, brioșele din brutăria noastră sunt proaspăt coapte și sunt ideale pentru o masă rapidă sau un mic răsfăț.",
+                "image1": "./produsele/images/briosa1.png",
+                "image2": "./produsele/images/briosa2.png",
+                "image3": "./produsele/images/briosa3.png",
+                "image4": "./produsele/images/briosa4.png"
+            }
+        ]
+    }    
+]
