@@ -44,14 +44,11 @@ nav {
     height: 125px;
 }
 
-.Butonnav, .Butonnav1 {
+.Butonnav {
     font-size: 32px;
     color: #5F4B4B;
 }
 
-.Butonnav1 {
-    color: #C0392B;
-}
 .Butonnav:hover {
     transform: scale(1.1);
     cursor: pointer;
