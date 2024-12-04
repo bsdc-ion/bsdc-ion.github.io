@@ -75,7 +75,7 @@ nav {
     display: flexbox;
     text-align: center;
     margin: auto 50px 50px;
-    border-radius: 60px;
+    border-radius: 30px;
     color: black;
     transition: box-shadow 0.2s ease-in-out;
 }
