@@ -36,6 +36,7 @@ readTextFile("./produsele/produse.json", function(text){
         cutie.className = "produs";
         conteiner.appendChild(cutie);
 
+        // adauga restu de script
         cutie.innerHTML = `
             <img src="${data[0].produse[i].image1}" alt="${data[0].produse[i].name}" class="imagineprodus">
             <h3 class="numeprodus">${data[0].produse[i].name}</h3>
