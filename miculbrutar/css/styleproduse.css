@@ -1,0 +1,130 @@
+/* scroll */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #B2731E;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a3a0f;
+}
+
+
+html, body {
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0;
+}
+
+body {
+    background-color: #F5E1C0;
+}
+
+/* start */
+nav {
+    margin-left: -15px;
+}
+.navig {
+    text-decoration: none;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 10% 13% 20%;
+}
+
+.logomic {
+    width: 125px;
+    height: 125px;
+}
+
+.Butonnav, .Butonnav1 {
+    font-size: 32px;
+    color: #5F4B4B;
+}
+
+.Butonnav1 {
+    color: #C0392B;
+}
+.Butonnav:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* produse */
+.produse {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 0;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.produs {
+    width: 310px;
+    height: 426px;
+    background-color: #FBC02D;
+    display: flexbox;
+    text-align: center;
+    margin: auto 50px 50px;
+    border-radius: 30px;
+    color: black;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.produs:hover {
+    box-shadow: 5px 5px 50px #000;
+}
+
+.imagineprodus {
+    width: 275.74px;
+    height: 253.79px;
+    background-color: #D9D9D9;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.numeprodus {
+    font-size: 36px;
+    margin: 15px;
+}
+
+.maimultinfo {
+    background-color: #C1E1C1;
+    border: none;
+    border-radius: 69px;
+    font-family: "Itim", serif;
+    font-size: 28px;
+    width: 276px;
+    height: 57px;
+    display: block;
+    margin: auto;
+}
+.maimultinfo:hover {
+    cursor: pointer;
+    background-color: #9ab19a;
+    color: rgb(232, 255, 173);
+}
+
+/* participanti / footer */
+
+footer {
+    height: 80px;
+    background-color: #383838;
+    color: white;
+}
+
+.numepart {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 25% 30% 25% 16%;
+    text-align: center;
+}
