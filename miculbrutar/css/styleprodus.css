@@ -60,10 +60,10 @@ nav {
     width: 1100px;
     height: 650px;
     background-color: #FFF8E7;
-    justify-content: center;
     margin: auto;
     border-radius: 30px;
     margin-bottom: 50px;
+    display: flex;
 }
 
 .imagini {
@@ -99,14 +99,12 @@ nav {
 }
 
 .infoscris {
-    float:right;
-    display: flex;
-    flex-direction: column;
-    align-items: center
+    text-align: center;
 }
 
 .titlu {
-    font-size: 80px;
+    font-size: 70px;
+    margin-bottom: 0;
 }
 
 .stock {
@@ -115,8 +113,62 @@ nav {
     padding: 0;
 }
 
+.infoscris {
+    display: flex;
+    margin-top: -650px;
+    margin-right: 100px;
+    text-align: center;
+}
 
+.descirere {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.buyman {
+    background-color: #C1E1C1;
+    border: none;
+    border-radius: 69px;
+    font-family: "Itim", serif;
+    font-size: 28px;
+    width: 276px;
+    height: 57px;
+    display: block; 
+    margin: 20px auto; 
+    text-align: center; 
+}
+.buyman:hover {
+    cursor: pointer;
+    background-color: #9ab19a;
+    color: rgb(232, 255, 173);
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+}
+.right {
+    width: 50%;
+    height: 100%;
+}
+
+.infobox {
+    background-color: #FAD4D8;
+    height: 300px;
+    width: 450px;
+    margin: auto;
+    border-radius: 20px;
+}
 /* recomandari */
+.recomandari {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 0;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
 .produs {
     width: 310px;
     height: 426px;
