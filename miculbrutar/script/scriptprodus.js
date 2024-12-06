@@ -43,15 +43,15 @@ titlu.textContent = name;
 // recomandari
 var recom = document.getElementById("recomandari");
 
-var data;
+var data = [];
 var lastname = [];
+var results = [];
+
 
 readTextFile("./produsele/produse.json", function(text){
     data = JSON.parse(text);
 
     // variabile //
-    var results = [];
-    var searchField = "name";
     var searchVal = titlu.textContent;
 
     // cauta  valorea //
@@ -73,19 +73,29 @@ readTextFile("./produsele/produse.json", function(text){
     var imgg2 = document.createElement("img");
     imgg2.className = "imaginemica";
     imgg2.src = results[0].image2;
+    imgg2.addEventListener("click", function () {
+        imgg1.src = results[0].image2;
+    });
     img2.appendChild(imgg2);
     
     var imgg3 = document.createElement("img");
     imgg3.className = "imaginemica";
     imgg3.src = results[0].image3;
+    imgg3.addEventListener("click", function () {
+        imgg1.src = results[0].image3;
+    });
     img2.appendChild(imgg3);
 
     var imgg4 = document.createElement("img");
     imgg4.className = "imaginemica";
-    imgg4.src = results[0].image4;
+    imgg4.src = results[0].image1;
+    imgg4.addEventListener("click", function () {
+        imgg1.src = results[0].image1;
+    });
+    imgg4.id = "image4";
     img2.appendChild(imgg4);
 
-        // descriere
+    // descriere
     var para = document.createElement("div");
     para.className = "descirere";
     para.textContent = results[0].description;
