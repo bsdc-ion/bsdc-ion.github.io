@@ -39,7 +39,3 @@ yt.addEventListener("click", function() {
 tw.addEventListener("click", function() {
     window.open('https://www.x.com/');
 });
-
-var url = window.location.href;
-url = url.split('.html')[0];
-window.history.replaceState( null, null, url );

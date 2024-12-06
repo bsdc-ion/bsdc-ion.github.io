@@ -148,7 +148,3 @@ function redirectToDetails(name, image, description) {
     url.searchParams.append('name', name);
     window.location.href = url;
 }
-
-var url = window.location.href;
-url = url.split('.html')[0];
-window.history.replaceState( null, null, url );
