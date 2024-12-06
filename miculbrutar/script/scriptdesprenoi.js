@@ -14,7 +14,7 @@ const tw = document.getElementById("Twitter");
 
 /* navigatie */
 homebutton.addEventListener("click", function () {
-    window.location.href = "indexproduse.html";
+    window.location.href = "indexproduse";
 });
 
 /* date imp */

@@ -3,11 +3,11 @@ const homebutton = document.getElementById("produse");
 const aboutbutton = document.getElementById("desprenoi");
 
 homebutton.addEventListener("click", function () {
-    window.location.href = "indexproduse.html";
+    window.location.href = "indexproduse";
 });
 
 aboutbutton.addEventListener("click", function () {
-    window.location.href  = "indexdesprenoi.html";
+    window.location.href  = "indexdesprenoi";
 });
 
 
@@ -144,7 +144,7 @@ function getRandomInt(min, max) {
 
 // codeaza tot in site
 function redirectToDetails(name, image, description) {
-    const url = new URL('/miculbrutar/indexprodus.html', window.location.origin);
+    const url = new URL('/miculbrutar/indexprodus', window.location.origin);
     url.searchParams.append('name', name);
     window.location.href = url;
 }
