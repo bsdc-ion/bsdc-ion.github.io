@@ -96,6 +96,12 @@ nav {
     display: flex;
     flex-direction: column;
     position: relative;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.imaginemica:hover {
+    filter: grayscale(0%);
 }
 
 .infoscris {
