@@ -41,7 +41,7 @@ const descriere = document.getElementById("infobox");
 titlu.textContent = name;
 
 // recomandari
-const recom = document.getElementById("recomandari");
+var recom = document.getElementById("recomandari");
 
 var data;
 var lastname = [];
@@ -91,34 +91,39 @@ readTextFile("./produsele/produse.json", function(text){
     para.textContent = results[0].description;
     descriere.appendChild(para);
 
+    check(data, results);
+});
 
-    for(var i = 0; i < 3; i++){
+// unde se intampla magia
+function check(params, params2) {
+    var i = 0;
+    while(i < 3) {
         var rand = getRandomInt(1, 11);
-
-        if(data[0].produse[rand].name == results[0].name || lastname[i-1] == results[0].name || lastname[i-1] == data[0].produse[rand].name) {
-            if(rand != 12) {
-                rand++;
-            }
-            else if(rand == 12) {
-                rand = getRandomInt(1, 8);
-            }
-        }
+        if(params[0].produse[rand].name == params2[0].name || lastname[i-1] == params2[0].name || lastname[i-1] == params[0].produse[rand].name) return rand = getRandomInt(1, 11);
 
         // creaza cutie support
         var cutie = document.createElement("div");
         cutie.className = "produs";
         recom.appendChild(cutie);
         
-        lastname.push(data[0].produse[rand].name);
-
+        lastname.push(params[0].produse[rand].name);
+    
         // adauga restu de script
         cutie.innerHTML = `
-            <img src="${data[0].produse[rand].image1}" alt="${data[0].produse[rand].name}" class="imagineprodus">
-            <h3 class="numeprodus">${data[0].produse[rand].name}</h3>
-            <button onclick="redirectToDetails('${data[0].produse[rand].name}', '${data[0].produse[rand].image1}')" class="maimultinfo">Informații</button>
+            <img src="${params[0].produse[rand].image1}" alt="${params[0].produse[rand].name}" class="imagineprodus">
+            <h3 class="numeprodus">${params[0].produse[rand].name}</h3>
+            <button onclick="redirectToDetails('${params[0].produse[rand].name}', '${params[0].produse[rand].image1}')" class="maimultinfo">Informații</button>
         `;
+        i++;
     }
-});
+    if(lastname.length === 0) {
+        var nuavemrecom = document.createElement("div");
+        nuavemrecom.textContent = "Nu exista nici o recomandare!";
+        nuavemrecom.className = "nuavem";
+        recom.appendChild(nuavemrecom);
+    }
+    return 1;
+}
 
 // genereaza numar random
 function getRandomInt(min, max) {
@@ -126,7 +131,6 @@ function getRandomInt(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
 
 // codeaza tot in site
 function redirectToDetails(name, image, description) {
