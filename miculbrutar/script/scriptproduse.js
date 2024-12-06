@@ -2,7 +2,7 @@ window.onload = function(){document.getElementsByTagName('html')[0].className = 
 
 const homebutton = document.getElementById("desprenoi");
 homebutton.addEventListener("click", function () {
-    window.location.href = "indexdesprenoi";
+    window.location.href = "indexdesprenoi.html";
 });
 
 // buttons var
@@ -47,7 +47,7 @@ readTextFile("./produsele/produse.json", function(text){
 
 // codeaza tot in site
 function redirectToDetails(name, image, description) {
-    const url = new URL('/miculbrutar/indexprodus', window.location.origin);
+    const url = new URL('/miculbrutar/indexprodus.html', window.location.origin);
     url.searchParams.append('name', name);
     window.location.href = url;
 }
