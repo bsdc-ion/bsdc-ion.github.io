@@ -1,0 +1,161 @@
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3e88ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4000ff;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(34,34,125,1) 50%, rgba(2,0,36,1) 90%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow:auto;
+    font-family: Oswald;
+}
+
+.page {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* start of box */
+.mainbox {
+    background: rgb(61,155,255);
+    background: linear-gradient(50deg, rgba(61,155,255,1) 0%, rgba(0,78,129,1) 60%);
+    display:flexbox;
+    flex-grow: 0;
+    flex-shrink: 2;
+    height: 100rem;
+    max-width: 550px;
+    min-width: 400px;
+    border-radius: 40px;
+    margin-top: 60;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.432);
+}
+
+.head {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top:0;
+    margin-bottom: 0;
+    display:grid;
+    max-width: 550px;
+    min-width: 400px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.profilepic {
+    width: 126px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    display:flex;
+    text-align:center;
+    position:relative;
+    margin-left: 39%;
+    margin-top: 10%;
+    vertical-align: top;
+}
+
+.smalltext {
+    color: white;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: clamp(40px, 5vw, 45px);
+}
+
+.infoaboutme {
+    color: rgba(255, 255, 255, 0.666);
+    margin-top: 0;
+    width:auto;
+    font-size: clamp(7px, 4vw, 20px);
+}
+
+.border {
+    border: black solid 3px;
+}
+
+.border2 {
+    border: rgb(0, 0, 0) solid 1px;
+}
+
+.social {
+    display: flex;
+    height: 125px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+.socialicon {
+    height: 70px;
+    width: 70px;
+    transition: transform .3s;
+}
+.socialicon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.text2 {
+    transition: transform .3s;
+}
+.text2:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.mywork {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    transition: transform .5s;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.mywork:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.workicon {
+    height: 150px;
+    width: 175px; 
+}
+/* iphone and small devices */
+@media only screen and (max-width: 475px) {
+    .mainbox {
+        height: 82rem;
+    }
+    .profilepic {
+        margin-left: 40vw;
+    }
+    .mywork {
+        margin-left: 0px;
+    }
+}
+@media only screen and (min-width: 475px) and ( max-width: 980px) {
+}
