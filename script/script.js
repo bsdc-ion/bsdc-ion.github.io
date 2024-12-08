@@ -8,7 +8,7 @@ const pokemon = document.getElementById("pokemon");
 const miculbrutar = document.getElementById("miculbrutar");
 
 ehub.addEventListener("click", function() {
-    window.location.href = "/experiencehubpage/index";
+    window.location.href = "/experiencehubpage/indexhome";
 });
 
 pv1.addEventListener("click", function () {
