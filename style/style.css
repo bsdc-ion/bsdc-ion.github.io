@@ -17,6 +17,7 @@ html, body {
 }
 body {
     background: radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(2,0,36,1) 85%);
+    transform: scale(0.8);
 }
 
 /* box thingy */
@@ -92,10 +93,9 @@ body {
     height: 200px;
     background-color: rgb(8, 84, 84);
     cursor: pointer;
-    transition: transform 3s;
     border-radius: 30px;
     box-shadow: 1px 1px 10px;
-    transition: box-shadow 3s;
+    transition: transform 50ms;
     
 }
 .workobject:hover{
@@ -149,4 +149,14 @@ ul {
     position: absolute;
     margin-top: -200px;
     display: block;
+}
+
+
+/* where the magic happens */ 
+
+
+
+/* iphone and small devices */
+@media only screen and (max-width: 475px) {
+    
 }
