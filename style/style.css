@@ -111,12 +111,20 @@ body {
     box-shadow: 1px 1px 10px;
 }
 
-ul {
+.hi1 {
     display: grid; 
     grid-template-columns: repeat(auto-fill, 150px); 
     grid-gap: 100px;
     margin: 20px 0px 0px -20px;
     list-style-type: none;
+}
+
+.hi2 {
+    display: grid; 
+    grid-template-columns: 180px 20px;
+    grid-gap: 100px;
+    list-style-type: none;
+    justify-content: center;
 }
 
 .workicon {
@@ -151,9 +159,26 @@ ul {
     display: block;
 }
 
+.linkobject {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 55px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+}
+.lii {
+    width: fit-content;
+    height: fit-content;
+    margin: -50px;
+}
 
-/* where the magic happens */ 
-
+.textinfo {
+    color: rgb(0, 0, 0);
+    margin: auto;
+    font-size: 20px;
+}
 
 
 /* iphone and small devices */
