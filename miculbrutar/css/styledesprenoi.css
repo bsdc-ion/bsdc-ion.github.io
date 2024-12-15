@@ -161,7 +161,7 @@ a {
     border: 0px;
     display: flex;
     border-radius: 20px;
-    box-shadow: 5px 5px 45px;
+    box-shadow: 5px 5px 45px #ffff;
     justify-content: center;
     margin: auto;
     margin-top: 20px;

@@ -26,9 +26,9 @@ body {
     width: 1500px;
     display: flex;
     height: 850px;
-    background-color: rgba(44, 62, 80, 1);
+    background-color: #2B2D42;
     border-radius: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 1);
 }
 
 /* welcome page box */
@@ -63,23 +63,23 @@ body {
 .description {
     width: 600px;
     height: 200px;
-    background-color: darkcyan;
+    background-color: #011030;
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 22px;
-    border-radius: 30px;
-    box-shadow: 1px 1px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #F4C542;
 }
 
 .randomlink1 {
     margin: 50px 0px 0px 0px;
     width: 600px;
     height: 300px;
-    background-color: darkcyan;
+    background-color: #011030;
     display: flex;
-    border-radius: 30px;
-    box-shadow: 1px 1px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #F4C542;
 }
 
 .worksection {
@@ -91,7 +91,7 @@ body {
 .workobject {
     width: 200px;
     height: 200px;
-    background-color: rgb(8, 84, 84);
+    background-color: #118AB2;
     cursor: pointer;
     border-radius: 30px;
     box-shadow: 1px 1px 10px;
@@ -106,7 +106,7 @@ body {
 .workobject1 {
     width: 200px;
     height: 200px;
-    background-color: rgb(8, 84, 84);
+    background-color: rgb(0, 0, 0);
     border-radius: 30px;
     box-shadow: 1px 1px 10px;
 }
