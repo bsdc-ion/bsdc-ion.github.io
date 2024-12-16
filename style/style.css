@@ -82,6 +82,11 @@ body {
     box-shadow: 0px 0px 5px #F4C542;
 }
 
+.linkrandom {
+    width: 100%;
+    display: block;
+}
+
 .worksection {
     width:65%;
     height: 100%;
@@ -120,11 +125,13 @@ body {
 }
 
 .hi2 {
-    display: grid; 
-    grid-template-columns: 180px 20px;
-    grid-gap: 100px;
-    list-style-type: none;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    margin: auto;
 }
 
 .workicon {
@@ -159,23 +166,40 @@ body {
     display: block;
 }
 
-.linkobject {
+.linkobject1 {
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: rgb(4, 0, 30);
     height: 55px;
     width: 250px;
     border-radius: 20px;
     text-align: center;
+    text-decoration: none;
+    transition: transform 58ms;
 }
+
+.linkobject {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(4, 0, 30);
+    height: 55px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 58ms;
+}
+.linkobject:hover {
+    transform: scale(1.1);
+}
+
 .lii {
-    width: fit-content;
-    height: fit-content;
-    margin: -50px;
+    margin: auto;
+    list-style-type: none;
 }
 
 .textinfo {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin: auto;
     font-size: 20px;
 }
