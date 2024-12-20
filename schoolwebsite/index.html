@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Webpage</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Kavoon&display=swap" rel="stylesheet">
+
+    <!-- STYLE -->
     <link rel="stylesheet" href="/schoolwebsite/style/style.css">
 </head>
 <body>
-    <h1>This is boilerplate!</h1>
+    <nav class="navbarr">
+        <a class="navbar-brand" href="#">
+            <img src="/schoolwebsite/images/pagetsmall.png" alt="" class="logo">
+        </a>
+        <div class="navigationtext">
+            <ul>
+                <li><a href="#">Our School<img src="/schoolwebsite/images/arrowdown.svg"></a></li>
+                <li><a href="#">Information<img src="/schoolwebsite/images/arrowdown.svg"></a></li>
+                <li><a href="#">Curriculum<img src="/schoolwebsite/images/arrowdown.svg"></a></li>
+                <li><a href="#">Sixth Form<img src="/schoolwebsite/images/arrowdown.svg"></a></li>
+            </ul>
+        </div>
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Search...">
+                <img src="/schoolwebsite/images/Search.svg" alt="" class="searchicon">
+            </form>
+        </div>
+    </nav>
+    <section class="landingpage">
+        <div class="lefthandside">
+            <div class="overlay">
+                <div class="pagetname">Paget High<br>School</div>
+                <button class="explorebutt" id="explorebutton">Newsletters</button>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial">
+        <h1 class="head">Welcome from the Headteacher</h1>
+        <div class="content">
+            <img src="/schoolwebsite/images/headteacher.png" alt="" class="headteach">
+            <div class="description">Lewis Fenn Griffin<br><br>Welcome to Paget High School, where we aim to provide an excellent education for all of our students, where we celebrate diversity and strive to foster an environment where every young person can flourish, academically, socially and emotionally.<br><br>At Paget, our commitment to ensuring success is reflected in our goal of disruption free lessons, our dedicated pastoral team and rich professional development for staff. It is rooted in our belief that every individual possesses unique talents and potential waiting to be unleashed.<br><br>We recognise and embrace the rich tapestry of backgrounds, cultures and perspectives that make up our student body…        <a href="#" style="color: #0022FF; font-weight: bolder;">Read more</a></div>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
 </body>
 <script src="/schoolwebsite/script/app.js"></script>
 </html>
