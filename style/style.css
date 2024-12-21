@@ -219,6 +219,7 @@ div, section, p, ul, li, h3, body {
         height: 2000px;
         margin: -220px auto 100px auto;
         flex-direction: column;
+        background-color: #383c6f;
     }
     
     .welcomesec {
