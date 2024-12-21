@@ -259,6 +259,9 @@ div, section, p, ul, li, h3, body {
     .textinfo {
         font-size: 24px;
     }
+    .text {
+        font-size: 45px;
+    }
 }
 
 /* custom tablet */
