@@ -278,3 +278,10 @@ div, section, p, ul, li, h3, body {
         transform: scale(0.7);
     }
 }
+
+/* bigger devices */
+@media only screen and (min-width: 1900) {
+    body {
+        transform: scale(0.9)
+    }
+}
