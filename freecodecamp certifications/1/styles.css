@@ -66,3 +66,13 @@ input, select {
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+.input-wrap-group {
+    display: grid;
+    grid-template-columns: 100% 40 40%%;
+    margin: auto;
+    width: fit-content;
+}
+.input-wrap-group input {
+    width: 20px;
+}
