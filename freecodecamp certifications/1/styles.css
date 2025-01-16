@@ -69,10 +69,17 @@ input, select {
 
 .input-wrap-group {
     display: grid;
-    grid-template-columns: 100% 40 40%%;
+    grid-template-columns: 35% 35%;
     margin: auto;
+    margin-bottom: 30px;
     width: fit-content;
 }
 .input-wrap-group input {
     width: 20px;
+}
+
+form p {
+    color: white;
+    font-size: 20px;
+    margin: auto;
 }
