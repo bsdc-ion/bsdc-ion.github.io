@@ -10,6 +10,58 @@ html, body {
 }
 
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(42, 42, 42) 50%, rgb(102, 102, 102) 100%);
+    background: white
+}
+
+/* start of everything */
+#main {
+    background-color:#eee;
+    width: 95%;
+    margin: 20px auto auto auto;
+}
+
+#title {
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 15px;
+}
+#img-div {
+    background-color: white;
+    width: 96%;
+    margin: auto;
+    padding: 50px;
+}
+#image {
+    max-width: 100%;
+    max-height: 900px;
+    display: block;
+    margin: auto;
+}
+p {
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+h3 {
+    font-weight: 600;
+}
+h2 {
+    padding: 40px;
+    font-size: 40px;
+}
+ul {
+    max-width: 550px;
+    margin: auto;
+}
+
+li {
+    font-size: 20px;
+    width: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-size: 25px;
+    padding: 30px;
 }
