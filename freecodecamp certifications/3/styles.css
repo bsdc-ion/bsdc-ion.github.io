@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    text-align: center;
+}
+
+/* start of everything */
+#navbar {
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-right: 3px solid grey;
+    font-family: "Smooch Sans", serif;
+    position:relative;
+}
+
+#navbar h1 {
+    font-size: 50px;
+    padding-top: 20px;
+    font-weight: 800;
+}
+#navbar section {
+    padding-top: 50px;
+}
+
+#navbar li {
+    font-size: 30px;
+    padding: 10px 0 10px 0;
+    border-top: 1px solid black;
+    cursor: pointer;
+}
+
+/* content page */
+#main-doc {
+    width: 80%;
+    height: 100%;
+    float:right;
+}
+
+.main-section header {
+    float: left;
+    font-family: "Smooch Sans", serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-right: 100%;
+    width: 250px;
+    padding-bottom: 20px;
+}
+
+.main-section {
+    width: 100%;
+    height: fit-content;
+    padding-left: 15px;
+}
+
+.main-section p {
+    font-size: 20px;
+}
+
+.main-section ul {
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.main-section code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}

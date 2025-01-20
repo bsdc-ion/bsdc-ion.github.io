@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Technical Documentation Page</title>
+    <link rel="stylesheet" href="/freecodecamp certifications/3/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Coded by MLGBD -->
+</head>
+<body>
+    <nav id="navbar">
+        <h1>PAWN Documentation</h1>
+        <section>
+            <ul>
+                <li>Introduction</li>
+            </ul>
+            <ul>
+                <li>What you'll learn</li>
+            </ul>
+            <ul>
+                <li>Hello World</li>
+            </ul>
+            <ul>
+                <li>Player Spawn Event</li>
+            </ul>
+            <ul>
+                <li>Creating a Custom Vehicle Spawn Command</li>
+            </ul>
+            <ul>
+                <li>Best Practices</li>
+            </ul>
+        </section>
+    </nav>
+    <br>
+    <main id="main-doc">
+        <section class="main-section">
+            <header>Introduction</header>
+            <p>Welcome to the official documentation for Pawn Scripting, a lightweight and efficient scripting language designed for creating mods and custom server logic in multiplayer games. Whether you're a game modder, server administrator, or a developer looking to extend your game’s features, this guide will help you harness the power of Pawn to enhance your gameplay experience.</p>
+            <br>
+            <p>Pawn scripting is widely used in popular multiplayer games such as GTA: San Andreas Multiplayer (SA-MP) and Multi Theft Auto (MTA), enabling you to control game mechanics, interact with players, and modify virtually every aspect of the game world.</p>
+            <br>
+            <p>This documentation will guide you through the core concepts, syntax, and best practices of Pawn scripting, with step-by-step tutorials and examples to get you started. Whether you're building simple game modes, creating complex systems, or managing server events, you'll find everything you need to unlock the full potential of Pawn.</p>
+        </section>
+        <section class="main-section">
+            <header>What You’ll Learn</header>
+            <ul>
+                <li>Basic Syntax: Understanding variables, functions, and operators in Pawn</li>
+                <li>Game Modes: How to create and manage custom game modes.</li>
+                <li>Server Administration: Implementing server-side logic to control player interactions and events.</li>
+            </ul>
+        </section>
+        <section class="main-section">
+            <header>Hello World</header>
+            <p>This is a simple example to introduce Pawn syntax. It prints a message when the game mode is initialized.</p>
+            <code>
+                public OnGameModeInit()
+                {
+                    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;print("Hello, World!");
+                    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;return 1;
+                }
+            </code>
+        </section>
+        <section class="main-section">
+            <header>Player Spawn Event</header>
+            <p>This script handles what happens when a player spawns in the game.</p>
+            <code>
+            public OnPlayerSpawn(playerid)
+            {
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;SendClientMessage(playerid, 0x00FF00FF, "You have spawned!");
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;GivePlayerWeapon(playerid, 31, 100); // Gives player a pistol with 100 ammo
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;return 1;
+            }
+            </code>
+        </section>
+        <section class="main-section">
+            <header>Creating a Custom Vehicle Spawn Command</header>
+            <p>This script lets players spawn a vehicle using a custom command.</p>
+            <code>
+            CMD:car(playerid, params[])
+            {
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;new vehicleID;
+                
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;vehicleID = CreateVehicle(411, GetPlayerPosX(playerid), GetPlayerPosY(playerid), GetPlayerPosZ(playerid), 0, 0, 0, -1);
+                
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;SendClientMessage(playerid, 0x00FF00FF, "Your car has been spawned!");
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;return 1;
+            }
+            </code>
+        </section>
+        <section class="main-section">
+            <header>Creating a Custom Vehicle Spawn Command</header>
+            <p>This script lets players spawn a vehicle using a custom command.</p>
+            <br>
+            <ul>
+                <li>Comment your code: Always add comments to describe your functions, variables, and logic to make your scripts easier to understand.</li>
+                <li>Use meaningful variable names: This helps you and others to easily understand what each variable represents.</li>
+                <li>Modularize your code: Break down your code into smaller functions for readability and reusability.</li>
+                <li>Test your scripts regularly: Run your scripts frequently to check for syntax errors and unexpected behavior.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
