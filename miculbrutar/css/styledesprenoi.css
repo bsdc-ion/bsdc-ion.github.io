@@ -252,4 +252,23 @@ a {
     .textmic {
         font-size: 15px;
     }
+
+    /* info */
+    .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .contact-item {
+        font-size: 22px;
+    }
+    .infomare {
+        margin: auto;
+        border-radius: 0px;
+    }
+    .harta {
+        width: 100%;
+        border-radius: unset;
+    }
 }
