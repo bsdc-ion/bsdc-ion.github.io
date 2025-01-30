@@ -97,6 +97,16 @@ h2:after {
     flex-direction: row;
     justify-content: center;
 }
+.textmic {
+    font-size: 20px; margin: 0px; font-weight: bold;
+}
+
+.textnormal {
+    font-size: 28px; margin-bottom: -20px;
+}
+.headerrr {
+    font-size: 43px; margin-bottom: -80px;
+}
 
 /* partea stanga */
 .infomare {
@@ -166,20 +176,80 @@ a {
     margin: auto;
     margin-top: 20px;
 }
-
-/* participanti / footer */
-
-footer {
-    height: 80px;
-    background-color: #383838;
-    color: white;
-    margin-top: 55px;
+/* menu on mobile */
+.menu {
+    background-color: #ffb700;
+    height: 200px;
+    width: 100%;
+    display: none;
+    margin-top: -20px;
+    transition: all .25s linear; 
+    -o-transition: all .25s linear; 
+    -moz-transition: all .25s linear; 
+    -webkit-transition: all .25s linear; 
 }
-
-.numepart {
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: 25% 30% 25% 16%;
-    text-align: center;
+#menu-but {
+    display: none;
 }
+#close {
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* small devices and small tablets */
+@media only screen and (min-width: 0px) and (max-width: 1000px) {
+    .navig {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    #menu-but {
+        display: block;
+    }
+    .logomic {
+        margin-left: 30px;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+    }
+    .menu .logomic {
+        display: flex;
+        margin: auto;
+        cursor: default;
+    }
+    hr {
+        background-color: #000;
+        border: 1px solid black;
+    }
+    .navmob {
+        text-decoration: none;
+        list-style: none;
+        margin-left: -30px;
+        text-align: center;
+    }
 
+    /* descriere gen */
+    .aboutusinfo {
+        width: 100%;
+        height: 800px;
+        background-color: beige;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .headerrr {
+        font-size: 30px;
+        font-weight: bolder;
+        margin-bottom: 0px;
+    }
+    .textnormal {
+        font-size: 20px;
+    }
+    .textmic {
+        font-size: 15px;
+    }
+}

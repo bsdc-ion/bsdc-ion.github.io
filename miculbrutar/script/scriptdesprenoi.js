@@ -22,6 +22,23 @@ locatie.addEventListener("click", function() {
     window.open('https://maps.app.goo.gl/Ljcdk9ZfBYCzrYLH9');
 });
 
+/* functie */
+function toggleMenu() {
+    var menuBox = document.getElementById('menu');   
+    var menubutton = document.getElementById('menu-but');
+    var closebut = document.getElementById('close');
+    if(menuBox.style.display == "block") { 
+      menuBox.style.display = "none";
+      menubutton.style.display = "block";
+      closebut.style.display = "none";
+    }
+    else { 
+      menuBox.style.display = "block";
+      menubutton.style.display = "none";
+      closebut.style.display = "block";
+    }
+}
+
 
 /* retele sociale */
 ig.addEventListener("click", function() {

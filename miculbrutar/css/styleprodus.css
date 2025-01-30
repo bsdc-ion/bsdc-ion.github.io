@@ -247,18 +247,60 @@ h2:after {
     margin: 125px;
 }
 
-
-/* participanti / footer */
-
-footer {
-    height: 80px;
-    background-color: #383838;
-    color: white;
+/* menu on mobile */
+.menu {
+    background-color: #ffb700;
+    height: 200px;
+    width: 100%;
+    display: none;
+    margin-top: -20px;
+    transition: all .25s linear; 
+    -o-transition: all .25s linear; 
+    -moz-transition: all .25s linear; 
+    -webkit-transition: all .25s linear; 
 }
-
-.numepart {
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: 25% 30% 25% 16%;
-    text-align: center;
+#menu-but {
+    display: none;
+}
+#close {
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* small devices and small tablets */
+@media only screen and (min-width: 0px) and (max-width: 1000px) {
+    .navig {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    #menu-but {
+        display: block;
+    }
+    .logomic {
+        margin-left: 30px;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+    }
+    .menu .logomic {
+        display: flex;
+        margin: auto;
+        cursor: default;
+    }
+    hr {
+        background-color: #000;
+        border: 1px solid black;
+    }
+    .navmob {
+        text-decoration: none;
+        list-style: none;
+        margin-left: -30px;
+        text-align: center;
+    }
 }

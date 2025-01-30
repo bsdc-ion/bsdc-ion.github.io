@@ -3,6 +3,22 @@ homebutton.addEventListener("click", function () {
     window.location.href = "indexdesprenoi.html";
 });
 
+
+function toggleMenu() {
+    var menuBox = document.getElementById('menu');   
+    var menubutton = document.getElementById('menu-but');
+    var closebut = document.getElementById('close');
+    if(menuBox.style.display == "block") { 
+      menuBox.style.display = "none";
+      menubutton.style.display = "block";
+      closebut.style.display = "none";
+    }
+    else { 
+      menuBox.style.display = "block";
+      menubutton.style.display = "none";
+      closebut.style.display = "block";
+    }
+}
 // buttons var
 var infobut = [];
 

@@ -24,6 +24,23 @@ function readTextFile(file, callback) {
     rawFile.send(null);
 }
 
+// functie de pula mea
+function toggleMenu() {
+    var menuBox = document.getElementById('menu');   
+    var menubutton = document.getElementById('menu-but');
+    var closebut = document.getElementById('close');
+    if(menuBox.style.display == "block") { 
+      menuBox.style.display = "none";
+      menubutton.style.display = "block";
+      closebut.style.display = "none";
+    }
+    else { 
+      menuBox.style.display = "block";
+      menubutton.style.display = "none";
+      closebut.style.display = "block";
+    }
+}
+
 
 // get data from other site
 function LoadQuery(param) {
