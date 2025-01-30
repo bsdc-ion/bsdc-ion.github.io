@@ -59,7 +59,7 @@ nav {
 
 /* despre noi */
 .aboutusinfo {
-    width: 1200px;
+    width: 1280px;
     height: 550px;
     background-color: #FFF8E7;
     display: flex;
@@ -69,7 +69,10 @@ nav {
     border-radius: 30px;
     box-shadow: 5px 5px 20px;
 }
-
+p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 /* unde ne gasiti */
 .liniedespartire {
     margin-top: 50px;
@@ -201,7 +204,7 @@ a {
     cursor: pointer;
 }
 /* small devices and small tablets */
-@media only screen and (min-width: 0px) and (max-width: 1000px) {
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
     .navig {
         display: none;
     }
@@ -242,12 +245,12 @@ a {
         text-align: center;
     }
     .headerrr {
-        font-size: 30px;
+        font-size: clamp(30px, 5vw, 80px);
         font-weight: bolder;
         margin-bottom: 0px;
     }
     .textnormal {
-        font-size: 20px;
+        font-size: clamp(22px, 3vw, 40px);
     }
     .textmic {
         font-size: 15px;
@@ -261,7 +264,7 @@ a {
         justify-content: unset;
     }
     .contact-item {
-        font-size: 22px;
+        font-size: clamp(22px, 5vw, 35px);
     }
     .infomare {
         margin: auto;
@@ -270,5 +273,14 @@ a {
     .harta {
         width: 100%;
         border-radius: unset;
+    }
+}
+/* font fix */
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+    .Butonnav, .Butonnav1 {
+        font-size: 29px;
+    }
+    .aboutusinfo {
+        width: 100%;
     }
 }
