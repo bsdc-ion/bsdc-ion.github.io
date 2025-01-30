@@ -15,25 +15,36 @@
 </head>
 <body>
     <nav id="navbar">
-        <h1>PAWN Documentation</h1>
+        <header>PAWN Documentation</header>
         <section>
             <ul>
-                <li>Introduction</li>
-            </ul>
-            <ul>
-                <li>What you'll learn</li>
-            </ul>
-            <ul>
-                <li>Hello World</li>
-            </ul>
-            <ul>
-                <li>Player Spawn Event</li>
-            </ul>
-            <ul>
-                <li>Creating a Custom Vehicle Spawn Command</li>
-            </ul>
-            <ul>
-                <li>Best Practices</li>
+                <li>
+                    <a href="#Introduction" class="nav-link">Introduction</a>
+                </li>
+                <li>
+                    <a href="#What_You'll_Learn" class="nav-link">What you'll learn</a>
+                </li>
+                <li>
+                    <a href="#Hello_World" class="nav-link">Hello World</a>
+                </li>
+                <li>
+                    <a href="#Player_Spawn_Event" class="nav-link">Player Spawn Event</a>
+                </li>
+                <li>
+                    <a href="#Creating_a_Custom_Vehicle_Spawn_Command" class="nav-link">Creating a Custom Vehicle Spawn Command</a>
+                </li>
+                <li>
+                    <a href="#Best_Practices" class="nav-link">Best Practices</a>            
+                </li>
+                <li>
+                    <a href="#Event_Handlers" class="nav-link">Event Handlers</a>            
+                </li>
+                <li>
+                    <a href="#Arrays" class="nav-link">Arrays</a>            
+                </li>
+                <li>
+                    <a href="#Finish" class="nav-link">Finish</a>            
+                </li>
             </ul>
         </section>
     </nav>
@@ -47,8 +58,8 @@
             <br>
             <p>This documentation will guide you through the core concepts, syntax, and best practices of Pawn scripting, with step-by-step tutorials and examples to get you started. Whether you're building simple game modes, creating complex systems, or managing server events, you'll find everything you need to unlock the full potential of Pawn.</p>
         </section>
-        <section class="main-section" id="What_You’ll_Learn">
-            <header>What You’ll Learn</header>
+        <section class="main-section" id="What_You'll_Learn">
+            <header>What You'll Learn</header>
             <ul>
                 <li>Basic Syntax: Understanding variables, functions, and operators in Pawn</li>
                 <li>Game Modes: How to create and manage custom game modes.</li>
@@ -78,7 +89,7 @@
             }
             </code>
         </section>
-        <section class="main-section" id="Creating_a _Custom_Vehicle_Spawn_Command">
+        <section class="main-section" id="Creating_a_Custom_Vehicle_Spawn_Command">
             <header>Creating a Custom Vehicle Spawn Command</header>
             <p>This script lets players spawn a vehicle using a custom command.</p>
             <code>
@@ -93,9 +104,8 @@
             }
             </code>
         </section>
-        <section class="main-section" id="Creating_a _Custom_Vehicle_Spawn_Command">
-            <header>Creating a Custom Vehicle Spawn Command</header>
-            <p>This script lets players spawn a vehicle using a custom command.</p>
+        <section class="main-section" id="Best_Practices">
+            <header>Best Practices</header>
             <br>
             <ul>
                 <li>Comment your code: Always add comments to describe your functions, variables, and logic to make your scripts easier to understand.</li>
@@ -103,6 +113,44 @@
                 <li>Modularize your code: Break down your code into smaller functions for readability and reusability.</li>
                 <li>Test your scripts regularly: Run your scripts frequently to check for syntax errors and unexpected behavior.</li>
             </ul>
+        </section>
+        <section class="main-section" id="Event_Handlers">
+            <header>Event Handlers</header>
+            <p>SA-MP relies on event-based programming. Here’s an example:</p>
+            <br>
+           <code>
+            public OnPlayerConnect(playerid) {
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;SendClientMessage(playerid, 0xFFFFFFAA, "Welcome to the server!");
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;printf("Player %d connected.", playerid);
+            }
+            
+            public OnPlayerDisconnect(playerid, reason) {
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;printf("Player %d disconnected (Reason: %d).", playerid, reason);
+            }
+           </code>
+        </section>
+        <section class="main-section" id="Arrays">
+            <header>Arrays</header>
+            <br>
+           <code>
+            new playerScores[MAX_PLAYERS]; // Array declaration
+
+            public OnPlayerConnect(playerid) {
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;playerScores[playerid] = 0; // Initialize score for the connected player
+            }
+
+            public OnPlayerScore(playerid) {
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;playerScores[playerid] += 10;
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;printf("Player %d's score: %d", playerid, playerScores[playerid]);
+            }
+           </code>
+        </section>
+        <section class="main-section" id="Finish">
+            <header>Finish</header>
+            <br>
+            <p>Overall, Pawn is a powerful tool for its niche. </p>
+            <p>Its lightweight design, event-driven structure, and ease of use make it an excellent choice for creating custom features, handling in-game events, and extending the capabilities of multiplayer game servers.</p>
+            <p>While it may not be a general-purpose language, its focus on simplicity and efficiency makes it indispensable for its intended applications.</p>
         </section>
     </main>
 </body>

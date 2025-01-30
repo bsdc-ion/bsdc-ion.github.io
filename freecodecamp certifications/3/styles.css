@@ -19,7 +19,7 @@ html, body {
     position:relative;
 }
 
-#navbar h1 {
+#navbar header {
     font-size: 50px;
     padding-top: 20px;
     font-weight: 800;
@@ -80,4 +80,11 @@ html, body {
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
+}
+
+/* bigger devices */
+@media only screen and (min-width: 1900) {
+    body {
+        transform: scale(0.9);
+    }
 }
