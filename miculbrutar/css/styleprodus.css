@@ -272,7 +272,7 @@ h2:after {
     cursor: pointer;
 }
 /* small devices and small tablets */
-@media only screen and (min-width: 0px) and (max-width: 1000px) {
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
     .navig {
         display: none;
     }
