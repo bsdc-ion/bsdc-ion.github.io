@@ -27,7 +27,3 @@ pokemon.addEventListener("click", function () {
 miculbrutar.addEventListener("click", function () {
     window.location.href = "/miculbrutar/index";
 });
-
-paget.addEventListener("click", function () {
-    window.location.href = "/Paget-High-School/index.html";
-})
