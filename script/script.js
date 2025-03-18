@@ -6,6 +6,7 @@ const pv1 = document.getElementById("portofoliov1");
 const trans = document.getElementById("translator");
 const pokemon = document.getElementById("pokemon");
 const miculbrutar = document.getElementById("miculbrutar");
+const paget = document.getElementById("paget");
 
 ehub.addEventListener("click", function() {
     window.location.href = "/experiencehubpage/indexhome";
@@ -26,3 +27,7 @@ pokemon.addEventListener("click", function () {
 miculbrutar.addEventListener("click", function () {
     window.location.href = "/miculbrutar/index";
 });
+
+paget.addEventListener("click", function () {
+    window.location.href = "/Paget-High-School/index.html";
+})
