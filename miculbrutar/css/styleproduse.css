@@ -127,14 +127,15 @@ nav {
 .menu {
     background-color: #ffb700;
     height: 200px;
-    width: 100%;
+    width: 90vw;
+    margin: auto;
     display: none;
     margin-top: -20px;
-    transition: all .25s linear; 
-    -o-transition: all .25s linear; 
-    -moz-transition: all .25s linear; 
-    -webkit-transition: all .25s linear; 
+    animation: fade 1s linear;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
 }
+
 #menu-but {
     display: none;
 }
@@ -172,6 +173,7 @@ nav {
     hr {
         background-color: #000;
         border: 1px solid black;
+        margin-left: -10px;
     }
     .navmob {
         text-decoration: none;
@@ -180,3 +182,10 @@ nav {
         text-align: center;
     }
 }
+
+
+@keyframes fade {
+    0% { opacity: 0.2 }
+    50% { opacity: 0.8 }
+    100% { opacity: 1 }
+  }
