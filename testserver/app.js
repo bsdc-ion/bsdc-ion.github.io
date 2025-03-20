@@ -1,0 +1,1 @@
+console.log('Boilerplate app is running')
