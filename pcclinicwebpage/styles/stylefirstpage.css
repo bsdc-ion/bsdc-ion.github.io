@@ -37,22 +37,28 @@ a {
 }
 
 .logo {
-    min-width: 300px;
-    max-width: 480px;
-    width: 90%;
+    min-width: 200px;
+    max-width: 300px;
+    width: 80%;
 }
 
 .button {
     background-color: #1E90FF;
     color: white;
+
     border: none;
-    border-radius: 40px;
+    border-radius: 25px;
+
     font-family: "Itim", serif;
     font-size: 40px;
-    width: 280px;
-    height: 65px;
+
+    min-width: 200px;
+    max-width: 350px;
+    width: 30%;
+    height: 55px;
+
     display: block;
-    margin: 0 auto;
+    margin: -22px auto auto auto;
 }
 
 .button:hover {
@@ -62,5 +68,33 @@ a {
 }
 /* tablets and bigger devices */
 @media only screen and (min-width: 580px) and (max-width: 1200px) {
+    .backgroundmob {
+        background-image: url("/pcclinicwebpage/images/background_tab.png");
+    }
+    .logo {
+        min-width: 400px;
+        max-width: 450px;
+    }
+    .button {
+        height: 65px;
+        font-size: 44px;
+        max-width: 285px;
+    }
+}
+/* laptops and desktops */
+@media only screen and (min-width: 1200px) {
+    .logo {
+        min-width: 400px;
+        max-width: 550px;
+    }
+    .backgroundmob {
+        background-image: url("/pcclinicwebpage/images/background_lap.png");
+    }
+    .button {
+        max-width: 285px;
+        height: 65px;
+        font-size: 48px;
 
+        margin: -60px auto auto auto;
+    }
 }
