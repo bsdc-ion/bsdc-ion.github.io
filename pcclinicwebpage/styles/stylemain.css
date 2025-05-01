@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Mako&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.kavoon-regular {
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.mako-regular {
+    font-family: "Mako", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+/* start of everything*/
+
+/* head mobile*/
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #003366;
+}
+
+header img {
+    float: left;
+    width: 85px;
+    height: 75px;
+
+    margin: 10px;
+    cursor: pointer;
+}
+
+header .menu {
+    width: 65px;
+    height: 50px;
+
+    float:right;
+    margin: 20px;
+}
+
+/* main section */
+.mainsection {
+    width: 100%;
+    height: 100%;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.product {
+    width: 90%;
+    max-width: 450px;
+    min-width: 310px;
+
+    height: 60%;
+    max-height: 500px;
+    min-height: 420px;
+
+    background-color: #1E90FF;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+
+    border-radius: 40px;
+}
+
+.product img {
+    height: 80%;
+    width: 95%;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    border: 6px #0066CC solid;
+    border-bottom: 0;
+}
+
+.product h2 {
+    font-size: clamp(30px, 30%, 50px);
+    margin: 20px;
+}
+
+.product .moreinfo {
+    width: 95%;
+    display: flex;
+    margin: auto;
+
+    background-color: #0066CC;
+    color: #f5f5f5;
+    font-size: 30px;
+    
+    justify-content: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+    border: 0;
+    margin-top: 0;
+}
