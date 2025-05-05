@@ -59,7 +59,9 @@ a {
     width: 30%;
     height: 55px;
 
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: -22px auto auto auto;
 }
 
