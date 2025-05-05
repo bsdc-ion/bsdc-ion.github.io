@@ -73,9 +73,7 @@ header .menu {
     height: 100%;
     background-color: #003366;
 
-    float:right;
     position: fixed;
-    top: 0;
     right: 0;
 }
 
@@ -83,7 +81,7 @@ header .menu {
 .sidebar img {
     all: unset;
     width: 80%;
-    margin-top: 125px;
+    margin-top: 
 }
 
 .button {
@@ -174,6 +172,22 @@ header .menu {
 
     width: 70%;
     height: 80%;
+    margin: auto;
+}
+
+.pos {
+    display: flex; 
+    flex-direction: row; 
+    list-style-type: none; 
+    justify-content: space-between;
+
+    width: 80%;
+    min-width: 225px;
+    max-width: 650px;
+    margin: auto;
+}
+
+.pos li {
     margin: auto;
 }
 
