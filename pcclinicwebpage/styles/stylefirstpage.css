@@ -62,7 +62,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -22px auto auto auto;
+    margin: 20px auto auto auto;
 }
 
 .button a {
@@ -103,6 +103,6 @@ a {
         max-width: 250px;
         font-size: 48px;
 
-        margin: -60px auto auto auto;
+        margin: -10px auto auto auto;
     }
 }
