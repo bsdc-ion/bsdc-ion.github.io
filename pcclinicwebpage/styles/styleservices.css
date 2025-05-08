@@ -63,3 +63,10 @@
     border: 0;
     margin-top: 0;
 }
+
+@media only screen and (min-width: 500px) {
+    .product {
+        min-width: 370px;
+        max-width: 420px;
+    }
+}
