@@ -219,7 +219,7 @@ header .menu {
     width: 100%;
 }
 
-/* head mobile*/
+/* foot mobile*/
 footer {
     height: fit-content;
     padding-bottom: 30px;
@@ -228,15 +228,18 @@ footer {
     background-color: #003366;
     margin-top: 80px;
     padding-top: 40px;
+    display: flex;
+    flex-direction: row;
 }
+
 
 
 /* Contact Item */
 .contact-item {
-    padding: 20px;
+    margin: 20px;
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     color: white;
 }
 
@@ -310,6 +313,22 @@ a {
         width: 60%;
         margin-top: 70px;
     }
+    footer {
+        flex-direction: column;
+    }
+    .lefthandside {
+        width: 100%;
+    }
+    .righthandside {
+        width: 100%;
+    }
+    .map {
+        margin: auto;
+        float: unset;
+        margin-top: 40px;
+        min-width: 350px;
+        width: 90%;
+    }
 }
 
 @media only screen and (min-width: 500px) {
@@ -346,15 +365,15 @@ a {
 
 @media only screen and (min-width: 600px) {
     header {
-        height: 125px;
+        height: 100px;
     }
     header img {
-        width: 105px;
-        height: 95px;
+        width: 95px;
+        height: 75px;
     }
     header .menu {
-        width: 85px;
-        height: 70px;
+        width: 75px;
+        height: 60px;
     }
     .kavoon-regular {
         margin-top: 140px;
@@ -398,19 +417,63 @@ a {
 
     .navbar ul li {
         margin: 30px;
+        cursor: pointer;
+    }
+    .navbar ul li a:hover {
+        color: rgb(245, 192, 192);
+    }
+    .navbar .pos li {
+        margin: auto;
+    }
+    .navbar .buttonsmall {
+        background-color: #0d4e90;
+    }
+    .navbar .buttonsmall:hover {
+        background-color: #2f567e;
     }
     .navbar ul li a {
         color: #f5f5f5;
-        font-size: 30px;
+        font-size: 30px;    
     }
     .navbar .pos {
         float: right;
         display: flex;
         margin: auto 0 auto auto;
     }
-
     header img {
-        width: 110px;
-        height: 100px;
+        width: 90px;
+        height: 80px;
+    }
+    
+    .lefthandside {
+        width: 50%;
+        height: 450px;
+    }
+
+    .righthandside {
+        width: 50%;
+        height: 450px;
+    }
+
+    .map {
+        width: 70%;
+        max-width: 800px;
+
+        height: 90%;
+        max-height: 450px;
+        
+        border: 0px;
+        display: flex;
+
+        border-radius: 20px;  
+        float: right;  
+
+        justify-content: center;
+        margin: 40px 30px auto auto;
+    }
+
+    footer {
+        flex-direction: row;
     }
 }
+

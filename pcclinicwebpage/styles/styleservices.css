@@ -90,3 +90,16 @@
         max-width: 460px;
     }
 }
+
+@media only screen and (min-width: 1760px) {
+    .products {
+        max-width: unset;
+    }
+    .product {
+        min-width: 370px;
+        max-width: 420px;
+
+        min-height: 550px;
+        max-height: 550px;
+    }
+}

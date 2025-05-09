@@ -3,12 +3,14 @@ const sidebar = document.getElementById("side");
 const menubut = document.getElementById("menu");
 
 const themeswitch = document.getElementById("lightdarkmode");
+const themeswitch2 = document.getElementById("lightdarkmode1");
+
 const icon = document.getElementById("iconitself");
+const icon1 = document.getElementById("iconitself1");
 
 const bodyy = document.getElementById("body");
 const head = document.getElementById("head");
 const foot = document.getElementById("foot");
-
 
 const elementss = document.getElementsByClassName("product");
 const imgbord = document.getElementsByTagName("img");
@@ -26,7 +28,7 @@ menubut.addEventListener("click", function () {
 });
 
 /* darkmode */
-themeswitch.addEventListener("click", function() {
+function Theme() {
     if(icon.classList.contains("moon")) {
         icon.classList.add("sun");
         icon.classList.remove("moon");
@@ -34,6 +36,15 @@ themeswitch.addEventListener("click", function() {
     else {
         icon.classList.add("moon");
         icon.classList.remove("sun");
+    }
+
+    if(icon1.classList.contains("moon")) {
+        icon1.classList.add("sun");
+        icon1.classList.remove("moon");
+    }
+    else {
+        icon1.classList.add("moon");
+        icon1.classList.remove("sun");
     }
 
     for(var i = 0; i < elementss.length; i++) {
@@ -56,4 +67,6 @@ themeswitch.addEventListener("click", function() {
     head.classList.toggle("foregrounddark");
     foot.classList.toggle("foregrounddark");
     sidebar.classList.toggle("foregrounddark");
-});
+}
+themeswitch.addEventListener("click", Theme);
+themeswitch2.addEventListener("click", Theme);
