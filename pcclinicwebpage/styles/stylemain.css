@@ -10,6 +10,10 @@
     color: #f5f5f5;
 }
 
+.textdark {
+    color: #f5f5f5 !important;
+}
+
 .borderdark {
     border-color: #303030 !important;
 }
@@ -231,8 +235,6 @@ footer {
     display: flex;
     flex-direction: row;
 }
-
-
 
 /* Contact Item */
 .contact-item {
