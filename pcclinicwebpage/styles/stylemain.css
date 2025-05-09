@@ -290,7 +290,9 @@ a {
     display: block;
 }
 
-
+.navbar {
+    display: none;
+}
 /* start of media query */
 @media only screen and (min-height: 400px) and (min-width: 320px) {
     /* menu fixes */
@@ -381,14 +383,34 @@ a {
     .menu {
         display: none;
     }
+
     .navbar {
         height: 100%;
+        display: flex;
     }
     .navbar ul {
         width: fit-content;
-        margin: auto;
+        margin: auto auto auto 0;
         display: flex;
         flex-direction: row;
+        float: left;
+    }
+
+    .navbar ul li {
+        margin: 30px;
+    }
+    .navbar ul li a {
         color: #f5f5f5;
+        font-size: 30px;
+    }
+    .navbar .pos {
+        float: right;
+        display: flex;
+        margin: auto 0 auto auto;
+    }
+
+    header img {
+        width: 110px;
+        height: 100px;
     }
 }
