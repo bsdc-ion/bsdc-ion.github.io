@@ -19,8 +19,28 @@ const moreinf = document.getElementsByClassName("moreinfo");
 const button = document.getElementsByClassName("button");
 const sbutton = document.getElementsByClassName("buttonsmall");
 
+/* specific to contact us page */
+const insta = document.getElementById("insta");
+const facebook = document.getElementById("Facebook");
+const youtube = document.getElementById("Youtube");
+const twitter = document.getElementById("Twitter");
+
+const phone = document.getElementById("phone");
+const phone1 = document.getElementById("phone1");
+
+const mail = document.getElementById("mail");
+const mail1 = document.getElementById("mail1");
+
+const map = document.getElementById("map");
+const map1 = document.getElementById("map1");
+
+const from = document.getElementById("formm");
+const sub = document.getElementById("submit");
 
 
+if (localStorage.getItem("ThemeSwitch") === "Dark") {
+    Theme();
+}
 /* code the menu itself */
 menubut.addEventListener("click", function () {
     sidebar.classList.toggle("dispb");
@@ -29,13 +49,18 @@ menubut.addEventListener("click", function () {
 
 /* darkmode */
 function Theme() {
+    var myUrl = window.location.href;
+    lastWordInUrl = myUrl.substring(myUrl.lastIndexOf('/')+1,myUrl.length);
+
     if(icon.classList.contains("moon")) {
         icon.classList.add("sun");
         icon.classList.remove("moon");
+        localStorage.setItem("ThemeSwitch", "Dark");
     }
     else {
         icon.classList.add("moon");
         icon.classList.remove("sun");
+        localStorage.setItem("ThemeSwitch", "Light");
     }
 
     if(icon1.classList.contains("moon")) {
@@ -61,12 +86,52 @@ function Theme() {
     }
     for(var i = 0; i < moreinf.length; i++) {
         moreinf[i].classList.toggle("buttondark");
-    }
-
+    }  
     bodyy.classList.toggle("backgrounddark");
     head.classList.toggle("foregrounddark");
-    foot.classList.toggle("foregrounddark");
+    if(lastWordInUrl == 'index.html') {
+        foot.classList.toggle("foregrounddark");
+    }
     sidebar.classList.toggle("foregrounddark");
+
+    if(lastWordInUrl == 'indexcont.html') {
+        if(insta.src.indexOf("/Light/Instagram.svg") !== -1) {
+            insta.src = "/pcclinicwebpage/images/dark/Instagram.svg";
+            facebook.src = "/pcclinicwebpage/images/dark/Facebook.svg";
+            youtube.src = "/pcclinicwebpage/images/dark/Youtube.svg";
+            twitter.src = "/pcclinicwebpage/images/dark/Twitter.svg";
+
+            map.src = "/pcclinicwebpage/images/dark/Map.svg";
+            mail.src = "/pcclinicwebpage/images/dark/Mail.svg";
+            phone.src = "/pcclinicwebpage/images/dark/Phone.svg";
+
+            map1.classList.toggle("whitetext");
+            mail1.classList.toggle("whitetext");
+            phone1.classList.toggle("whitetext");
+
+            from.classList.toggle("foregrounddark");
+            sub.classList.toggle("buttondark");
+            return 1;
+        }
+        else if(insta.src.indexOf("/dark/Instagram.svg") !== -1) {
+            insta.src = "/pcclinicwebpage/images/Light/Instagram.svg";
+            facebook.src = "/pcclinicwebpage/images/Light/Facebook.svg";
+            youtube.src = "/pcclinicwebpage/images/Light/Youtube.svg";
+            twitter.src = "/pcclinicwebpage/images/Light/Twitter.svg";
+
+            map.src = "/pcclinicwebpage/images/Light/Map.svg";
+            mail.src = "/pcclinicwebpage/images/Light/Mail.svg";
+            phone.src = "/pcclinicwebpage/images/Light/Phone.svg";
+
+            map1.classList.toggle("whitetext");
+            mail1.classList.toggle("whitetext");
+            phone1.classList.toggle("whitetext");
+
+            from.classList.toggle("foregrounddark");
+            sub.classList.toggle("buttondark");
+            return 1;
+        }  
+    }
 }
 themeswitch.addEventListener("click", Theme);
 themeswitch2.addEventListener("click", Theme);

@@ -14,7 +14,7 @@
 <body id="body">
     <header id="head">
         <a href="/pcclinicwebpage/Services"><img  src="/pcclinicwebpage/images/logolandingpage.png"></a>
-        <img src="/pcclinicwebpage/images/menubut.png" class="menu" id="menu">
+        <img src="/pcclinicwebpage/images/menu.svg" class="menu" id="menu">
         <div class="backgroundb" id="blur"></div>
         <nav class="sidebar" id="side">
             <img src="/pcclinicwebpage/images/logolandingpage.png">
@@ -42,22 +42,21 @@
             </ul>
         </nav>
     </header>
-    <h1 class="kavoon-regular">Contact Us</h1>
     <section class="mainsection">
         <section class="lefthandsidep">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1206.1086977046302!2d-1.6311556!3d52.8004188!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a024776346265%3A0x1e14e88c557a62a1!2sBurton%20and%20South%20Derbyshire%20College!5e0!3m2!1sen!2suk!4v1746815837581!5m2!1sen!2suk" width="600" height="450" class="mapp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <section class="infomare">
                 <div class="contact-item">
-                    <img src="/pcclinicwebpage/images/dark/Phone.svg" class="contactimg">
-                    <a href="callto:0756274582" class="mako-regular da">071234567789</a>
+                    <img src="/pcclinicwebpage/images/dark/Phone.svg" class="contactimg" id="phone">
+                    <a href="callto:0756274582" class="mako-regular" id="phone1">071234567789</a>
                 </div>
                 <div class="contact-item">
-                    <img src="/pcclinicwebpage/images/dark/Mail.svg" class="contactimg">
-                    <a href="mailto:pcclinic@bsdc.ac.uk" class="mako-regular da">pcclinic@bsdc.ac.uk</a>
+                    <img src="/pcclinicwebpage/images/dark/Mail.svg" class="contactimg" id="mail">
+                    <a href="mailto:pcclinic@bsdc.ac.uk" class="mako-regular" id="mail1">pcclinic@bsdc.ac.uk</a>
                 </div>
                 <div class="contact-item">
-                    <img src="/pcclinicwebpage/images/dark/Map.svg" class="contactimg">
-                    <a href="https://maps.app.goo.gl/obDhkG62Fwci5pdZ8" class="mako-regular da">Town Centre Campus, Lichfield Street, DE14 3RL</a>
+                    <img src="/pcclinicwebpage/images/dark/Map.svg" class="contactimg" id="map">
+                    <a href="https://maps.app.goo.gl/obDhkG62Fwci5pdZ8" class="mako-regular" id="map1">Town Centre Campus, Lichfield Street, DE14 3RL</a>
                 </div>
             </section>
             <section class="social-icons">
@@ -68,8 +67,9 @@
             </section>
         </section>   
         <section class="righthandsidep">
-            <div class="formbackground">
+            <div class="formbackground" id="formm">
                 <form>
+                    <h1 class="kavoon-regular">Contact Form</h1>
                     <div class="name-fields">
                         <div class="field">
                             <label for="firstName" class="mako-regular">First Name*</label>
@@ -88,7 +88,7 @@
                         <label for="message" class="mako-regular">Message*</label>
                         <textarea id="message" placeholder="How much is it for a maintenance?"></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="submit" class="submit-btn" id="submit">Submit</button>
                 </form>
             </div>
         </section>
