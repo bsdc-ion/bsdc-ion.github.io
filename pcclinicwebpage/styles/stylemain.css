@@ -65,9 +65,6 @@ html, body {
     background-size: contain;
     display: flex;
 
-    width: 70%;
-    height: 80%;
-    margin: auto;
 }
 
 .sun {
@@ -76,9 +73,6 @@ html, body {
     background-size: contain;
     display: flex;
 
-    width: 70%;
-    height: 80%;
-    margin: auto;
 }
   
 /* start of everything*/
