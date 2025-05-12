@@ -46,16 +46,18 @@ menubut.addEventListener("click", function () {
     behindblur.classList.toggle("dispb");
 });
 
-
 /* switch to dark in case of the other page was*/
 if (localStorage.getItem("ThemeSwitch") === "Dark") {
     Theme();
 }
+
+
 /* darkmode */
 function Theme() {
     var myUrl = window.location.href;
     var secondToLast = myUrl.substring(0, myUrl.lastIndexOf('/'));
     secondToLast = secondToLast.substring(secondToLast.lastIndexOf('/') + 1);
+    secondToLast = secondToLast.toLowerCase();
 
     if(icon.classList.contains("moon")) {
         icon.classList.add("sun");
@@ -96,13 +98,13 @@ function Theme() {
     head.classList.toggle("foregrounddark");
     sidebar.classList.toggle("foregrounddark");
 
-    if(secondToLast !== 'ContactUs') {
+    if(secondToLast !== 'contactus') {
         foot.classList.toggle("foregrounddark");
     }
-    if(secondToLast == 'AboutUs') {
+    if(secondToLast === 'aboutus') {
         abouts.classList.toggle("foregrounddark");
     }
-    if(secondToLast == 'ContactUs') {
+    if(secondToLast == 'contactus') {
         if(insta.src.indexOf("/Light/Instagram.svg") !== -1) {
             insta.src = "/pcclinicwebpage/images/dark/Instagram.svg";
             facebook.src = "/pcclinicwebpage/images/dark/Facebook.svg";
