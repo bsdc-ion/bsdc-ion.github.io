@@ -1,0 +1,139 @@
+/* right side */
+.rightside {
+    width: 50%;
+}
+
+.submit-btn {
+    display: block;
+    width: 45%;
+    margin: 20px auto auto auto;
+
+    padding: 10px;
+    background-color: #0077e6;
+    color: white;
+
+    max-width: 190px;
+    min-width: 170px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* left side */
+.leftside {
+    width: 50%;;
+}
+
+.bookrepairbackground {
+    width: 90%;
+    margin: auto;
+    background-color: #1E90FF;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px black;
+    text-align: left;
+
+    padding-bottom: 20px;
+    min-height: 700px;
+    max-width: 1300px;
+}
+.bookrepairbackground .header {
+    font-size: clamp(80px, 5vw, 85px);
+    font-weight: bolder;
+    margin: auto;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 80%;
+
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    margin:auto;
+    display: flex;
+
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 20px;
+}
+.bfield {
+    width: 100%;
+    margin: auto;
+}
+
+.name-fields {
+    display: flex;
+    gap: 30px;
+    margin: auto;
+    justify-content: center;
+}
+
+label {
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+    margin-right: auto;
+    width: fit-content;
+}
+
+input,
+textarea,
+option,
+select {
+    width: 100%;
+    font-size: 25px;
+    padding: 15px;
+
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+
+    outline: none;
+    color: #333;
+}
+
+textarea {
+    resize: none;
+    height: 140px;
+}
+
+
+.submit-btn:hover {
+    background-color: #005bb5;
+}
+/* small devices and small tablets */
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+    .bookrepairbackground {
+        height: fit-content;
+    }
+    .leftside {
+        width: 100%;
+    }
+    .rightside {
+        width: 100%;
+    }
+    form {
+        flex-direction: column;
+    }
+    .submit-btn {
+        padding: 10px;
+        font-size: 45px;
+        width: 70%;
+    }
+
+    .bookrepairbackground .header {
+        font-size: clamp(30px, 5vw, 30px);
+    }
+}
+
+@media only screen and (min-width: 900px) {
+}

@@ -19,27 +19,6 @@ const moreinf = document.getElementsByClassName("moreinfo");
 const button = document.getElementsByClassName("button");
 const sbutton = document.getElementsByClassName("buttonsmall");
 
-/* specific to contact us page */
-const insta = document.getElementById("insta");
-const facebook = document.getElementById("Facebook");
-const youtube = document.getElementById("Youtube");
-const twitter = document.getElementById("Twitter");
-
-const phone = document.getElementById("phone");
-const phone1 = document.getElementById("phone1");
-
-const mail = document.getElementById("mail");
-const mail1 = document.getElementById("mail1");
-
-const map = document.getElementById("map");
-const map1 = document.getElementById("map1");
-
-const from = document.getElementById("formm");
-const sub = document.getElementById("submit");
-
-/* specific to about us page */
-const abouts = document.getElementById("aboutt");
-
 /* code the menu itself */
 menubut.addEventListener("click", function () {
     sidebar.classList.toggle("dispb");
@@ -102,46 +81,52 @@ function Theme() {
         foot.classList.toggle("foregrounddark");
     }
     if(secondToLast === 'aboutus') {
-        abouts.classList.toggle("foregrounddark");
+        document.getElementById("aboutt").classList.toggle("foregrounddark");
     }
-    if(secondToLast == 'contactus') {
-        if(insta.src.indexOf("/Light/Instagram.svg") !== -1) {
-            insta.src = "/pcclinicwebpage/resources/images/dark/Instagram.svg";
-            facebook.src = "/pcclinicwebpage/resources/images/dark/Facebook.svg";
-            youtube.src = "/pcclinicwebpage/resources/images/dark/Youtube.svg";
-            twitter.src = "/pcclinicwebpage/resources/images/dark/Twitter.svg";
+    if(secondToLast === 'bookrepair') {
+        document.getElementById("bookingform").classList.toggle("foregrounddark");
+        document.getElementById("booksubmit").classList.toggle("buttondark");
+    }
+    if(secondToLast ==- 'contactus') {
+        if(document.getElementById("insta").src.indexOf("/Light/Instagram.svg") !== -1) {
+            document.getElementById("insta").src = "/pcclinicwebpage/resources/images/dark/Instagram.svg";
+            document.getElementById("Facebook").src = "/pcclinicwebpage/resources/images/dark/Facebook.svg";
+            document.getElementById("Youtube").src = "/pcclinicwebpage/resources/images/dark/Youtube.svg";
+            document.getElementById("Twitter").src = "/pcclinicwebpage/resources/images/dark/Twitter.svg";
 
-            map.src = "/pcclinicwebpage/resources/images/dark/Map.svg";
-            mail.src = "/pcclinicwebpage/resources/images/dark/Mail.svg";
-            phone.src = "/pcclinicwebpage/resources/images/dark/Phone.svg";
+            document.getElementById("map").src = "/pcclinicwebpage/resources/images/dark/Map.svg";
+            document.getElementById("mail").src = "/pcclinicwebpage/resources/images/dark/Mail.svg";
+            document.getElementById("phone").src = "/pcclinicwebpage/resources/images/dark/Phone.svg";
 
-            map1.classList.toggle("whitetext");
-            mail1.classList.toggle("whitetext");
-            phone1.classList.toggle("whitetext");
+            document.getElementById("map1").classList.toggle("whitetext");
+            document.getElementById("mail1").classList.toggle("whitetext");
+            document.getElementById("phone1").classList.toggle("whitetext");
 
             from.classList.toggle("foregrounddark");
             sub.classList.toggle("buttondark");
         }
-        else if(insta.src.indexOf("/resources/images/dark/Instagram.svg") !== -1) {
-            insta.src = "/pcclinicwebpage/resources/images/Light/Instagram.svg";
-            facebook.src = "/pcclinicwebpage/resources/images/Light/Facebook.svg";
-            youtube.src = "/pcclinicwebpage/resources/images/Light/Youtube.svg";
-            twitter.src = "/pcclinicwebpage/resources/images/Light/Twitter.svg";
+        else if(document.getElementById("insta").src.indexOf("/resources/images/dark/Instagram.svg") !== -1) {
+            document.getElementById("insta").src = "/pcclinicwebpage/resources/images/Light/Instagram.svg";
+            document.getElementById("Facebook").src = "/pcclinicwebpage/resources/images/Light/Facebook.svg";
+            document.getElementById("Youtube").src = "/pcclinicwebpage/resources/images/Light/Youtube.svg";
+            document.getElementById("Twitter").src = "/pcclinicwebpage/resources/images/Light/Twitter.svg";
 
-            map.src = "/pcclinicwebpage/resources/images/Light/Map.svg";
-            mail.src = "/pcclinicwebpage/resources/images/Light/Mail.svg";
-            phone.src = "/pcclinicwebpage/resources/images/Light/Phone.svg";
+            document.getElementById("map").src = "/pcclinicwebpage/resources/images/Light/Map.svg";
+            document.getElementById("mail").src = "/pcclinicwebpage/resources/images/Light/Mail.svg";
+            document.getElementById("phone").src = "/pcclinicwebpage/resources/images/Light/Phone.svg";
 
-            map1.classList.toggle("whitetext");
-            mail1.classList.toggle("whitetext");
-            phone1.classList.toggle("whitetext");
+            document.getElementById("map1").classList.toggle("whitetext");
+            document.getElementById("mail1").classList.toggle("whitetext");
+            document.getElementById("phone1").classList.toggle("whitetext");
 
-            from.classList.toggle("foregrounddark");
-            sub.classList.toggle("buttondark");
+            document.getElementById("formm").classList.toggle("foregrounddark");
+            document.getElementById("subb").classList.toggle("buttondark");
         }
         return 1;
     }
     
 }
+
+
 themeswitch.addEventListener("click", Theme);
 themeswitch2.addEventListener("click", Theme);

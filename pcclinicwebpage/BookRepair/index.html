@@ -7,7 +7,7 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="/pcclinicwebpage/resources/styles/stylemain.css">
-    <link rel="stylesheet" href="/pcclinicwebpage/resources/styles/stylebookrepair.css">
+    <link rel="stylesheet" href="/pcclinicwebpage/resources/styles/stylerepair.css">
 
     <!-- Coded by MLGBD -->
 </head>
@@ -43,7 +43,62 @@
         </nav>
     </header>
     <section class="mainsection">
-   
+        <section class="bookrepairbackground" id="bookingform">
+            <h1 class="header">Book Repair</h1>
+            <form class="bookform">
+                <div class="leftside">
+                    <div class="name-fields">
+                        <div class="field">
+                            <label for="firstName" class="mako-regular" >First Name*</label>
+                            <input type="text" id="firstName" placeholder="John"name="First Name" required>
+                        </div>
+                        <div class="field">
+                            <label for="lastName" class="mako-regular" >Last Name*</label>
+                            <input type="text" id="lastName" placeholder="Smith" name="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="bfield">
+                            <label for="email" class="mako-regular">Email*</label>
+                        <input type="email" id="email" placeholder="john.smith@domain.com" name="Email" required>
+                    </div>
+                    <div class="bfield">
+                        <label for="message" class="mako-regular">Message</label>
+                        <textarea id="message" placeholder="I want my screen replaced on a iPear 20." name="Message"></textarea>
+                    </div>
+                </div>
+                <div class="rightside">
+                    <label for="device" class="mako-regular" >Your Device*</label>
+                    <select name="device" id="device" required>
+                        <option value="unselected" disabled selected>Choose your device</option>
+                        <optgroup label="Smartphone">
+                            <option value="samsung">Samsung</option>
+                            <option value="Apple">Apple Iphone</option>
+                            <option value="Huawei">Huawei</option>
+                            <option value="other">Other Device (specify)</option>
+                        </optgroup>
+                        <optgroup label="Other Device">
+                            <option value="Laptop">Laptop</option>
+                            <option value="Desktop">Desktop</option>
+                            <option value="Tablet">Tablet</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="servicen" class="mako-regular" >What service do you need*</label>
+                    <select name="servicen" id="Services" required>
+                        <option value="unselected" disabled selected>Choose your service</option>
+                        <option value="maintenance" id="mainte">Maintenance</option>
+                        <option value="HardwareRepair" id="hard">Hardware Repair</option>
+                        <option value="SoftwareRepair" id="soft">Software Repair</option>
+                        <option value="Data Destruction" id="data">Data destruction</option>
+                    </select>
+
+                    <label for="datetime" class="mako-regular" >Select an Avaliable Book Slot*</label>
+                    <input type="datetime-local" id="booking" name="booking" required>
+
+                    <button type="submit" class="submit-btn" id="booksubmit">Submit</button>
+                </div>
+            </form>
+        </section>
     </section>
     <footer id="foot" class="">
         <section class="lefthandside">
