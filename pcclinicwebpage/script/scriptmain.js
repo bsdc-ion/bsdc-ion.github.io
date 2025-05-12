@@ -37,6 +37,9 @@ const map1 = document.getElementById("map1");
 const from = document.getElementById("formm");
 const sub = document.getElementById("submit");
 
+/* specific to about us page */
+const about = document.getElementById("aboutus");
+
 
 if (localStorage.getItem("ThemeSwitch") === "Dark") {
     Theme();
@@ -50,7 +53,8 @@ menubut.addEventListener("click", function () {
 /* darkmode */
 function Theme() {
     var myUrl = window.location.href;
-    lastWordInUrl = myUrl.substring(myUrl.lastIndexOf('/')+1,myUrl.length);
+    var secondToLast = myUrl.substring(0, myUrl.lastIndexOf('/'));
+    secondToLast = secondToLast.substring(secondToLast.lastIndexOf('/') + 1);
 
     if(icon.classList.contains("moon")) {
         icon.classList.add("sun");
@@ -89,12 +93,12 @@ function Theme() {
     }  
     bodyy.classList.toggle("backgrounddark");
     head.classList.toggle("foregrounddark");
-    if(lastWordInUrl == 'index.html') {
+    if(secondToLast !== 'ContactUs') {
         foot.classList.toggle("foregrounddark");
     }
     sidebar.classList.toggle("foregrounddark");
 
-    if(lastWordInUrl == 'indexcont.html') {
+    if(secondToLast == 'ContactUs') {
         if(insta.src.indexOf("/Light/Instagram.svg") !== -1) {
             insta.src = "/pcclinicwebpage/images/dark/Instagram.svg";
             facebook.src = "/pcclinicwebpage/images/dark/Facebook.svg";
@@ -131,6 +135,9 @@ function Theme() {
             sub.classList.toggle("buttondark");
             return 1;
         }  
+    }
+    if(secondToLast == 'AboutUs') {
+        about.classList.toggle("foregrounddark");
     }
 }
 themeswitch.addEventListener("click", Theme);
