@@ -106,14 +106,14 @@ function Theme() {
     }
     if(secondToLast == 'contactus') {
         if(insta.src.indexOf("/Light/Instagram.svg") !== -1) {
-            insta.src = "/pcclinicwebpage/images/dark/Instagram.svg";
-            facebook.src = "/pcclinicwebpage/images/dark/Facebook.svg";
-            youtube.src = "/pcclinicwebpage/images/dark/Youtube.svg";
-            twitter.src = "/pcclinicwebpage/images/dark/Twitter.svg";
+            insta.src = "/pcclinicwebpage/resources/images/dark/Instagram.svg";
+            facebook.src = "/pcclinicwebpage/resources/images/dark/Facebook.svg";
+            youtube.src = "/pcclinicwebpage/resources/images/dark/Youtube.svg";
+            twitter.src = "/pcclinicwebpage/resources/images/dark/Twitter.svg";
 
-            map.src = "/pcclinicwebpage/images/dark/Map.svg";
-            mail.src = "/pcclinicwebpage/images/dark/Mail.svg";
-            phone.src = "/pcclinicwebpage/images/dark/Phone.svg";
+            map.src = "/pcclinicwebpage/resources/images/dark/Map.svg";
+            mail.src = "/pcclinicwebpage/resources/images/dark/Mail.svg";
+            phone.src = "/pcclinicwebpage/resources/images/dark/Phone.svg";
 
             map1.classList.toggle("whitetext");
             mail1.classList.toggle("whitetext");
@@ -122,15 +122,15 @@ function Theme() {
             from.classList.toggle("foregrounddark");
             sub.classList.toggle("buttondark");
         }
-        else if(insta.src.indexOf("/dark/Instagram.svg") !== -1) {
-            insta.src = "/pcclinicwebpage/images/Light/Instagram.svg";
-            facebook.src = "/pcclinicwebpage/images/Light/Facebook.svg";
-            youtube.src = "/pcclinicwebpage/images/Light/Youtube.svg";
-            twitter.src = "/pcclinicwebpage/images/Light/Twitter.svg";
+        else if(insta.src.indexOf("/resources/images/dark/Instagram.svg") !== -1) {
+            insta.src = "/pcclinicwebpage/resources/images/Light/Instagram.svg";
+            facebook.src = "/pcclinicwebpage/resources/images/Light/Facebook.svg";
+            youtube.src = "/pcclinicwebpage/resources/images/Light/Youtube.svg";
+            twitter.src = "/pcclinicwebpage/resources/images/Light/Twitter.svg";
 
-            map.src = "/pcclinicwebpage/images/Light/Map.svg";
-            mail.src = "/pcclinicwebpage/images/Light/Mail.svg";
-            phone.src = "/pcclinicwebpage/images/Light/Phone.svg";
+            map.src = "/pcclinicwebpage/resources/images/Light/Map.svg";
+            mail.src = "/pcclinicwebpage/resources/images/Light/Mail.svg";
+            phone.src = "/pcclinicwebpage/resources/images/Light/Phone.svg";
 
             map1.classList.toggle("whitetext");
             mail1.classList.toggle("whitetext");

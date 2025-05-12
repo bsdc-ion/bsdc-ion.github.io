@@ -49,7 +49,7 @@ html, body {
 }
 
 .question {
-    background-image: url("/pcclinicwebpage/images/faq.svg");
+    background-image: url("/pcclinicwebpage/resources/images/faq.svg");
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
@@ -60,7 +60,7 @@ html, body {
 }
 
 .moon {
-    background-image: url("/pcclinicwebpage/images/moon.svg");
+    background-image: url("/pcclinicwebpage/resources/images/moon.svg");
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
@@ -68,7 +68,7 @@ html, body {
 }
 
 .sun {
-    background-image: url("/pcclinicwebpage/images/sun.svg");
+    background-image: url("/pcclinicwebpage/resources/images/sun.svg");
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
