@@ -19,6 +19,9 @@ const moreinf = document.getElementsByClassName("moreinfo");
 const button = document.getElementsByClassName("button");
 const sbutton = document.getElementsByClassName("buttonsmall");
 
+themeswitch.addEventListener("click", Theme);
+themeswitch2.addEventListener("click", Theme);
+
 /* code the menu itself */
 menubut.addEventListener("click", function () {
     sidebar.classList.toggle("dispb");
@@ -87,25 +90,8 @@ function Theme() {
         document.getElementById("bookingform").classList.toggle("foregrounddark");
         document.getElementById("booksubmit").classList.toggle("buttondark");
     }
-    if(secondToLast ==- 'contactus') {
-        if(document.getElementById("insta").src.indexOf("/Light/Instagram.svg") !== -1) {
-            document.getElementById("insta").src = "/pcclinicwebpage/resources/images/dark/Instagram.svg";
-            document.getElementById("Facebook").src = "/pcclinicwebpage/resources/images/dark/Facebook.svg";
-            document.getElementById("Youtube").src = "/pcclinicwebpage/resources/images/dark/Youtube.svg";
-            document.getElementById("Twitter").src = "/pcclinicwebpage/resources/images/dark/Twitter.svg";
-
-            document.getElementById("map").src = "/pcclinicwebpage/resources/images/dark/Map.svg";
-            document.getElementById("mail").src = "/pcclinicwebpage/resources/images/dark/Mail.svg";
-            document.getElementById("phone").src = "/pcclinicwebpage/resources/images/dark/Phone.svg";
-
-            document.getElementById("map1").classList.toggle("whitetext");
-            document.getElementById("mail1").classList.toggle("whitetext");
-            document.getElementById("phone1").classList.toggle("whitetext");
-
-            from.classList.toggle("foregrounddark");
-            sub.classList.toggle("buttondark");
-        }
-        else if(document.getElementById("insta").src.indexOf("/resources/images/dark/Instagram.svg") !== -1) {
+    if(secondToLast === 'contactus') {
+        if(document.getElementById("insta").src.indexOf("pcclinicwebpage/resources/images/dark/Instagram.svg") !== -1) {
             document.getElementById("insta").src = "/pcclinicwebpage/resources/images/Light/Instagram.svg";
             document.getElementById("Facebook").src = "/pcclinicwebpage/resources/images/Light/Facebook.svg";
             document.getElementById("Youtube").src = "/pcclinicwebpage/resources/images/Light/Youtube.svg";
@@ -120,13 +106,24 @@ function Theme() {
             document.getElementById("phone1").classList.toggle("whitetext");
 
             document.getElementById("formm").classList.toggle("foregrounddark");
-            document.getElementById("subb").classList.toggle("buttondark");
+            document.getElementById("submit").classList.toggle("buttondark");
         }
-        return 1;
-    }
-    
+        else if(document.getElementById("insta").src.indexOf("/pcclinicwebpage/resources/images/Light/Instagram.svg") !== -1) {
+            document.getElementById("insta").setAttribute("src", '/pcclinicwebpage/resources/images/dark/Instagram.svg');
+            document.getElementById("Facebook").src = "/pcclinicwebpage/resources/images/dark/Facebook.svg";
+            document.getElementById("Youtube").src = "/pcclinicwebpage/resources/images/dark/Youtube.svg";
+            document.getElementById("Twitter").src = "/pcclinicwebpage/resources/images/dark/Twitter.svg";
+
+            document.getElementById("map").src = "/pcclinicwebpage/resources/images/dark/Map.svg";
+            document.getElementById("mail").src = "/pcclinicwebpage/resources/images/dark/Mail.svg";
+            document.getElementById("phone").src = "/pcclinicwebpage/resources/images/dark/Phone.svg";
+
+            document.getElementById("map1").classList.toggle("whitetext");
+            document.getElementById("mail1").classList.toggle("whitetext");
+            document.getElementById("phone1").classList.toggle("whitetext");
+
+            document.getElementById("formm").classList.toggle("foregrounddark");
+            document.getElementById("submit").classList.toggle("buttondark");
+        }
+    }   
 }
-
-
-themeswitch.addEventListener("click", Theme);
-themeswitch2.addEventListener("click", Theme);

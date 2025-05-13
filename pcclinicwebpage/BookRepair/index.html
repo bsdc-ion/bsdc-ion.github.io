@@ -25,7 +25,7 @@
                 <li><a href="/pcclinicwebpage/BookRepair/" CLASS="button mako-regular">Book Repair</a></li>
             </ul>
             <ul class="pos">
-                <li><a href="/pcclinicwebpage/Services/index.html" class="buttonsmall"><i class="question"></i></a></li>
+                <li><a href="/pcclinicwebpage/FaQ/" class="buttonsmall"><i class="question"></i></a></li>
                 <li id="lightdarkmode"><i class="buttonsmall moon" id="iconitself"></i></li>
             </ul>
         </nav>
@@ -37,7 +37,7 @@
                 <li><a href="/pcclinicwebpage/BookRepair/" class="mako-regular">Book Repair</a></li>
             </ul>
             <ul class="pos">
-                <li><a href="/pcclinicwebpage/Services/index.html" class="buttonsmall"><i class="question"></i></a></li>
+                <li><a href="/pcclinicwebpage/FaQ/" class="buttonsmall"><i class="question"></i></a></li>
                 <li id="lightdarkmode1"><i class="buttonsmall moon" id="iconitself1"></i></li>
             </ul>
         </nav>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="bfield">
                         <label for="message" class="mako-regular">Message</label>
-                        <textarea id="message" placeholder="I want my screen replaced on a iPear 20." name="Message"></textarea>
+                        <textarea id="message" placeholder="Here you specify your device, the exact problem and other things. thanks" name="Message"></textarea>
                     </div>
                 </div>
                 <div class="rightside">
@@ -71,15 +71,15 @@
                     <select name="device" id="device" required>
                         <option value="unselected" disabled selected>Choose your device</option>
                         <optgroup label="Smartphone">
-                            <option value="samsung">Samsung</option>
-                            <option value="Apple">Apple Iphone</option>
-                            <option value="Huawei">Huawei</option>
-                            <option value="other">Other Device (specify)</option>
+                            <option value="samsung" id="samsung">Samsung</option>
+                            <option value="Apple" id="Apple">Apple Iphone</option>
+                            <option value="Huawei" id="Huawei">Huawei</option>
+                            <option value="other" id="other">Other Device (specify)</option>
                         </optgroup>
                         <optgroup label="Other Device">
-                            <option value="Laptop">Laptop</option>
-                            <option value="Desktop">Desktop</option>
-                            <option value="Tablet">Tablet</option>
+                            <option value="Laptop" id="Laptop">Laptop</option>
+                            <option value="Desktop" id="Desktop">Desktop</option>
+                            <option value="Tablet" id="Tablet">Tablet</option>
                         </optgroup>
                     </select>
 
@@ -93,7 +93,7 @@
                     </select>
 
                     <label for="datetime" class="mako-regular" >Select an Avaliable Book Slot*</label>
-                    <input type="datetime-local" id="booking" name="booking" required>
+                    <input type="datetime-local" id="booking" name="booking" required min="2025-05-12T12:00">
 
                     <button type="submit" class="submit-btn" id="booksubmit">Submit</button>
                 </div>
@@ -129,4 +129,5 @@
     </footer>
 </body>
 <script src="/pcclinicwebpage/resources/script/scriptmain.js"></script>
+<script src="/pcclinicwebpage/resources/script/scriptlogic.js"></script>
 </html>
