@@ -12,6 +12,7 @@ const datades = document.getElementById("data");
 
 /* devices */
 const phones = ['Apple', 'samsung', 'Huawei', 'Tablet'];
+
 /* logic booking slot */
 date.min = new Date().toISOString().slice(0, -8);
 
@@ -23,10 +24,15 @@ serv.addEventListener("click", function () {
         serv.value = "HardwareRepair";
         console.log("merge");
     }
+    else {
+        mainte.disabled = false;
+        datades.disabled = false;
+        console.log("mergeeeeeeee");
+    }
 });
 
 booksubmit.addEventListener("click", function() {
     if(device.value == 'other') {
         message.setAttribute("required", "");
-    } 
+    }
 })
