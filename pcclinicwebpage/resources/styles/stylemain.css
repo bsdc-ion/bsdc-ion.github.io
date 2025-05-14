@@ -320,10 +320,13 @@ a {
         margin: auto;
         float: unset;
         margin-top: 40px;
-        min-width: 320px;
+        min-width: 300px;
         width: 90%;
 
         border-radius: 20px;
+    }
+    .kavoon-regular {
+        font-size: clamp(35px, 5vw, 40px);
     }
 }
 
