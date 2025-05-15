@@ -86,6 +86,41 @@ function Theme() {
     if(secondToLast === 'aboutus') {
         document.getElementById("aboutt").classList.toggle("foregrounddark");
     }
+    if(secondToLast === 'faq') {
+        document.getElementById("General").classList.toggle("foregrounddark");
+        document.getElementById("Warranty").classList.toggle("foregrounddark");
+        document.getElementById("Maintenance").classList.toggle("foregrounddark");
+
+        document.getElementById("OtherS").classList.toggle("foregrounddark");
+        document.getElementById("CommonI").classList.toggle("foregrounddark");
+        document.getElementById("Pricing").classList.toggle("foregrounddark");
+
+        /* menu content */
+        document.getElementById("genfaq").classList.toggle("foregrounddark");
+        document.getElementById("warfaq").classList.toggle("foregrounddark");
+        document.getElementById("maifaq").classList.toggle("foregrounddark");
+
+        document.getElementById("otfaq").classList.toggle("foregrounddark");
+        document.getElementById("prifaq").classList.toggle("foregrounddark");
+        document.getElementById("comfaq").classList.toggle("foregrounddark");
+
+        /* IMAGES */
+        if(document.getElementById("generalimg").src.indexOf("pcclinicwebpage/resources/images/dark/arrowd.svg") !== -1) {
+            document.getElementById("generalimg").src = "/pcclinicwebpage/resources/images/Light/arrowl.svg";
+            document.getElementById("generalimg2").src = "/pcclinicwebpage/resources/images/Light/arrowl.svg";
+            document.getElementById("generalimg3").src = "/pcclinicwebpage/resources/images/Light/arrowl.svg";
+            document.getElementById("generalimg4").src = "/pcclinicwebpage/resources/images/Light/arrowl.svg";
+            document.getElementById("generalimg5").src = "/pcclinicwebpage/resources/images/Light/arrowl.svg";
+            document.getElementById("generalimg6").src = "/pcclinicwebpage/resources/images/Light/arrowl.svg";
+        } else {
+            document.getElementById("generalimg").src = "/pcclinicwebpage/resources/images/dark/arrowd.svg";
+            document.getElementById("generalimg2").src = "/pcclinicwebpage/resources/images/dark/arrowd.svg";
+            document.getElementById("generalimg3").src = "/pcclinicwebpage/resources/images/dark/arrowd.svg";
+            document.getElementById("generalimg4").src = "/pcclinicwebpage/resources/images/dark/arrowd.svg";
+            document.getElementById("generalimg5").src = "/pcclinicwebpage/resources/images/dark/arrowd.svg";
+            document.getElementById("generalimg6").src = "/pcclinicwebpage/resources/images/dark/arrowd.svg";
+        }
+    }
     if(secondToLast === 'bookrepair') {
         document.getElementById("bookingform").classList.toggle("foregrounddark");
         document.getElementById("booksubmit").classList.toggle("buttondark");
