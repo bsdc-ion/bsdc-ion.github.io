@@ -12,6 +12,8 @@
     gap: 20px;
 
     max-width: 1400px;
+    position: relative;
+    z-index: 3;
 }
 
 /* question list */ 
@@ -66,7 +68,7 @@
     background: #0066CC;
     display: none;
 
-    width: 90%;
+    width: 70%;
     margin: auto;
     z-index: 1;
 
@@ -87,6 +89,9 @@
         max-width: 400px;
         min-width: 400px;
     }
+    .faq-answer {
+        width: 90%;
+    }
 }
 @media only screen and (min-width: 915px) {
     .allquestions {
@@ -97,4 +102,14 @@
 
 .displayy {
     display: block;
+}
+
+/* text fix */
+p strong {
+    font-size: x-large;
+    color: white;
+}
+p {
+    color: rgb(229, 172, 172);
+    font-size: large;
 }

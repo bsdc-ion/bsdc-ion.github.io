@@ -6,6 +6,9 @@ const others = document.getElementById("OtherS");
 const comm = document.getElementById("CommonI");
 const pric = document.getElementById("Pricing");
 
+const bl = document.getElementById("blur");
+
+
 /* gen faq */
 const genf = document.getElementById("genfaq");
 const warf = document.getElementById("warfaq");
@@ -36,9 +39,11 @@ comf.style.zIndex = "12";
 /* some array for automation */
 const menus = [genf, warf, maif, otf, comf, prif];
 
+const zid = ["11", "13", "15", "17", "19", "21"];
+
 function DisplayGood(goodf) {
     goodf.classList.toggle("displayy");
-    
+
     var index = menus.indexOf(goodf);
     menus.splice(index, 1);
     
@@ -50,6 +55,14 @@ function DisplayGood(goodf) {
     }
     menus.push(goodf);
     return 1;
+}
+
+function displayblur(goodf) {
+    for(const slide of menus ) {
+        if(slide == genf) {
+            bl.style.zIndex = 20;
+        }
+    }
 }
 /* how it works */
 gene.addEventListener("click", function () {

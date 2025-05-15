@@ -26,6 +26,8 @@ themeswitch2.addEventListener("click", Theme);
 menubut.addEventListener("click", function () {
     sidebar.classList.toggle("dispb");
     behindblur.classList.toggle("dispb");
+
+
 });
 
 /* switch to dark in case of the other page was*/
