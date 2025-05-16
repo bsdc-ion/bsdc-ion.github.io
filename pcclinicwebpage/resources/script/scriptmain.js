@@ -63,21 +63,13 @@ function Theme() {
         icon1.classList.remove("sun");
     }
 
-    for(var i = 0; i < elementss.length; i++) {
-        elementss[i].classList.toggle("foregrounddark");
+    for(var i = 0; i < sbutton.length; i++) {
+        sbutton[i].classList.toggle("buttondark");
     }
     for(var i = 0; i < button.length; i++) {
         button[i].classList.toggle("buttondark");
     }
-    for(var i = 0; i < sbutton.length; i++) {
-        sbutton[i].classList.toggle("buttondark");
-    }
-    for(var i = 0; i < imgbord.length; i++) {
-        imgbord[i].classList.toggle("borderdark");
-    }
-    for(var i = 0; i < moreinf.length; i++) {
-        moreinf[i].classList.toggle("buttondark");
-    }  
+
     bodyy.classList.toggle("backgrounddark");
     head.classList.toggle("foregrounddark");
     sidebar.classList.toggle("foregrounddark");
@@ -85,8 +77,23 @@ function Theme() {
     if(secondToLast !== 'contactus') {
         foot.classList.toggle("foregrounddark");
     }
+
+    if(secondToLast === 'services') {
+        for(var i = 0; i < elementss.length; i++) {
+            elementss[i].classList.toggle("foregrounddark");
+        }
+        for(var i = 0; i < imgbord.length; i++) {
+            imgbord[i].classList.toggle("borderdark");
+        }
+        for(var i = 0; i < moreinf.length; i++) {
+            moreinf[i].classList.toggle("buttondark");
+        } 
+        return 1;
+    }
+
     if(secondToLast === 'aboutus') {
         document.getElementById("aboutt").classList.toggle("foregrounddark");
+        return 1;
     }
     if(secondToLast === 'faq') {
         document.getElementById("General").classList.toggle("foregrounddark");
@@ -122,10 +129,12 @@ function Theme() {
             document.getElementById("generalimg5").src = "/pcclinicwebpage/resources/images/dark/arrowd.svg";
             document.getElementById("generalimg6").src = "/pcclinicwebpage/resources/images/dark/arrowd.svg";
         }
+        return 1;
     }
     if(secondToLast === 'bookrepair') {
         document.getElementById("bookingform").classList.toggle("foregrounddark");
         document.getElementById("booksubmit").classList.toggle("buttondark");
+        return 1;
     }
     if(secondToLast === 'contactus') {
         if(document.getElementById("insta").src.indexOf("pcclinicwebpage/resources/images/dark/Instagram.svg") !== -1) {
@@ -162,5 +171,6 @@ function Theme() {
             document.getElementById("formm").classList.toggle("foregrounddark");
             document.getElementById("submit").classList.toggle("buttondark");
         }
+        return 1;
     }   
 }

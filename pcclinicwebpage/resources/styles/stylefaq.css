@@ -13,7 +13,6 @@
 
     max-width: 1400px;
     position: relative;
-    z-index: 3;
 }
 
 /* question list */ 
@@ -48,7 +47,6 @@
     cursor: pointer;
 
     margin-bottom: 0;
-    z-index: 1;
 }
 
 .questionlist .left {
@@ -70,7 +68,6 @@
 
     width: 70%;
     margin: auto;
-    z-index: 1;
 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;

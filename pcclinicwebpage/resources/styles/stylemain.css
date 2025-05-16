@@ -40,6 +40,9 @@ div, section, p, ul, li, h3, body, h1, a, footer, header, img, button {
 .buttondark {
     background-color: #303030 !important;
 }
+.buttondark:hover {
+    background-color: #272121 !important;
+}
 
 html, body {
     height: 100%;
@@ -93,6 +96,7 @@ header {
     background-color: #003366;
 
     position: fixed;
+    z-index: 9999;
 }
 
 header img {
@@ -158,11 +162,11 @@ header .menu {
     border-radius: 15px;
 
     font-family: "Itim", serif;
-    font-size: clamp(30px, 10vw, 60px);
+    font-size: clamp(30px, 10vw, 50px);
 
-    min-width: 225px;
-    max-width: 550px;
-    width: 80%;
+    min-width: 235px;
+    max-width: 580px;
+    width: 84%;
 
     height: 5vh;
     min-height: 50px;
@@ -171,7 +175,9 @@ header .menu {
     display: flex;
     align-items: center;
     justify-content: center;
+
     margin: auto;
+    font-family: 'Mako';
 }
 
 .button:hover {
@@ -299,7 +305,7 @@ a {
 }
 
 .dispb {
-    display: block;
+    display: block !important;
 }
 
 .navbar {
