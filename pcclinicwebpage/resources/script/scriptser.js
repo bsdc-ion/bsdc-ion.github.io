@@ -12,7 +12,6 @@ var what;
 
 function Showbox(service) {
     menu.style.display = "none";
-    console.log("Showbox called with:", service);
     switch(service) {
         case 'softrep':
             title.textContent = "Software Repair";
