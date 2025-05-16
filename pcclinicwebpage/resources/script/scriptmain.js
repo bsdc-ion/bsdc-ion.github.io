@@ -24,10 +24,18 @@ themeswitch2.addEventListener("click", Theme);
 
 /* code the menu itself */
 menubut.addEventListener("click", function () {
+    event.stopPropagation();
     sidebar.classList.toggle("dispb");
     behindblur.classList.toggle("dispb");
+});
 
-
+window.addEventListener("click", function(event) {
+    setTimeout(() => {
+        if (sidebar.classList.contains("dispb") && !sidebar.contains(event.target)) {
+            sidebar.classList.remove("dispb");
+            behindblur.classList.remove("dispb");
+        }
+    }, 50);
 });
 
 /* switch to dark in case of the other page was*/
@@ -87,7 +95,9 @@ function Theme() {
         }
         for(var i = 0; i < moreinf.length; i++) {
             moreinf[i].classList.toggle("buttondark");
-        } 
+        }
+        document.getElementById("mainb").classList.toggle("foregrounddark");
+        document.getElementById("description").classList.toggle("buttondark");
         return 1;
     }
 

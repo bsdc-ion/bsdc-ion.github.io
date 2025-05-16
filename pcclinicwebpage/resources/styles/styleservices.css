@@ -111,7 +111,7 @@
 
 /* logic box on top */
 .dispf {
-    display: flex;
+    display: flex !important;
 }
 .mainbox {
     position: absolute;
@@ -124,7 +124,7 @@
 
     font-size: 24px;
     font-weight: bold;
-    display: flex;
+    display: none;
 
     border-radius: 15px;
     width: 90%;
@@ -136,6 +136,13 @@
     z-index: 9999;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     flex-direction: row;
+
+    transition: opacity 0.3s ease;
+}
+
+.mainbox.dispf {
+    opacity: 1;
+    pointer-events: auto;
 }
 /* left */
 
