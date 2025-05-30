@@ -6,7 +6,7 @@ const pv1 = document.getElementById("portofoliov1");
 const trans = document.getElementById("translator");
 const pokemon = document.getElementById("pokemon");
 const miculbrutar = document.getElementById("miculbrutar");
-const paget = document.getElementById("paget");
+const pcclinic = document.getElementById("pcclinic");
 
 ehub.addEventListener("click", function() {
     window.location.href = "/experiencehubpage/indexhome";
@@ -26,4 +26,8 @@ pokemon.addEventListener("click", function () {
 
 miculbrutar.addEventListener("click", function () {
     window.location.href = "/miculbrutar/index";
+});
+
+pcclinic.addEventListener("click", function () {
+    window.location.href = "/pcclinicwebpage/index.html";
 });
