@@ -1,0 +1,13 @@
+[
+    {
+        "repairs": [
+            {
+                "name": "Pâine albă",
+                "description": "Pâinea albă este unul dintre cele mai populare produse de panificație, apreciată pentru textura sa moale și coaja subțire. Fabricată din făină de grâu rafinată, apă, drojdie și sare, aceasta este coaptă cu grijă pentru a obține un miez pufos și o crustă aurie, delicată. În brutăria noastră, fiecare pâine albă este frământată cu grijă, lăsată să dospească și apoi coaptă în cuptoare tradiționale pentru a obține o pâine de calitate, perfectă pentru orice masă. Este ideală pentru sandvișuri, toasturi sau pur și simplu pentru a fi savurată alături de unt sau brânzeturi.",
+                "image1": "./produsele/images/paine_alba1.png",
+                "image2": "./produsele/images/paine_alba2.png",
+                "image3": "./produsele/images/paine_alba3.png"
+            }
+        ]
+    }    
+]
