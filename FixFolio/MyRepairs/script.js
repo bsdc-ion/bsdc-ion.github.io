@@ -20,6 +20,9 @@ function readTextFile(file, callback) {
 readTextFile("../localdb.json", function(text){
     data = JSON.parse(text);
 
+    var devstat = document.getElementById("devstat");
+    devstat.textContent = data.repairs.length;
+
     var mainbox = document.getElementById("grid");
 
     // incarca tot
