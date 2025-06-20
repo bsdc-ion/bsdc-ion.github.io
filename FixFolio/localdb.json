@@ -1,13 +1,24 @@
-[
-    {
-        "repairs": [
-            {
-                "name": "Pâine albă",
-                "description": "Pâinea albă este unul dintre cele mai populare produse de panificație, apreciată pentru textura sa moale și coaja subțire. Fabricată din făină de grâu rafinată, apă, drojdie și sare, aceasta este coaptă cu grijă pentru a obține un miez pufos și o crustă aurie, delicată. În brutăria noastră, fiecare pâine albă este frământată cu grijă, lăsată să dospească și apoi coaptă în cuptoare tradiționale pentru a obține o pâine de calitate, perfectă pentru orice masă. Este ideală pentru sandvișuri, toasturi sau pur și simplu pentru a fi savurată alături de unt sau brânzeturi.",
-                "image1": "./produsele/images/paine_alba1.png",
-                "image2": "./produsele/images/paine_alba2.png",
-                "image3": "./produsele/images/paine_alba3.png"
-            }
-        ]
-    }    
-]
+{
+    "repairs": [
+        {
+            "name": "iPad 6th Generation",
+            "image1": "/FixFolio/images/ipad6before.png",
+            "image2": "/FixFolio/images/ipad6after.png"
+        },
+        {
+            "name": "iPad 7th Generation",
+            "image1": "/FixFolio/images/ipad7before.png",
+            "image2": "/FixFolio/images/ipad7after.png"
+        },
+        {
+            "name": "Samsung S21 Ultra",
+            "image1": "/FixFolio/images/S21Ubefore.png",
+            "image2": "/FixFolio/images/placeholder.png"
+        },
+        {
+            "name": "Samsung A70",
+            "image1": "/FixFolio/images/placeholder.png",
+            "image2": "/FixFolio/images/placeholder.png"
+        }
+    ] 
+}

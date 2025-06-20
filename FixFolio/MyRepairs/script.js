@@ -17,8 +17,37 @@ function readTextFile(file, callback) {
 }
 
 // loading everything in:
-readTextFile("./localdb.json", function(text){
+readTextFile("../localdb.json", function(text){
     data = JSON.parse(text);
 
-    console.log(data)
+    var mainbox = document.getElementById("grid");
+
+    // incarca tot
+    for(var i = 0; i < data.repairs.length; i++){
+
+        // creaza cutie support
+        var cutie = document.createElement("div");
+        cutie.className = "product-card";
+        mainbox.appendChild(cutie);
+
+        // adauga restu de script
+        cutie.innerHTML = `
+            <div class="card-inner">
+                <div class="card-front">
+                    <div>
+                        <img src="${data.repairs[i].image1}" class="product-image"></img>
+                        <h3 class="device-name">${data.repairs[i].name}</h3>
+                    </div>
+                    <button class="product-button" onclick="flipCard(this)">See Final Result</button>
+                </div>
+                <div class="card-back">
+                    <div>
+                        <img src="${data.repairs[i].image2}" class="product-image"></img>
+                        <h3 class="device-name">${data.repairs[i].name}</h3>
+                    </div>
+                    <button class="product-button" onclick="flipCard(this)">See Before</button>
+                </div>
+            </div>
+        `;
+    }
 });

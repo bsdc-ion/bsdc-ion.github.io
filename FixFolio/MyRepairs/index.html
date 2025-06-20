@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products - Device Collection</title>
+    <title>Repaired - Device Collection</title>
 
     <link rel="stylesheet" href="/FixFolio/Styles/styleMYrepairspage.css">
 
@@ -20,30 +20,24 @@
     <div class="container">
         <div class="header">
             <h1 class="title">My Repairs</h1>
-            <p class="subtitle">yes.</p>
+            <p class="subtitle">Every device that I decided it was worth repairing is uploaded in here in a chronological order.</p>
         </div>
 
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <div>
-                            <div class="product-image">Image</div>
-                            <h3 class="device-name">Device Name</h3>
-                        </div>
-                        <button class="product-button" onclick="flipCard(this)">See Final Result</button>
-                    </div>
-                    <div class="card-back">
-                        <div>
-                            <div class="product-image">Back Image</div>
-                            <h3 class="device-name">Device Name - Back</h3>
-                        </div>
-                        <button class="product-button" onclick="flipCard(this)">See Before</button>
-                    </div>
-                </div>
-            </div>
+        <div class="product-grid" id="grid">
+        </div>
+        <div class="stats-container">
+        <div class="stat">
+            <div class="stat-number">15</div>
+            <div class="stat-label">Devices Fixed</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Hours Learning</div>
         </div>
     </div>
+    </div>
+    
+    
 
     <script src="/FixFolio/MyRepairs/script.js"></script>
 </body>
