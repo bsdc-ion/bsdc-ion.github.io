@@ -19,6 +19,16 @@
             "name": "Samsung A70",
             "image1": "/FixFolio/images/placeholder.png",
             "image2": "/FixFolio/images/placeholder.png"
+        },
+        {
+            "name": "Pixel 3a",
+            "image1": "/FixFolio/images/placeholder.png",
+            "image2": "/FixFolio/images/placeholder.png"
+        },
+        {
+            "name": "Samsung S10",
+            "image1": "/FixFolio/images/placeholder.png",
+            "image2": "/FixFolio/images/placeholder.png"
         }
     ] 
 }
