@@ -17,6 +17,7 @@ html, body {
 body {
     background: radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(2,0,36,1) 85%);
     transform: scale(0.8);
+    overflow-x: hidden;
 }
 /* transition */
 
@@ -212,14 +213,16 @@ div, section, p, ul, li, h3, body {
         align-items: unset; 
     }
     body {
-        transform: scale(0.6);
+        transform: scale(0.55);
     }
     .mainbox {
         width: 760px;
-        height: 2000px;
+        height: fit-content;
         margin: -220px auto 100px auto;
         flex-direction: column;
         background-color: #383c6f;
+
+        padding-bottom: 50px;
     }
     
     .welcomesec {
