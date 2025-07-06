@@ -8,12 +8,12 @@ let html2 = fs.readFileSync(path2, 'utf8');
 const now = new Date().toISOString();
 
 const updatedHtml = html.replace(
-  /<div class="stat-number" id="last-updated">6 July<\/div>/,
+  /<div class="stat-number" id="last-updated">.*?<\/div>/,
   `<div class="stat-number" id="last-updated">${now}</div>`
 );
 
 const updatedHtml2 = html2.replace(
-  /<div class="stat-number" id="last-updated">6 July<\/div>/,
+  /<div class="stat-number" id="last-updated">.*?<\/div>/,
   `<div class="stat-number" id="last-updated">${now}</div>`
 );
 
