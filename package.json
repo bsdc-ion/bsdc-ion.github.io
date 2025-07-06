@@ -1,0 +1,20 @@
+{
+  "name": "bsdc-ion.github.io",
+  "version": "1.0.0",
+  "description": "I still don't know what the hell I am doing :D",
+  "main": "index.js",
+  "scripts": {
+    "update-date": "node ./FixFolio/updatedate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsdc-ion/bsdc-ion.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsdc-ion/bsdc-ion.github.io/issues"
+  },
+  "homepage": "https://github.com/bsdc-ion/bsdc-ion.github.io/index.html"
+}

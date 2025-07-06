@@ -1,20 +1,25 @@
 const fs = require('fs');
-const path = './MyRepairs/index.html';
-const path2 = './index.html';
+const path = './FixFolio/MyRepairs/index.html';
+const path2 = './FixFolio/index.html';
 
 let html = fs.readFileSync(path, 'utf8');
 let html2 = fs.readFileSync(path2, 'utf8');
 
-const now = new Date().toISOString();
+// Get today's date
+const now = new Date();
+const day = now.getDate();
+const month = now.toLocaleString('default', { month: 'long' }); // "July"
+
+const formattedDate = `${day} ${month}`;
 
 const updatedHtml = html.replace(
   /<div class="stat-number" id="last-updated">.*?<\/div>/,
-  `<div class="stat-number" id="last-updated">${now}</div>`
+  `<div class="stat-number" id="last-updated">${formattedDate}</div>`
 );
 
 const updatedHtml2 = html2.replace(
   /<div class="stat-number" id="last-updated">.*?<\/div>/,
-  `<div class="stat-number" id="last-updated">${now}</div>`
+  `<div class="stat-number" id="last-updated">${formattedDate}</div>`
 );
 
 fs.writeFileSync(path, updatedHtml, 'utf8');
