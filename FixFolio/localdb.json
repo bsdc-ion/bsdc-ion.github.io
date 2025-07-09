@@ -18,7 +18,7 @@
         {
             "name": "Samsung A70",
             "image1": "/FixFolio/images/SA70Before.png",
-            "image2": "/FixFolio/images/placeholder.png"
+            "image2": "/FixFolio/images/SA70After.png"
         },
         {
             "name": "Google Pixel 3a",
@@ -27,7 +27,7 @@
         },
         {
             "name": "Samsung S10",
-            "image1": "/FixFolio/images/placeholder.png",
+            "image1": "/FixFolio/images/S10Before.png",
             "image2": "/FixFolio/images/placeholder.png"
         }
     ] 
