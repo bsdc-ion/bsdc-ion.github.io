@@ -44,6 +44,11 @@
             "name": "Iphone 8",
             "image1": "/FixFolio/images/I8Before.png",
             "image2": "/FixFolio/images/placeholder.png"
+        },
+        {
+            "name": "Macbook Air 2020",
+            "image1": "/FixFolio/images/MAir20Before.png",
+            "image2": "/FixFolio/images/placeholder.png"
         }
     ] 
 }
