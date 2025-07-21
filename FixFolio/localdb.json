@@ -42,32 +42,32 @@
         },
         {
             "name": "Macbook Air 2020",
-            "image1": "/FixFolio/images/placeholder.png",
+            "image1": "/FixFolio/images/MAir20Before.png",
             "image2": "/FixFolio/images/placeholder.png"
         },
         {
             "name": "iPhone 8 Plus",
-            "image1": "/FixFolio/images/placeholder.png",
+            "image1": "/FixFolio/images/iPh8PBefore.png",
             "image2": "/FixFolio/images/placeholder.png"
         },
         {
             "name": "iPhone SE2",
-            "image1": "/FixFolio/images/placeholder.png",
+            "image1": "/FixFolio/images/iPhSE2Before.png",
             "image2": "/FixFolio/images/placeholder.png"
         },
         {
             "name": "iPhone 12 Mini",
-            "image1": "/FixFolio/images/placeholder.png",
-            "image2": "/FixFolio/images/placeholder.png"
+            "image1": "/FixFolio/images/iPh12MBefore.png",
+            "image2": "/FixFolio/images/iPh12MAfter.png"
         },
         {
             "name": "Samsung A41",
-            "image1": "/FixFolio/images/placeholder.png",
+            "image1": "/FixFolio/images/SA41Before.png",
             "image2": "/FixFolio/images/placeholder.png"
         },
         {
             "name": "iPad 9th Generation",
-            "image1": "/FixFolio/images/placeholder.png",
+            "image1": "/FixFolio/images/iPad9Before.png",
             "image2": "/FixFolio/images/placeholder.png"
         }
     ] 
