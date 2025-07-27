@@ -33,12 +33,12 @@
         {
             "name": "Iphone 11",
             "image1": "/FixFolio/images/I11Before.png",
-            "image2": "/FixFolio/images/placeholder.png"
+            "image2": "/FixFolio/images/I11After.png"
         },
         {
             "name": "Iphone 8",
             "image1": "/FixFolio/images/I8Before.png",
-            "image2": "/FixFolio/images/placeholder.png"
+            "image2": "/FixFolio/images/I8After.png"
         },
         {
             "name": "iPhone 8 Plus",
