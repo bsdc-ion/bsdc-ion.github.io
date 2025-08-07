@@ -48,7 +48,7 @@
         {
             "name": "iPhone SE2",
             "image1": "/FixFolio/images/iPhSE2Before.png",
-            "image2": "/FixFolio/images/placeholder.png"
+            "image2": "/FixFolio/images/iPhSE2After.png"
         },
         {
             "name": "iPhone 12 Mini",
@@ -63,7 +63,7 @@
         {
             "name": "iPad 9th Generation",
             "image1": "/FixFolio/images/iPad9Before.png",
-            "image2": "/FixFolio/images/placeholder.png"
+            "image2": "/FixFolio/images/iPad9After.png"
         }
     ] 
 }
