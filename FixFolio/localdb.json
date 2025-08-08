@@ -2,68 +2,81 @@
     "repairs": [
         {
             "name": "iPad 6th Generation",
+            "category": "tablets",
             "image1": "/FixFolio/images/ipad6before.png",
             "image2": "/FixFolio/images/ipad6after.png"
         },
         {
             "name": "iPad 7th Generation",
+            "category": "tablets",
             "image1": "/FixFolio/images/ipad7before.png",
             "image2": "/FixFolio/images/ipad7after.png"
         },
         {
-            "name": "Samsung S21 Ultra",
-            "image1": "/FixFolio/images/S21Ubefore.png",
-            "image2": "/FixFolio/images/S21UAfter.png"
-        },
-        {
             "name": "Samsung A70",
+            "category": "phones",
             "image1": "/FixFolio/images/SA70Before.png",
             "image2": "/FixFolio/images/SA70After.png"
         },
         {
             "name": "Google Pixel 3a",
+            "category": "phones",
             "image1": "/FixFolio/images/Pixel3ABefore.png",
             "image2": "/FixFolio/images/Pixel3AAfter.png"
         },
         {
             "name": "Samsung S10",
+            "category": "phones",
             "image1": "/FixFolio/images/S10Before.png",
             "image2": "/FixFolio/images/S10After.png"
         },
         {
             "name": "Iphone 11",
+            "category": "phones",
             "image1": "/FixFolio/images/I11Before.png",
             "image2": "/FixFolio/images/I11After.png"
         },
         {
             "name": "Iphone 8",
+            "category": "phones",
             "image1": "/FixFolio/images/I8Before.png",
             "image2": "/FixFolio/images/I8After.png"
         },
         {
             "name": "iPhone 8 Plus",
+            "category": "phones",
             "image1": "/FixFolio/images/iPh8PBefore.png",
             "image2": "/FixFolio/images/placeholder.png"
         },
         {
             "name": "iPhone SE2",
+            "category": "phones",
             "image1": "/FixFolio/images/iPhSE2Before.png",
             "image2": "/FixFolio/images/iPhSE2After.png"
         },
         {
             "name": "iPhone 12 Mini",
+            "category": "phones",
             "image1": "/FixFolio/images/Iph12MBefore.png",
             "image2": "/FixFolio/images/Iph12MAfter.png"
         },
         {
             "name": "Samsung A41",
+            "category": "phones",
             "image1": "/FixFolio/images/SA41Before.png",
             "image2": "/FixFolio/images/placeholder.png"
         },
         {
             "name": "iPad 9th Generation",
+            "category": "tablets",
             "image1": "/FixFolio/images/iPad9Before.png",
             "image2": "/FixFolio/images/iPad9After.png"
+        },
+        {
+            "name": "iPhone 13",
+            "category": "phones",
+            "image1": "/FixFolio/images/iPh13Before.png",
+            "image2": "/FixFolio/images/placeholder.png"
         }
     ] 
 }
