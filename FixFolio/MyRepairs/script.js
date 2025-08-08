@@ -65,7 +65,7 @@ async function initFilters() {
     const response = await fetch('../localdb.json');
     const data = await response.json();
     
-    const filterButtons = document.querySelectorAll('.filter-btn');
+    const filterButtons = document.querySelectorAll('.filterrr');
     const sortIndexButton = document.querySelector('.sort-index-btn');
     const repairCards = Array.from(document.querySelectorAll('.product-card'));
     const container = repairCards[0].parentElement;
@@ -131,7 +131,18 @@ async function initFilters() {
     if (sortIndexButton) {
         sortIndexButton.addEventListener('click', () => {
             sortAscending = !sortAscending;
-            sortIndexButton.textContent = sortAscending ? 'Sort: Low to High' : 'Sort: High to Low';
+
+            sortIcon = document.getElementById("sortIcon");
+            
+            sortIcon.innerHTML = sortAscending ? 
+                `<svg viewBox="0 0 24 24">
+                    <path d="M12 5.83L15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83z"/>
+                    <path d="M12 18.17L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z" opacity="0.4"/>
+                </svg>` :
+                `<svg viewBox="0 0 24 24">
+                    <path d="M12 5.83L15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83z" opacity="0.4"/>
+                    <path d="M12 18.17L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z"/>
+                </svg>`;
             sortIndexButton.classList.toggle('active');
             
             sortByIndex();

@@ -326,6 +326,24 @@ body {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 500;
 }
+/* sort icon */
+.sort-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+/* Icon styles */
+.sort-index-btn {
+    padding: 5px 10px;
+}
+.sort-icon svg {
+    width: 25px;
+    height: 25px;
+    fill: currentColor;
+}
+
+
 
 /* floating points */
 .floating-dot:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
