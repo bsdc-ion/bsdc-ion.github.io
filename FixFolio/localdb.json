@@ -43,12 +43,6 @@
             "image2": "/FixFolio/images/I8After.png"
         },
         {
-            "name": "iPhone 8 Plus",
-            "category": "phones",
-            "image1": "/FixFolio/images/iPh8PBefore.png",
-            "image2": "/FixFolio/images/placeholder.png"
-        },
-        {
             "name": "iPhone SE2",
             "category": "phones",
             "image1": "/FixFolio/images/iPhSE2Before.png",
@@ -61,21 +55,27 @@
             "image2": "/FixFolio/images/Iph12MAfter.png"
         },
         {
-            "name": "Samsung A41",
-            "category": "phones",
-            "image1": "/FixFolio/images/SA41Before.png",
-            "image2": "/FixFolio/images/placeholder.png"
-        },
-        {
             "name": "iPad 9th Generation",
             "category": "tablets",
             "image1": "/FixFolio/images/iPad9Before.png",
             "image2": "/FixFolio/images/iPad9After.png"
         },
         {
+            "name": "iPhone Xr",
+            "category": "phones",
+            "image1": "/FixFolio/images/iphxrBefore.png",
+            "image2": "/FixFolio/images/iphxrAfter.png"
+        },
+        {
             "name": "iPhone 13",
             "category": "phones",
             "image1": "/FixFolio/images/iPh13Before.png",
+            "image2": "/FixFolio/images/placeholder.png"
+        },
+        {
+            "name": "Macbook Retina 2017",
+            "category": "laptops",
+            "image1": "/FixFolio/images/McbkBefore.png",
             "image2": "/FixFolio/images/placeholder.png"
         }
     ] 
