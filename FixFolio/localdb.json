@@ -70,13 +70,19 @@
             "name": "iPhone 13",
             "category": "phones",
             "image1": "/FixFolio/images/iPh13Before.png",
-            "image2": "/FixFolio/images/placeholder.png"
+            "image2": "/FixFolio/images/iPh13After.png"
         },
         {
-            "name": "Macbook Retina 2017",
+            "name": "Google Pixel 4",
+            "category": "phones",
+            "image1": "/FixFolio/images/Pixel4Before.png",
+            "image2": "/FixFolio/images/Pixel4After.png"
+        },
+        {
+            "name": "Macbook Air",
             "category": "laptops",
-            "image1": "/FixFolio/images/Mcbk17Before.png",
-            "image2": "/FixFolio/images/placeholder.png"
+            "image1": "/FixFolio/images/MAir15Before.png",
+            "image2": "/FixFolio/images/MAir15After.png"
         }
     ] 
 }
