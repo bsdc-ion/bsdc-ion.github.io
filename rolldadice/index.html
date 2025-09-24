@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boilerplate</title>
-    <link rel="stylesheet" href="/boilerplate/styles.css">
-
-    <!-- Coded by MLGBD -->
+    <title>Dice Roller</title>
+    <link href="/rolldadice/style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>This is boilerplate!</h1>
+    <div class="container">
+        <h1 class="title">Dice Roller</h1>
+        
+        <div class="dice-options">
+            <button class="dice-option active" data-sides="6">D6</button>
+            <button class="dice-option" data-sides="8">D8</button>
+            <button class="dice-option" data-sides="10">D10</button>
+            <button class="dice-option" data-sides="12">D12</button>
+            <button class="dice-option" data-sides="20">D20</button>
+        </div>
+
+        <div class="dice-container">
+            <div class="dice-type-label" id="diceLabel">Six-sided die</div>
+            <div class="dice-d6" id="dice">
+                <div class="dice-face" id="diceFace"></div>
+            </div>
+            <div class="result-text" id="resultText">Click roll to start!</div>
+        </div>
+
+        <button class="roll-button" id="rollButton">Roll Dice</button>
+    </div>
 </body>
-<script src="/boilerplate/app.js"></script>
+<script src="/rolldadice/app.js"></script>
 </html>

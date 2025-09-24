@@ -1,20 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: #3F5EFB;
-    background: radial-gradient(circle, rgba(63, 94, 251, 1) 61%, rgba(245, 215, 215, 1) 100%); 
-}
-
-.middlescreen {
-    width: 55%;
-    margin: auto;
-    height: 920px;
-}
-
-.mainbox {
-    width: 100%;
-    background-color: #051b8a;
-    height: 500px;
-
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(90deg,rgba(0, 183, 255, 1) 0%, rgba(25, 0, 255, 1) 100%);
+    min-height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dice-container {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 40px;
+    margin: 30px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* D6 - Classic Cube */
+.dice-d6 {
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 8px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    border: 2px solid #ddd;
+}
+
+.dice-d6.rolling {
+    animation: gentleRoll 0.4s ease-in-out;
+}
+
+@keyframes gentleRoll {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+}
+
+/* D8 - Octahedron */
+.dice-d8 {
+    width: 120px;
+    height: 120px;
+    background: white;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    clip-path: polygon(50% 0%, 0% 50%, 50% 100%, 100% 50%);
+    border: 2px solid #ddd;
+}
+
+/* D10 - Pentagon */
+.dice-d10 {
+    width: 120px;
+    height: 120px;
+    background: white;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    border: 2px solid #ddd;
+}
+
+/* D12 - Dodecagon */
+.dice-d12 {
+    width: 120px;
+    height: 120px;
+    background: white;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    border: 2px solid #ddd;
+}
+
+/* D20 - Circle for icosahedron approximation */
+.dice-d20 {
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    border: 2px solid #ddd;
+}
+
+.dice-face {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    background: #333;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.dice-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.result-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+.roll-button {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(238, 90, 36, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.roll-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(238, 90, 36, 0.5);
+}
+
+.roll-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.dice-options {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.dice-option {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.dice-option.active {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+}
+
+.dice-option:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.dice-type-label {
+    color: white;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .dice-d6, .dice-d8, .dice-d10, .dice-d12, .dice-d20 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .dice-number {
+        font-size: 2rem;
+    }
 }
