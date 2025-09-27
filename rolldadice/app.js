@@ -3,11 +3,11 @@ class DiceRoller {
         this.currentSides = 6;
         this.isRolling = false;
         this.diceTypeNames = {
-            6: 'Six-sided die',
-            8: 'Eight-sided die', 
-            10: 'Ten-sided die',
-            12: 'Twelve-sided die',
-            20: 'Twenty-sided die'
+            6: 'Six-sided dice',
+            8: 'Eight-sided dice', 
+            10: 'Ten-sided dice',
+            12: 'Twelve-sided dice',
+            20: 'Twenty-sided dice'
         };
         this.initializeElements();
         this.bindEvents();
