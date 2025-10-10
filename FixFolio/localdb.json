@@ -83,6 +83,24 @@
             "category": "laptops",
             "image1": "/FixFolio/images/MAir15Before.png",
             "image2": "/FixFolio/images/MAir15After.png"
+        },
+        {
+            "name": "Macbook Air",
+            "category": "laptops",
+            "image1": "/FixFolio/images/MBAir171Before.png",
+            "image2": "/FixFolio/images/placeholder.png"
+        },
+        {
+            "name": "Dell Inspiron 15",
+            "category": "laptops",
+            "image1": "/FixFolio/images/DellLBefore.png",
+            "image2": "/FixFolio/images/DellLAfter.png"
+        },
+        {
+            "name": "iPad 8th Generation",
+            "category": "tablets",
+            "image1": "/FixFolio/images/iPad8Before.png",
+            "image2": "/FixFolio/images/iPad8After.png"
         }
     ] 
 }
