@@ -8,25 +8,36 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Dice Roller</h1>
-        
-        <div class="dice-options">
-            <button class="dice-option active" data-sides="6">D6</button>
-            <button class="dice-option" data-sides="8">D8</button>
-            <button class="dice-option" data-sides="10">D10</button>
-            <button class="dice-option" data-sides="12">D12</button>
-            <button class="dice-option" data-sides="20">D20</button>
-        </div>
-
-        <div class="dice-container">
-            <div class="dice-type-label" id="diceLabel">Six-sided dice</div>
-            <div class="dice-d6" id="dice">
-                <div class="dice-face" id="diceFace"></div>
+        <div class="welcomeinterface" id="welcome-int">
+            <h1 class="title" style="font-size: 35px;">Welcome to the Dice Roller</h1>
+            <div class="dice-type-label" id="diceLabel" style="font-size: 15px;">Select the number of players</div>
+            <div clas="players">
+                <button class="roll-button selectionbut" id="1player" style="margin-bottom: 20px; margin-right: 10px;">1 Player</button>
+                <button class="roll-button selectionbut" id="2players">2 Players</button>
+                <button class="roll-button selectionbut" id="3players" style=" margin-right: 10px;">3 Players</button>
+                <button class="roll-button selectionbut" id="4players">4 Players</button>
             </div>
-            <div class="result-text" id="resultText">Click roll to start!</div>
         </div>
+        <div class="diceinterface" id="main-int">
+            <h1 class="title">Dice Roller</h1>
+            <div class="dice-options">
+                <button class="dice-option active" data-sides="6">D6</button>
+                <button class="dice-option" data-sides="8">D8</button>
+                <button class="dice-option" data-sides="10">D10</button>
+                <button class="dice-option" data-sides="12">D12</button>
+                <button class="dice-option" data-sides="20">D20</button>
+            </div>
 
-        <button class="roll-button" id="rollButton">Roll Dice</button>
+            <div class="dice-container">
+                <div class="dice-type-label" id="diceLabel">Six-sided dice</div>
+                <div class="dice-d6" id="dice">
+                    <div class="dice-face" id="diceFace"></div>
+                </div>
+                <div class="result-text" id="resultText">Click roll to start!</div>
+            </div>
+
+            <button class="roll-button" id="rollButton">Roll Dice</button>
+        </div>
     </div>
 </body>
 <script src="/rolldadice/app.js"></script>

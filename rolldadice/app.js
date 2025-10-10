@@ -115,7 +115,30 @@ class DiceRoller {
     }
 }
 
+class PlayerSelector {
+    constructor() {
+        this.currentInt = null;
+        this.initializeElements();
+        this.bindEvents();
+    }
+    initializeElements() {
+        // interfaces
+        this.maininterface = document.getElementById("main-int");
+        this.playerinterface = null;
+        this.welcomeint = document.getElementById("welcome-int");
+
+        // Selection buttons
+        this.Selectionbuttons = document.querySelectorAll(".selectionbut");
+    }
+    bindEvents() {
+        this.Selectionbuttons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                const currentInt = e.target.dataset
+            })
+        })
+    }
+}
 // Initialize the dice roller when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-    new DiceRoller();
+    
 });

@@ -227,6 +227,19 @@ body {
     font-weight: 500;
 }
 
+/* switch between interfaces */
+.diceinterface {
+    display: none;
+}
+
+.diceinterface.active {
+    display: block;
+}
+
+.welcomeinterface {
+    display: block;
+}
+
 @media (max-width: 480px) {
     .container {
         padding: 30px 20px;
