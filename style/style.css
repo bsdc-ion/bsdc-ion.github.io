@@ -259,7 +259,7 @@ div, section, p, ul, li, h3, body {
     font-weight: 600;
     margin-bottom: 0;
 }
-.project-info a {
+.project-card a {
     text-decoration: none;
 }
 
@@ -271,6 +271,13 @@ div, section, p, ul, li, h3, body {
     font-size: 4rem;
     position: relative;
     overflow: hidden;
+}
+
+
+.workicon {
+    width: 150px;
+    height: 150px;
+    display: flex;
 }
 
 /* coming soon */
