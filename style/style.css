@@ -19,7 +19,7 @@ html, body {
 body {
     background: #4d5466;
     background: radial-gradient(circle, rgba(77, 84, 102, 1) 0%, rgba(30, 38, 74, 1) 100%);
-    transform: scale(0.9);
+    transform: scale(0.7);
 }
 
 /* transition */
@@ -310,10 +310,6 @@ div, section, p, ul, li, h3, body {
 .project-card:nth-child(4) .project-image { background: linear-gradient(90deg,rgba(129, 140, 248, 1) 0%, rgba(106, 121, 235, 1) 52%, rgba(68, 79, 184, 1) 100%); }
 
 /* media queries */
-
-
-
-
 
 @media (max-width: 768px) {
     html, body {
