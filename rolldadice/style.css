@@ -229,7 +229,7 @@ body {
 
 /* switch between interfaces */
 .diceinterface {
-    display: none;
+    display: block;
 }
 
 .diceinterface.active {
@@ -237,7 +237,7 @@ body {
 }
 
 .welcomeinterface {
-    display: block;
+    display: none;
 }
 
 @media (max-width: 480px) {
