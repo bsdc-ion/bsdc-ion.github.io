@@ -55,7 +55,7 @@ div, section, p, ul, li, h3, body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    animation: floatIn 0.8s ease-out;
+    animation: floatIn 0.5s ease-out;
 
     transform: scale(0.8);
 }
