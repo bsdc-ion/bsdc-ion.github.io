@@ -329,7 +329,7 @@ div, section, p, ul, li, h3, body {
         padding: 1.5rem;
         grid-template-columns: 1fr;
         margin: 1rem auto;
-        transform: scale(0.975);
+        transform: scale(1);
     }
 
     .header-section {
