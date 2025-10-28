@@ -88,7 +88,7 @@
             "name": "Macbook Air",
             "category": "laptops",
             "image1": "/FixFolio/images/MBAir171Before.png",
-            "image2": "/FixFolio/images/placeholder.png"
+            "image2": "/FixFolio/images/MBAir171After.png"
         },
         {
             "name": "Dell Inspiron 15",
@@ -101,6 +101,12 @@
             "category": "tablets",
             "image1": "/FixFolio/images/iPad8Before.png",
             "image2": "/FixFolio/images/iPad8After.png"
+        },
+        {
+            "name": "Google Pixel 6 Pro",
+            "category": "phones",
+            "image1": "/FixFolio/images/GooglPixel6PBefore.png",
+            "image2": "/FixFolio/images/placeholder.png"
         }
     ] 
 }
