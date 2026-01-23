@@ -35,7 +35,7 @@ body {
     text-align: center;
 }
 .mainbox {
-    background-image: url("/languagewebpage/images/empty-blackboard.png");
+    background-image: url("/24-25Webs/languagewebpage/images/empty-blackboard.png");
     display:flexbox;
     flex-grow: 0;
     flex-shrink: 0;

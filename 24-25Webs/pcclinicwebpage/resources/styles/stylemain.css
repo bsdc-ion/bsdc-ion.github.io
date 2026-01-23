@@ -61,7 +61,7 @@ html, body {
 }
 
 .question {
-    background-image: url("/pcclinicwebpage/resources/images/faq.svg");
+    background-image: url("/24-25Webs/pcclinicwebpage/resources/images/faq.svg");
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
@@ -72,7 +72,7 @@ html, body {
 }
 
 .moon {
-    background-image: url("/pcclinicwebpage/resources/images/moon.svg");
+    background-image: url("/24-25Webs/pcclinicwebpage/resources/images/moon.svg");
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;

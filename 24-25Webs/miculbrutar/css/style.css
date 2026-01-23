@@ -28,7 +28,7 @@ html, body {
 /* landing page */
 
 .landingpage {
-    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url("/miculbrutar/images/background.png");
+    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url("/24-25Webs/miculbrutar/images/background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

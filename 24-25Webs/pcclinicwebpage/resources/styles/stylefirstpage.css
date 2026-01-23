@@ -20,7 +20,7 @@ a {
 }
 /* background */
 .backgroundmob {
-    background-image: url("/pcclinicwebpage/resources/images/background_mob.png");
+    background-image: url("/24-25Webs/pcclinicwebpage/resources/images/background_mob.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -82,7 +82,7 @@ a {
 /* tablets and bigger devices */
 @media only screen and (min-width: 580px) and (max-width: 1200px) {
     .backgroundmob {
-        background-image: url("/pcclinicwebpage/resources/images/background_tab.png");
+        background-image: url("/24-25Webs/pcclinicwebpage/resources/images/background_tab.png");
     }
     .logo {
         min-width: 400px;
@@ -101,7 +101,7 @@ a {
         max-width: 400px;
     }
     .backgroundmob {
-        background-image: url("/pcclinicwebpage/resources/images/background_lap.png");
+        background-image: url("/24-25Webs/pcclinicwebpage/resources/images/background_lap.png");
     }
     .button {
         max-width: 250px;
