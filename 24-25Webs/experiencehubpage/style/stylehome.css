@@ -90,7 +90,6 @@ footer {
     font-family: "Calibri";
     text-decoration: none;
 }
-
 .buttonbro2:hover {
     color:aqua;
 }
@@ -105,14 +104,11 @@ footer {
     margin-left: 30px;
     margin-top: 30px;
 }
-
 .locationpin {
     width: 30px;
     height: 40px;
     margin-right: 8px;
 }
-
-
 .pmpin {
     width: 40px;
     height: 40px;
