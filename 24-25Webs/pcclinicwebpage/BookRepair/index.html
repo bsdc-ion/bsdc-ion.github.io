@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Clinic</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/24-25Webs/pcclinicwebpage/resources/styles/stylemain.css">
+    <link rel="stylesheet" href="/24-25Webs/pcclinicwebpage/resources/styles/stylerepair.css">
+    
+    <!-- Temporary icon -->
+    <link rel="icon" href="/24-25Webs/pcclinicwebpage/favicon.ico">
+    <!-- Coded by MLGBD -->
+</head>
+<body id="body">
+    <header id="head">
+        <a href="/24-25Webs/pcclinicwebpage/Services"><img  src="/24-25Webs/pcclinicwebpage/resources/images/logolandingpage.png"></a>
+        <img src="/24-25Webs/pcclinicwebpage/resources/images/menu.svg" class="menu" id="menu">
+        <div class="backgroundb" id="blur"></div>
+        <nav class="sidebar" id="side">
+            <img src="/24-25Webs/pcclinicwebpage/resources/images/logolandingpage.png">
+            <ul style="list-style: none; padding: 0;">
+                <li><a href="/24-25Webs/pcclinicwebpage/Services" CLASS="button ">Services</a></li>
+                <li><a href="/24-25Webs/pcclinicwebpage/ContactUs/" CLASS="button ">Contact Us</a></li>
+                <li><a href="/24-25Webs/pcclinicwebpage/AboutUS/" CLASS="button ">About Us</a></li>
+                <li><a href="/24-25Webs/pcclinicwebpage/BookRepair/" CLASS="button ">Book Repair</a></li>
+            </ul>
+            <ul class="pos">
+                <li><a href="/24-25Webs/pcclinicwebpage/FaQ/" class="buttonsmall"><i class="question"></i></a></li>
+                <li id="lightdarkmode"><i class="buttonsmall moon" id="iconitself"></i></li>
+            </ul>
+        </nav>
+        <nav class="navbar" id="nav">
+            <ul style="list-style: none; padding: 0;"> 
+                <li><a href="/24-25Webs/pcclinicwebpage/Services" class="">Services</a></li>
+                <li><a href="/24-25Webs/pcclinicwebpage/ContactUs/" class="">Contact Us</a></li>
+                <li><a href="/24-25Webs/pcclinicwebpage/AboutUS/" class="">About Us</a></li>
+                <li><a href="/24-25Webs/pcclinicwebpage/BookRepair/" class="">Book Repair</a></li>
+            </ul>
+            <ul class="pos">
+                <li><a href="/24-25Webs/pcclinicwebpage/FaQ/" class="buttonsmall"><i class="question"></i></a></li>
+                <li id="lightdarkmode1"><i class="buttonsmall moon" id="iconitself1"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="mainsection">
+        <section class="bookrepairbackground" id="bookingform">
+            <h1 class="header">Book Repair</h1>
+            <form class="bookform">
+                <div class="leftside">
+                    <div class="name-fields">
+                        <div class="field">
+                            <label for="firstName" class="" >First Name*</label>
+                            <input type="text" id="firstName" placeholder="John"name="First Name" required>
+                        </div>
+                        <div class="field">
+                            <label for="lastName" class="" >Last Name*</label>
+                            <input type="text" id="lastName" placeholder="Smith" name="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="bfield">
+                            <label for="email" class="">Email*</label>
+                        <input type="email" id="email" placeholder="john.smith@domain.com" name="Email" required>
+                    </div>
+                    <div class="bfield">
+                        <label for="message" class="">Message</label>
+                        <textarea id="message" placeholder="Here you specify your device, the exact problem and other things. thanks" name="Message"></textarea>
+                    </div>
+                </div>
+                <div class="rightside">
+                    <label for="device" class="" >Your Device*</label>
+                    <select name="device" id="device" required>
+                        <option value="unselected" disabled selected>Choose your device</option>
+                        <optgroup label="Smartphone">
+                            <option value="samsung" id="samsung">Samsung</option>
+                            <option value="Apple" id="Apple">Apple Iphone</option>
+                            <option value="Huawei" id="Huawei">Huawei</option>
+                            <option value="other" id="other">Other Device (specify)</option>
+                        </optgroup>
+                        <optgroup label="Other Device">
+                            <option value="Laptop" id="Laptop">Laptop</option>
+                            <option value="Desktop" id="Desktop">Desktop</option>
+                            <option value="Tablet" id="Tablet">Tablet</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="servicen" class="" >What service do you need*</label>
+                    <select name="servicen" id="Services" required>
+                        <option value="unselected" disabled selected>Choose your service</option>
+                        <option value="maintenance" id="mainte">Maintenance</option>
+                        <option value="HardwareRepair" id="hard">Hardware Repair</option>
+                        <option value="SoftwareRepair" id="soft">Software Repair</option>
+                        <option value="DataDestruction" id="data">Data destruction</option>
+                    </select>
+
+                    <label for="datetime" class="" >Select an Avaliable Book Slot*</label>
+                    <input type="datetime-local" id="booking" name="booking" required min="2025-05-12T12:00">
+
+                    <button type="submit" class="submit-btn" id="booksubmit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    <footer id="foot" class="">
+        <section class="lefthandside">
+            <section class="infomare">
+                <div class="contact-item">
+                    <img src="/24-25Webs/pcclinicwebpage/resources/images/Light/Phone.svg" class="contactimg">
+                    <a href="callto:0756274582">071234567789</a>
+                </div>
+                <div class="contact-item">
+                    <img src="/24-25Webs/pcclinicwebpage/resources/images/Light/Mail.svg" class="contactimg">
+                    <a href="mailto:pcclinic@bsdc.ac.uk">pcclinic@bsdc.ac.uk</a>
+                </div>
+                <div class="contact-item">
+                    <img src="/24-25Webs/pcclinicwebpage/resources/images/Light/Map.svg" class="contactimg">
+                    <a href="https://maps.app.goo.gl/obDhkG62Fwci5pdZ8">Town Centre Campus, Lichfield Street, DE14 3RL</a>
+                </div> 
+            </section>
+            <section class="social-icons">
+                <a href="https://www.instagram.com"><img src="/24-25Webs/pcclinicwebpage/resources/images/Light/Instagram.svg" class="socialic" id="insta"></a>
+                <a href="https://www.Facebook.com"><img src="/24-25Webs/pcclinicwebpage/resources/images/Light/Facebook.svg" class="socialic" id="Facebook"></a>
+                <a href="https://www.youtube.com"><img src="/24-25Webs/pcclinicwebpage/resources/images/Light/Youtube.svg" class="socialic" id="Youtube"></a>
+                <a href="https://www.twitter.com"><img src="/24-25Webs/pcclinicwebpage/resources/images/Light/Twitter.svg" class="socialic" id="Twitter"></a>
+            </section>
+        </section>
+        <section class="righthandside">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1206.1086977046302!2d-1.6311556!3d52.8004188!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a024776346265%3A0x1e14e88c557a62a1!2sBurton%20and%20South%20Derbyshire%20College!5e0!3m2!1sen!2suk!4v1746815837581!5m2!1sen!2suk" width="600" height="450" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </section>
+        </section>
+    </footer>
+</body>
+<script src="/24-25Webs/pcclinicwebpage/resources/script/scriptmain.js"></script>
+<script src="/24-25Webs/pcclinicwebpage/resources/script/scriptlogic.js"></script>
+</html>
