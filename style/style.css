@@ -334,7 +334,7 @@ div, section, p, ul, li, h3, body {
 
 @media (max-width: 975px) {
     html, body {
-        display: block;
+        display: flex;
         height: auto;
         align-items: initial;
     }
@@ -343,7 +343,6 @@ div, section, p, ul, li, h3, body {
         padding: 1rem;
         min-height: 100vh;
         transform: scale(1);
-
     }
     
     .mainbox {
