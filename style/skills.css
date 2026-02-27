@@ -1,0 +1,85 @@
+/* Skills Dropdown */
+.skills-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-8px);
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6),
+                0 0 0 1px rgba(102, 126, 234, 0.15) inset;
+    padding: 1.4rem;
+    width: 280px;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s ease, transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.skills-dropdown.open {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(-50%) translateY(0);
+}
+
+.skills-dropdown h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 1rem;
+    text-align: left;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.skill-item {
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.88rem;
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.skill-item:hover {
+    background: rgba(102, 126, 234, 0.15);
+    border-color: rgba(102, 126, 234, 0.35);
+    color: #a5b4fc;
+}
+
+.skills-btn-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+.skills-btn-wrapper .link-card {
+    width: 100%;
+}
+
+/* small arrow pointer */
+.skills-dropdown::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    background: rgba(15, 23, 42, 0.95);
+    border-left: 1px solid rgba(255,255,255,0.12);
+    border-top: 1px solid rgba(255,255,255,0.12);
+}

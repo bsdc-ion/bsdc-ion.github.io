@@ -13,6 +13,8 @@ html, body {
     justify-content: center;
     display: flex;
     align-items: center; 
+    transform: scale(0.85);
+
 }
 
 
@@ -29,11 +31,6 @@ html {
 ::selection {
     background: rgba(102, 126, 234, 0.3);
     color: #fff;
-}
-
-.profile-avatar:hover {
-    transform: rotate(3deg) scale(1.05);
-    border-color: #764ba2;
 }
 
 /* transition */
@@ -70,8 +67,8 @@ div, section, p, ul, li, h3, body {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     animation: floatIn 0.5s ease-out;
+    z-index: 999;
 
-    transform: scale(0.75);
 }
 
 /* welcome section */
@@ -167,21 +164,28 @@ div, section, p, ul, li, h3, body {
 
 .bottom-links {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
 }
 
 .link-card {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.5rem;
+    flex: 1; 
+    justify-content: center; 
+    padding: 1rem;
     background: rgba(30, 41, 59, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
-    color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     text-decoration: none;
     transition: all 0.3s ease;
+}
+
+.link-card strong {
+    font-size: 1rem;
+    color: #fff;
 }
 
 .link-card:hover {
@@ -321,11 +325,10 @@ div, section, p, ul, li, h3, body {
 }
 
 /* background images */
-.project-card:nth-child(1) .project-image { background: linear-gradient(90deg,rgba(118, 75, 162, 1) 0%, rgba(84, 34, 133, 1) 52%, rgb(68, 12, 124) 100%); }
-.project-card:nth-child(2) .project-image { background: linear-gradient(90deg,rgba(251, 191, 36, 1) 0%, rgba(199, 146, 12, 1) 52%, rgba(156, 111, 0, 1) 100%); }
-.project-card:nth-child(3) .project-image { background: linear-gradient(90deg,rgba(14, 165, 233, 1) 0%, rgba(36, 135, 181, 1) 52%, rgba(7, 81, 115, 1) 100%); }
-.project-card:nth-child(4) .project-image { background: linear-gradient(90deg,rgba(129, 140, 248, 1) 0%, rgba(106, 121, 235, 1) 52%, rgba(68, 79, 184, 1) 100%); }
-.project-card:nth-child(5) .project-image { background: linear-gradient(90deg,rgba(255, 77, 77, 1) 0%, rgba(238, 46, 46, 1) 52%, rgba(204, -34.578947368421056,-34.578947368421056,1) 100%); }
+.project-card:nth-child(1) .project-image { background: linear-gradient(90deg,rgba(251, 191, 36, 1) 0%, rgba(199, 146, 12, 1) 52%, rgba(156, 111, 0, 1) 100%); }
+.project-card:nth-child(2) .project-image { background: linear-gradient(90deg,rgba(14, 165, 233, 1) 0%, rgba(36, 135, 181, 1) 52%, rgba(7, 81, 115, 1) 100%); }
+.project-card:nth-child(3) .project-image { background: linear-gradient(90deg,rgba(129, 140, 248, 1) 0%, rgba(106, 121, 235, 1) 52%, rgba(68, 79, 184, 1) 100%); }
+.project-card:nth-child(4) .project-image { background: linear-gradient(90deg,rgba(255, 77, 77, 1) 0%, rgba(238, 46, 46, 1) 52%, rgba(204, -34.578947368421056,-34.578947368421056,1) 100%); }
 
 /* media queries */
 
@@ -339,13 +342,14 @@ div, section, p, ul, li, h3, body {
     body {
         padding: 1rem;
         min-height: 100vh;
+        transform: scale(1);
+
     }
     
     .mainbox {
         padding: 1.5rem;
         grid-template-columns: 1fr;
         margin: 1rem auto;
-        transform: scale(1);
     }
 
     .header-section {
@@ -360,4 +364,19 @@ div, section, p, ul, li, h3, body {
     .hobby-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.link-card:hover {
+    background: rgba(30, 41, 59, 0.7);
+    border-color: rgba(102, 126, 234, 0.5);
+    transform: translateX(5px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.link-card svg {
+    transition: transform 0.3s ease;
+}
+
+.link-card:hover svg {
+    transform: rotate(-10deg) scale(1.1);
 }
