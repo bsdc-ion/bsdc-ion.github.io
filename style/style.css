@@ -14,23 +14,14 @@ html, body {
     display: flex;
     align-items: center; 
     transform: scale(0.85);
-
+    
 }
 
 
 body {
     background: #4d5466;
     background: radial-gradient(circle, rgba(77, 84, 102, 1) 0%, rgba(30, 38, 74, 1) 100%);
-    
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-::selection {
-    background: rgba(102, 126, 234, 0.3);
-    color: #fff;
+    background-attachment: fixed;
 }
 
 /* transition */
@@ -336,19 +327,19 @@ div, section, p, ul, li, h3, body {
     html, body {
         display: flex;
         height: auto;
-        align-items: initial;
+        align-items: initial;  
+        padding: unset;
     }
     
     body {
-        padding: 1rem;
         min-height: 100vh;
         transform: scale(1);
+        padding: unset;
     }
     
     .mainbox {
-        padding: 1.5rem;
+        padding: 1rem;
         grid-template-columns: 1fr;
-        margin: 1rem auto;
     }
 
     .header-section {
