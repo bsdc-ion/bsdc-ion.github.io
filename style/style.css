@@ -16,7 +16,7 @@ html, body {
     transform: scale(0.85);
 }
 
-html {
+body {
     background: radial-gradient(circle, rgba(77, 84, 102, 1) 0%, rgba(30, 38, 74, 1) 100%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -328,12 +328,13 @@ div, section, p, ul, li, h3, body {
         align-items: initial;  
         padding: unset;
         height: fit-content;
+        transform: scale(1);
     }
     
     body {
         min-height: 100vh;
         padding: unset;
-        transform: scale(1);
+
 
         padding-bottom: 5vh;
     }
