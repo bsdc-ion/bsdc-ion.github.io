@@ -17,6 +17,12 @@ html, body {
     
 }
 
+html {
+    background: radial-gradient(circle, rgba(77, 84, 102, 1) 0%, rgba(30, 38, 74, 1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%; 
+}
 
 body {
     background: #4d5466;
